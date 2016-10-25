@@ -1,7 +1,17 @@
 import { Template } from 'meteor/templating';
 
-// The Header menu does not use dropdown menus, but most menus do.
-// Here's how to do the required initialization for Semantic UI dropdown menus.
-Template.Header.onRendered(function enableDropDown() {
-  this.$('.dropdown').dropdown();
+Template.Header.onCreated(function appBodyOnCreated() {
+  // placeholder: typically you will put global subscriptions here if you remove the autopublish package.
 });
+
+Template.Header.helpers({
+  // placeholder: if you display dynamic data in your layout, you will put your template helpers here.
+  isHome: function isHome() {
+    return Meteor.Router.current().route.getName()  === 'Home_Page';
+  },
+});
+
+Template.Header.events({
+  // placeholder: if you add a form to this top-level layout, handle the associated events here.
+});
+

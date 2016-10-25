@@ -1,0 +1,38 @@
+<template name="Edit_Profile_Page">
+  <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
+    <h1 class = "ui header">Edit Profile</h1>
+    <form class = "ui form">
+      <div class="field">
+        <label>Name</label>
+        <div class="two fields">
+          <div class="field">
+            <input type="text" name="first" id="first" placeholder="First Name">
+
+          </div>
+          <div class="field">
+            <input type="text" name="last" id="last" placeholder="Last Name">
+
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <label>Address</label>
+        <div class="three fields">
+          <div class="twelve wide field">
+            <input type="text" name="address" id="address" placeholder="Address">
+
+          </div>
+          <div class="field">
+            <input type="text" name="telephone" id="telephone" placeholder="Phone Number">
+
+          </div>
+          <div class="field">
+            <input type="text" name="email" id="email" placeholder="Email Address">
+
+          </div>
+        </div>
+      </div>
+      <button class="ui button" type="submit">Submit</button>
+    </form>
+  </div>
+</template>

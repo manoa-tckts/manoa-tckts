@@ -1,0 +1,39 @@
+<template name="Sell_Tickets_Page">
+  <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
+    <h1 class = "ui header">Sell Ticket</h1>
+    <form class = "ui form">
+      <div class="field">
+        <label>Event</label>
+        <div class="two fields">
+          <div class="field">
+            <input type="text" name="first" id="first" placeholder="Event Name">
+
+          </div>
+          <div class="field">
+            <input type="text" name="last" id="last" placeholder="Date">
+
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <label>Location</label>
+        <div class="three fields">
+          <div class="twelve wide field">
+            <input type="text" name="address" id="address" placeholder="Location  ">
+
+          </div>
+          <div class="field">
+            <input type="text" name="telephone" id="telephone" placeholder="Price">
+
+          </div>
+          <div class="ui checkbox">
+            <input type="checkbox" name="negotiable">
+            <label>Negotiable Price?</label>
+          </div>
+        </div>
+      </div>
+      <button class="ui button" type="submit">Submit</button>
+      <button class="ui button" type="submit">Upload Image</button>
+    </form>
+  </div>
+</template>
