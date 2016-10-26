@@ -2,304 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18098894-616c-4b97-a925-cf9ffeb2e568" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/public/images/hd_party_wallpaper.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_npm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/imports/ui/pages/edit-profile-page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/imports/ui/pages/edit-profile-page.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/imports/ui/pages/events-page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/imports/ui/pages/events-page.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/imports/ui/pages/sell-tickets-page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/imports/ui/pages/sell-tickets-page.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/imports/api/stuff/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/imports/api/stuff/stuff.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/imports/startup/both/accounts-config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/imports/startup/server/stuff.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/imports/ui/pages/add-stuff-page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/imports/ui/pages/add-stuff-page.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/imports/ui/pages/edit-stuff-page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/imports/ui/pages/edit-stuff-page.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/imports/ui/pages/list-stuff-page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/imports/ui/pages/list-stuff-page.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/.bin/detect-indent" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/.bin/repeating" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/path-exists/.meteor-portable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/path-exists/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/path-exists/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/path-exists/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/path-exists/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/node_modules/globals/.meteor-portable" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/node_modules/globals/globals.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/node_modules/globals/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/node_modules/globals/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/node_modules/globals/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/node_modules/globals/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/cli.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/example/parse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/readme.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/test/all_bool.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/test/bool.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/test/dash.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/test/default_bool.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/test/dotted.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/test/kv_short.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/test/long.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/test/num.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/test/parse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/test/parse_modified.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/test/short.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/test/stop_early.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/test/unknown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/node_modules/minimist/test/whitespace.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/get-stdin/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/get-stdin/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/get-stdin/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/package.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/arrays/empty-array.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/arrays/leading-comma-array.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/arrays/lone-trailing-comma-array.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/arrays/no-comma-array.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/arrays/regular-array.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/arrays/trailing-comma-array.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/comments/block-comment-following-array-element.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/comments/block-comment-following-top-level-value.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/comments/block-comment-in-string.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/comments/block-comment-preceding-top-level-value.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/comments/block-comment-with-asterisks.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/comments/inline-comment-following-array-element.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/comments/inline-comment-following-top-level-value.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/comments/inline-comment-in-string.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/comments/inline-comment-preceding-top-level-value.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/comments/top-level-block-comment.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/comments/top-level-inline-comment.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/comments/unterminated-block-comment.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/misc/empty.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/misc/npm-package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/misc/npm-package.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/misc/readme-example.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/misc/valid-whitespace.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/new-lines/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/new-lines/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/new-lines/comment-cr.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/new-lines/comment-crlf.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/new-lines/comment-lf.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/new-lines/escaped-cr.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/new-lines/escaped-crlf.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/new-lines/escaped-lf.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/binary-coffeescript.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/float-leading-decimal-point.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/float-leading-zero.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/float-trailing-decimal-point-with-integer-exponent.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/float-trailing-decimal-point.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/float-with-integer-exponent.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/float.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/hexadecimal-empty.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/hexadecimal-lowercase-letter.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/hexadecimal-uppercase-x.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/hexadecimal-with-integer-exponent.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/hexadecimal.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/infinity.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/integer-with-float-exponent.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/integer-with-hexadecimal-exponent.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/integer-with-integer-exponent.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/integer-with-negative-float-exponent.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/integer-with-negative-hexadecimal-exponent.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/integer-with-negative-integer-exponent.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/integer-with-negative-zero-integer-exponent.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/integer-with-positive-float-exponent.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/integer-with-positive-hexadecimal-exponent.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/integer-with-positive-integer-exponent.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/integer-with-positive-zero-integer-exponent.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/integer-with-zero-integer-exponent.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/integer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/lone-decimal-point.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/nan.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-binary-coffeescript.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-float-leading-decimal-point.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-float-leading-zero.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-float-trailing-decimal-point.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-float.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-hexadecimal.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-infinity.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-integer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-noctal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-octal-coffeescript.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-octal.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-zero-binary-coffeescript.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-zero-float-leading-decimal-point.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-zero-float-trailing-decimal-point.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-zero-float.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-zero-hexadecimal.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-zero-integer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-zero-octal-coffeescript.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/negative-zero-octal.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/noctal-with-leading-octal-digit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/noctal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/octal-coffeescript.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/octal.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-binary-coffeescript.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-float-leading-decimal-point.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-float-leading-zero.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-float-trailing-decimal-point.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-float.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-hexadecimal.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-infinity.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-integer.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-noctal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-octal-coffeescript.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-octal.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-zero-binary-coffeescript.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-zero-float-leading-decimal-point.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-zero-float-trailing-decimal-point.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-zero-float.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-zero-hexadecimal.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-zero-integer.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-zero-octal-coffeescript.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/positive-zero-octal.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/zero-binary-coffeescript.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/zero-float-leading-decimal-point.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/zero-float-trailing-decimal-point.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/zero-float.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/zero-hexadecimal.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/zero-integer-with-integer-exponent.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/zero-integer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/zero-octal-coffeescript.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/numbers/zero-octal.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/objects/duplicate-keys.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/objects/empty-object.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/objects/illegal-unquoted-key-number.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/objects/illegal-unquoted-key-symbol.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/objects/leading-comma-object.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/objects/lone-trailing-comma-object.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/objects/no-comma-object.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/objects/reserved-unquoted-key.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/objects/single-quoted-key.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/objects/trailing-comma-object.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/objects/unquoted-keys.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/strings/escaped-single-quoted-string.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/strings/multi-line-string.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/strings/single-quoted-string.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/strings/unescaped-multi-line-string.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/todo/unicode-escaped-unquoted-key.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse-cases/todo/unicode-unquoted-key.json5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/parse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/require.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/json5/test/stringify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/repeating/cli.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/shebang-regex/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/shebang-regex/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/shebang-regex/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/node_modules/shebang-regex/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/add-page.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/edit-page.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/home-page.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/landing-page.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/list-page.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/meteor-application-template-youtube.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/not-authorized-page.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/bcrypt/build/Release/bcrypt_lib.node" afterPath="$PROJECT_DIR$/app/node_modules/bcrypt/build/Release/bcrypt_lib.node" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.meteor/packages" afterPath="$PROJECT_DIR$/app/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.meteor/versions" afterPath="$PROJECT_DIR$/app/.meteor/versions" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/client/main.js" afterPath="$PROJECT_DIR$/app/client/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/imports/startup/both/index.js" afterPath="$PROJECT_DIR$/app/imports/startup/both/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/imports/startup/client/router.js" afterPath="$PROJECT_DIR$/app/imports/startup/client/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/imports/startup/server/accounts.js" afterPath="$PROJECT_DIR$/app/imports/startup/server/accounts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/imports/startup/server/index.js" afterPath="$PROJECT_DIR$/app/imports/startup/server/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/imports/ui/layouts/app-body.js" afterPath="$PROJECT_DIR$/app/imports/ui/layouts/app-body.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/imports/ui/layouts/footer.html" afterPath="$PROJECT_DIR$/app/imports/ui/layouts/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/imports/ui/layouts/header.html" afterPath="$PROJECT_DIR$/app/imports/ui/layouts/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/imports/ui/layouts/header.js" afterPath="$PROJECT_DIR$/app/imports/ui/layouts/header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/imports/ui/layouts/index.js" afterPath="$PROJECT_DIR$/app/imports/ui/layouts/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/imports/ui/pages/home-page.html" afterPath="$PROJECT_DIR$/app/imports/ui/pages/home-page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/imports/ui/pages/index.js" afterPath="$PROJECT_DIR$/app/imports/ui/pages/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/imports/ui/stylesheets/style.css" afterPath="$PROJECT_DIR$/app/imports/ui/stylesheets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/README.md" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/lib/api/browser.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/lib/api/browser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/lib/api/node.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/lib/api/node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/lib/helpers/resolve.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/lib/helpers/resolve.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/lib/tools/build-external-helpers.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/lib/tools/build-external-helpers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/file/index.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/file/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/file/logger.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/file/logger.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/file/options/build-config-chain.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/file/options/build-config-chain.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/file/options/index.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/file/options/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/file/options/option-manager.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/file/options/option-manager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/internal-plugins/shadow-functions.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/internal-plugins/shadow-functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/pipeline.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/pipeline.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/plugin-pass.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/lib/transformation/plugin-pass.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/lib/util.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/lib/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/babel-register/lib/cache.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/babel-register/lib/cache.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/babel-register/lib/node.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/babel-register/lib/node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/babel-register/package.json" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/babel-register/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/babel-runtime/helpers/asyncToGenerator.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/babel-runtime/helpers/asyncToGenerator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/babel-runtime/helpers/typeof.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/babel-runtime/helpers/typeof.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/babel-runtime/package.json" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/node_modules/babel-runtime/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-core/package.json" afterPath="$PROJECT_DIR$/app/node_modules/babel-core/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-generator/lib/generators/classes.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-generator/lib/generators/classes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-generator/lib/generators/flow.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-generator/lib/generators/flow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-generator/lib/generators/statements.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-generator/lib/generators/statements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-generator/lib/node/parentheses.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-generator/lib/node/parentheses.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-generator/lib/node/whitespace.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-generator/lib/node/whitespace.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-generator/lib/printer.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-generator/lib/printer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-generator/node_modules/babel-runtime/helpers/asyncToGenerator.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-generator/node_modules/babel-runtime/helpers/asyncToGenerator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-generator/node_modules/babel-runtime/helpers/typeof.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-generator/node_modules/babel-runtime/helpers/typeof.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-generator/node_modules/babel-runtime/package.json" afterPath="$PROJECT_DIR$/app/node_modules/babel-generator/node_modules/babel-runtime/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-generator/package.json" afterPath="$PROJECT_DIR$/app/node_modules/babel-generator/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-polyfill/node_modules/babel-runtime/helpers/asyncToGenerator.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-polyfill/node_modules/babel-runtime/helpers/asyncToGenerator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-polyfill/node_modules/babel-runtime/helpers/typeof.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-polyfill/node_modules/babel-runtime/helpers/typeof.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-polyfill/node_modules/babel-runtime/package.json" afterPath="$PROJECT_DIR$/app/node_modules/babel-polyfill/node_modules/babel-runtime/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-template/node_modules/babel-runtime/helpers/asyncToGenerator.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-template/node_modules/babel-runtime/helpers/asyncToGenerator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-template/node_modules/babel-runtime/helpers/typeof.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-template/node_modules/babel-runtime/helpers/typeof.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-template/node_modules/babel-runtime/package.json" afterPath="$PROJECT_DIR$/app/node_modules/babel-template/node_modules/babel-runtime/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/path/context.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/path/context.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/path/evaluation.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/path/evaluation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/path/index.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/path/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/path/inference/index.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/path/inference/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/path/inference/inferers.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/path/inference/inferers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/path/lib/virtual-types.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/path/lib/virtual-types.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/path/modification.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/path/modification.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/scope/index.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/scope/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/visitors.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-traverse/lib/visitors.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/node_modules/babel-runtime/helpers/asyncToGenerator.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-traverse/node_modules/babel-runtime/helpers/asyncToGenerator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/node_modules/babel-runtime/helpers/typeof.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-traverse/node_modules/babel-runtime/helpers/typeof.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/node_modules/babel-runtime/package.json" afterPath="$PROJECT_DIR$/app/node_modules/babel-traverse/node_modules/babel-runtime/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-traverse/package.json" afterPath="$PROJECT_DIR$/app/node_modules/babel-traverse/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-types/README.md" afterPath="$PROJECT_DIR$/app/node_modules/babel-types/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-types/lib/converters.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-types/lib/converters.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-types/lib/definitions/flow.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-types/lib/definitions/flow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-types/lib/definitions/index.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-types/lib/definitions/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-types/lib/index.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-types/lib/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-types/node_modules/babel-runtime/helpers/asyncToGenerator.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-types/node_modules/babel-runtime/helpers/asyncToGenerator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-types/node_modules/babel-runtime/helpers/typeof.js" afterPath="$PROJECT_DIR$/app/node_modules/babel-types/node_modules/babel-runtime/helpers/typeof.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-types/node_modules/babel-runtime/package.json" afterPath="$PROJECT_DIR$/app/node_modules/babel-types/node_modules/babel-runtime/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/babel-types/package.json" afterPath="$PROJECT_DIR$/app/node_modules/babel-types/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/index.js" afterPath="$PROJECT_DIR$/app/node_modules/detect-indent/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/package.json" afterPath="$PROJECT_DIR$/app/node_modules/detect-indent/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/detect-indent/readme.md" afterPath="$PROJECT_DIR$/app/node_modules/detect-indent/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/globals/package.json" afterPath="$PROJECT_DIR$/app/node_modules/globals/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/home-or-tmp/package.json" afterPath="$PROJECT_DIR$/app/node_modules/home-or-tmp/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/json5/CHANGELOG.md" afterPath="$PROJECT_DIR$/app/node_modules/json5/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/json5/README.md" afterPath="$PROJECT_DIR$/app/node_modules/json5/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/json5/lib/json5.js" afterPath="$PROJECT_DIR$/app/node_modules/json5/lib/json5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/json5/package.json" afterPath="$PROJECT_DIR$/app/node_modules/json5/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/os-homedir/package.json" afterPath="$PROJECT_DIR$/app/node_modules/os-homedir/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/os-tmpdir/package.json" afterPath="$PROJECT_DIR$/app/node_modules/os-tmpdir/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/repeating/index.js" afterPath="$PROJECT_DIR$/app/node_modules/repeating/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/repeating/package.json" afterPath="$PROJECT_DIR$/app/node_modules/repeating/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/node_modules/repeating/readme.md" afterPath="$PROJECT_DIR$/app/node_modules/repeating/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/server/main.js" afterPath="$PROJECT_DIR$/app/server/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/settings.development.json" afterPath="$PROJECT_DIR$/config/settings.development.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="final-project-mockup.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -319,7 +22,7 @@
     <favorites_list name="final-project-mockup" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/imports/startup/client/router.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -345,9 +48,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
               <caret line="25" column="83" selection-start-line="25" selection-start-column="83" selection-end-line="25" selection-end-column="83" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -408,8 +109,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="5" />
-    <option name="y" value="26" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="734" />
   </component>
@@ -752,6 +452,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -800,7 +506,7 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="5" y="26" width="1280" height="734" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="734" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -809,17 +515,17 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -838,6 +544,38 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/imports/startup/client/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="104" selection-start-line="13" selection-start-column="104" selection-end-line="13" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/sell-tickets-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/sell-tickets-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/doc/add-page.png" />
     <entry file="file://$PROJECT_DIR$/app/.eslintrc">
       <provider selected="true" editor-type-id="text-editor">
@@ -850,9 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#33#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -860,9 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -870,7 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,7 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,7 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -902,7 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -910,9 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -920,7 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -928,9 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#45#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -938,7 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,7 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,7 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -962,7 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -970,7 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="16" column="27" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -978,7 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -986,9 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -996,7 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,7 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1012,7 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,9 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1030,7 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,10 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="e#42#81#0" expanded="true" />
-            <element signature="e#241#282#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1049,9 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="16" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#42#81#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1059,11 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-437">
           <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,9 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1081,7 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,9 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="78" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="78" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1123,9 +808,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="83" selection-start-line="25" selection-start-column="83" selection-end-line="25" selection-end-column="83" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
