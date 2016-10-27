@@ -81,6 +81,7 @@ reactive-dict@1.1.8
 reactive-var@1.0.10
 reload@1.1.10
 retry@1.0.8
+risul:slick@1.5.5_1
 routepolicy@1.0.11
 sacha:spin@2.3.1
 semantic:ui@2.2.1

@@ -14,6 +14,11 @@ Template.Events_Page.events({
 
 
 });
-/**
- * Created by Jordan on 10/25/16.
- */
+
+Template.Events_Page.rendered = function() {
+  $('#carousel').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+  });
+}

@@ -1,38 +1,54 @@
 <template name="Edit_Profile_Page">
   <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
     <h1 class = "ui header">Edit Profile</h1>
-    <form class = "ui form">
-      <div class="field">
-        <label>Name</label>
-        <div class="two fields">
-          <div class="field">
-            <input type="text" name="first" id="first" placeholder="First Name">
 
-          </div>
-          <div class="field">
-            <input type="text" name="last" id="last" placeholder="Last Name">
-
-          </div>
+    <div class="ui two column doubling stackable grid container">
+      <div class="column">
+        <div class = "ui centered card">
+          <img class="ui fluid centered medium rounded image" src="/images/matthew.png">
+          <button class="ui fluid basic centered button" type="submit">Edit/Upload Picture</button>
         </div>
       </div>
-      <div class="field">
-        <label>Address</label>
-        <div class="three fields">
-          <div class="twelve wide field">
-            <input type="text" name="address" id="address" placeholder="Address">
+      <div class="column">
+        <form class = "ui form">
+          <div class="field">
+            <label>Name</label>
+            <div class="two fields">
+              <div class="field">
+                <input type="text" name="first" id="first" placeholder="First Name" value="Matthew">
 
+              </div>
+              <div class="field">
+                <input type="text" name="last" id="last" placeholder="Last Name" value="Oalmud">
+
+              </div>
+            </div>
           </div>
           <div class="field">
-            <input type="text" name="telephone" id="telephone" placeholder="Phone Number">
-
+            <label>Contact info</label>
+            <div class="two fields">
+              <div class="field">
+                <input type="text" name="telephone" id="telephone" placeholder="Phone Number" value="555-1208">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="contact phone">
+                  <label>Contact you by phone?</label>
+                </div>
+              </div>
+              <div class="field">
+                <input type="text" name="email" id="email" placeholder="Email Address" value="MatthewO@meteor.com">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="contact email">
+                  <label>Contact you by email?</label>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="field">
-            <input type="text" name="email" id="email" placeholder="Email Address">
-
-          </div>
-        </div>
+          <button class="ui button" type="submit">Submit</button>
+        </form>
       </div>
-      <button class="ui button" type="submit">Submit</button>
-    </form>
+    </div>
+
+
+
   </div>
 </template>
