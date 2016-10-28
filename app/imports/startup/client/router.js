@@ -8,7 +8,7 @@ FlowRouter.route('/', {
   },
 });
 
-FlowRouter.route('/profile', {
+FlowRouter.route('/edit', {
   name: 'Edit_Profile_Page',
   action() {
     BlazeLayout.render('App_Body', { main: 'Edit_Profile_Page' });
@@ -34,3 +34,10 @@ FlowRouter.notFound = {
     BlazeLayout.render('App_Body', { main: 'App_Not_Found' });
   },
 };
+
+FlowRouter.route('/profile', {
+  name: 'Profile_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Profile_Page' });
+  },
+});

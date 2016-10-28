@@ -1,0 +1,105 @@
+<template name="Profile_Page">
+  <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
+  <h1 class = "ui header">Hello {{user}}</h1>
+
+    <div class="ui two column grid">
+      <div class="four wide column">
+        <div class = "ui segment">
+          <div class="ui secondary vertical menu">
+            <a class="active item">
+              Account
+            </a>
+            <a class="item">
+              Settings
+            </a>
+            <a class="item">
+              Messages
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="twelve wide column">
+        <div class = "ui segment">
+          <h2 class="ui header">Your tickets</h2>
+          <div class="ui items">
+            <div class="item">
+              <div class="ui card">
+                <div style= "min-height: 275px" class="centered image">
+                  <img style="height: 300px" class="ui fluid image" src="/images/haunted-wonderland.jpg"/>
+                </div>
+                <div class="content">
+                  <div class="header">Haunted Wonderland</div>
+                  <div class="meta">
+                    <a>Hawaii Country Club</a>
+                  </div>
+                </div>
+                <div class="extra content">
+        <span class="right floated">
+          October 29 2016
+        </span>
+                  <span>
+          <i class="ticket icon"></i>
+          75 Tickets
+        </span>
+                </div>
+              </div>
+              <div class="content">
+                <a class="header">Buying</a>
+                <div class="meta">
+                  <span>Price</span>
+                </div>
+                <div class="description">
+                  <p><span>$65 - $75</span></p>
+                </div>
+                <div class="extra">
+                  <p>Contact by Phone</p>
+                  <p>Meetup on campus</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="ui card">
+                <div style= "min-height: 275px" class="centered image">
+                  <img style="height: 300px;" class="ui fluid image" src="/images/yellowcard.jpg"/>
+                </div>
+                <div class="content">
+                  <div class="header">Yellowcard</div>
+                  <div class="meta">
+                    <a>The Republik</a>
+                  </div>
+                </div>
+                <div class="extra content">
+      <span class="right floated">
+        February 5 2016
+      </span>
+                  <span>
+        <i class="ticket icon"></i>
+        115 Tickets
+      </span>
+                </div>
+              </div>
+              <div class="content">
+                <a class="header">Selling</a>
+                <div class="meta">
+                  <span>Price</span>
+                </div>
+                <div class="description">
+                  <p>$75</p>
+                </div>
+                <div class="extra">
+                  <p>Contact by phone</p>
+                  <p>Negotiable price</p>
+                  <p>Meet up off campus</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</template>

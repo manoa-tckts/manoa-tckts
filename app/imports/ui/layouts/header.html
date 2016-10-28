@@ -1,7 +1,7 @@
 <template name="Header">
     <div class="ui top fixed inverted borderless menu">
       <div class="ui container">
-        <a class="item" href="{{pathFor 'Home_Page'}}"><h1><i class="ticket icon"></i>TCKTS</h1></a>
+          <a class="item" href="{{pathFor 'Home_Page'}}"><h1><i class="ticket icon"></i>TCKTS</h1></a>
         <a class = "right item">{{> Cas_Login }}</a>
         {{#if currentUser}}
         <div class="ui inverted borderless menu">
@@ -9,12 +9,14 @@
             <i class="list sidebar icon"></i>
             <i class="dropdown icon"></i>
             <div class="menu">
-              <a class="{{ isActiveRoute 'Edit_Profile_Page'}} item" href="{{ pathFor 'Edit_Profile_Page' }}">Profile</a>
+              <a class="{{ isActiveRoute 'Profile_Page'}} item" href="{{ pathFor 'Profile_Page' }}">Profile</a>
+              <a class="{{ isActiveRoute 'Edit_Profile_Page'}} item" href="{{ pathFor 'Edit_Profile_Page' }}">Edit Profile</a>
               <a class="{{ isActiveRoute 'Events_Page'}} item" href="{{ pathFor 'Events_Page' }}">Events</a>
               <a class="{{ isActiveRoute 'Sell_Tickets_Page'}} item" href="{{ pathFor 'Sell_Tickets_Page' }}">Sell</a>
             </div>
           </div>
-        </div>{{/if}}
+        </div>
+        {{/if}}
       </div>
     </div>
 </template>
