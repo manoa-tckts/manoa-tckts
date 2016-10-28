@@ -9,6 +9,13 @@ FlowRouter.route('/', {
 });
 
 FlowRouter.route('/profile', {
+  name: 'Profile_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Profile_Page' });
+  },
+});
+
+FlowRouter.route('/edit-profile', {
   name: 'Edit_Profile_Page',
   action() {
     BlazeLayout.render('App_Body', { main: 'Edit_Profile_Page' });

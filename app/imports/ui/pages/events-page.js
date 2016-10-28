@@ -18,7 +18,7 @@ Template.Events_Page.events({
 Template.Events_Page.rendered = function() {
   $('#carousel').slick({
     infinite: false,
-    slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToShow: 3,
+    slidesToScroll: 3,
   });
 }
