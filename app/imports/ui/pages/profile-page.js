@@ -8,6 +8,9 @@ import { Template } from 'meteor/templating';
 
 Template.Profile_Page.helpers({
 
+  user: function user() {
+    return Meteor.user() ? Meteor.user().profile.name : 'No logged in user';
+  },
 });
 
 Template.Profile_Page.events({
