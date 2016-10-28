@@ -1,11 +1,7 @@
 <template name="Header">
     <div class="ui top fixed inverted borderless menu">
       <div class="ui container">
-        {{#if currentUser}}
-          <a class="item" href="{{pathFor 'Events_Page'}}"><h1><i class="ticket icon"></i>TCKTS</h1></a>
-        {{else}}
           <a class="item" href="{{pathFor 'Home_Page'}}"><h1><i class="ticket icon"></i>TCKTS</h1></a>
-        {{/if}}
         <a class = "right item">{{> Cas_Login }}</a>
         {{#if currentUser}}
         <div class="ui inverted borderless menu">
