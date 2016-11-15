@@ -1,4 +1,10 @@
 {
+  "galaxy.meteor.com": {
+    "env": {
+      "MONGO_URL": "mongodb://dumlaoj:ics314f16@ds145245.mlab.com:45245/manoa-tckts"
+    }
+  },
+
   "cas": {
     "baseUrl": "https://cas-test.its.hawaii.edu/cas/",
     "autoClose": true
@@ -14,6 +20,7 @@
   "allowed_users": [
     "johnson",
     "cmoore",
+<<<<<<< HEAD
 
     "nunogawa",
     "dumlaoj",
@@ -21,5 +28,10 @@
     "dumlaoj",
     "bchun9"
 
+=======
+    "nunogawa",
+    "dumlaoj",
+    "bchun9"
+>>>>>>> master
   ]
 }

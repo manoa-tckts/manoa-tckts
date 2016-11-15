@@ -1,7 +1,7 @@
 {
   "galaxy.meteor.com": {
     "env": {
-    "MONGO_URL": "mongodb://testuser:test123@ds147797.mlab.com:47797/manoa-tckts"
+      "MONGO_URL": "mongodb://dumlaoj:ics314f16@ds145245.mlab.com:45245/manoa-tckts"
     }
   }
 }
