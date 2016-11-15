@@ -15,6 +15,11 @@ export const EventsSchema = new SimpleSchema({
     optional: false,
     max: 2000,
   },
+  image: {
+    label: 'image',
+    type: String,
+    optional: false,
+  },
   date: {
     label: 'date',
     type: String,
@@ -33,8 +38,8 @@ export const EventsSchema = new SimpleSchema({
     optional: false,
     max: 200,
   },
-  negotiable: {
-    label: 'negotiable',
+  tickets: {
+    label: 'tickets',
     type: String,
     optional: true,
     max: 200,
