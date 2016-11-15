@@ -1,6 +1,6 @@
 <template name="Sell_Tickets_Page">
-  <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
-    <h1 class = "ui header">Sell Ticket</h1>
+  <div style = "margin-top: 90px; min-height: 300px" class = "ui centered container">
+    <h1 class = "ui header">Sell Your Ticket</h1>
     <form class = "ui form">
       <div class="field">
         <label>Event</label>
@@ -36,4 +36,50 @@
       <button class="ui button" type="submit">Upload Image</button>
     </form>
   </div>
+
+  <div style = "min-height: 150px;" class="ui segment">
+    <h1 class = "ui header">Search For People Buying Tickets</h1>
+    <div class="ui container">
+      <div class="ui search">
+        <input class="prompt" type="text" placeholder="Search By Event Name...">
+        <div class="results"></div>
+
+        <div class="ui button" type="search">Search</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style = "min-height: 150px;" class="ui segment">
+    <h1 class = "ui header">Recent Buying Ticket Posts</h1>
+
+    <!--<div class="ui container">
+    <table class="ui celled table">
+      <thead>
+      <tr>
+        <th>Event Name</th>
+        <th>Date</th>
+        <th>Location</th>
+        <th>Price</th>
+        <th>Image</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      {{#each peoplebuyingtickets in pbtList}}
+      <tr>
+        <td>{{peoplebuyingtickets.event}}</td>
+        <td>{{peoplebuyingtickets.date}}</td>
+        <td>{{peoplebuyingtickets.location}}</td>
+        <td>{{peoplebuyingtickets.price}}</td>
+        <td>{{peoplebuyingtickets.image}}</td>
+
+      </tr>
+      {{/each}}
+      </tbody>
+    </table>
+
+  </div>-->
+  </div>
+
 </template>
