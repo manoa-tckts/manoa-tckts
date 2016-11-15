@@ -10,27 +10,27 @@ const pbtSeeds = [
     date: '10-12-2016',
     location: '1238 Dole Street',
     price: '69',
-    image: 'imgsrc'
+    negotiable: 'yes'
   },
   { event: 'testevent2',
     date: '10-12-2016',
     location: '1238 Dole Street',
     price: '69',
-    image: 'imgsrc'
+    negotiable: 'yes'
   },
   { event: 'testevent3',
     date: '10-12-2016',
     location: '1238 Dole Street',
     price: '69',
-    image: 'imgsrc'
+    negotiable: 'yes'
   },
 ];
 
 /**
  * Initialize the Stuff collection if empty with seed data.
+ *if (PeopleBuyingTickets.find().count() === 0) {
+ *_.each(pbtSeeds, function seedPeopleBuyingTickets(pbtSeeds) {
+ *   PeopleBuyingTickets.insert(pbtSeeds);
+ * });
+ *}
  */
-if (PeopleBuyingTickets.find().count() === 0) {
-  _.each(pbtSeeds, function seedPeopleBuyingTickets(pbtSeeds) {
-    PeopleBuyingTickets.insert(pbtSeeds);
-  });
-}

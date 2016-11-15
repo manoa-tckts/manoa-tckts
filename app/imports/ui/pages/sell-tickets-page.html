@@ -6,11 +6,11 @@
         <label>Event</label>
         <div class="two fields">
           <div class="field">
-            <input type="text" name="first" id="first" placeholder="Event Name">
+            <input type="text" name="event" id="event" placeholder="Event Name">
 
           </div>
           <div class="field">
-            <input type="text" name="last" id="last" placeholder="Date">
+            <input type="text" name="date" id="date" placeholder="Date">
 
           </div>
         </div>
@@ -19,11 +19,11 @@
         <label>Location</label>
         <div class="three fields">
           <div class="twelve wide field">
-            <input type="text" name="address" id="address" placeholder="Location  ">
+            <input type="text" name="location" id="location" placeholder="Location  ">
 
           </div>
           <div class="field">
-            <input type="text" name="telephone" id="telephone" placeholder="Price">
+            <input type="text" name="price" id="price" placeholder="Price">
 
           </div>
           <div class="ui checkbox">
@@ -37,7 +37,7 @@
     </form>
   </div>
 
-  <div style = "min-height: 150px;" class="ui segment">
+  <div class="ui segment">
     <h1 class = "ui header">Search For People Buying Tickets</h1>
     <div class="ui container">
       <div class="ui search">
@@ -50,29 +50,29 @@
     </div>
   </div>
 
-  <div style = "min-height: 150px;" class="ui segment">
+  <div class="ui segment">
     <h1 class = "ui header">Recent Buying Ticket Posts</h1>
 
-    <!--<div class="ui container">
+   <!-- <div class="ui container">
     <table class="ui celled table">
       <thead>
       <tr>
-        <th>Event Name</th>
+        <th>Event</th>
         <th>Date</th>
         <th>Location</th>
         <th>Price</th>
-        <th>Image</th>
+        <th>Negotiable</th>
       </tr>
       </thead>
 
       <tbody>
-      {{#each peoplebuyingtickets in pbtList}}
+      {{#each pbt in pbtList}}
       <tr>
-        <td>{{peoplebuyingtickets.event}}</td>
-        <td>{{peoplebuyingtickets.date}}</td>
-        <td>{{peoplebuyingtickets.location}}</td>
-        <td>{{peoplebuyingtickets.price}}</td>
-        <td>{{peoplebuyingtickets.image}}</td>
+        <td>{{pbt.event}}</td>
+        <td>{{pbt.date}}</td>
+        <td>{{pbt.location}}</td>
+        <td>{{pbt.price}}</td>
+        <td>{{pbt.negotiable}}</td>
 
       </tr>
       {{/each}}
