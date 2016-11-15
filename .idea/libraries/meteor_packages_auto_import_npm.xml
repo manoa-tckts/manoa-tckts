@@ -1,5 +1,6 @@
 <component name="libraryTable">
   <library name="meteor-packages-auto-import-npm" type="javaScript">
+<<<<<<< HEAD
     <properties>
       <sourceFilesUrls>
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/mkdirp/bin/cmd.js" />
@@ -4980,6 +4981,8 @@
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/babylon/bin/babylon.js" />
       </sourceFilesUrls>
     </properties>
+=======
+>>>>>>> refs/remotes/origin/master
     <CLASSES>
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/mkdirp/bin/cmd.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/babel-compiler/6.9.1/npm/node_modules/mkdirp/index.js" />

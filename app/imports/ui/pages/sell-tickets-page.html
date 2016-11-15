@@ -1,16 +1,16 @@
 <template name="Sell_Tickets_Page">
-  <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
-    <h1 class = "ui header">Sell Ticket</h1>
+  <div style = "margin-top: 90px; min-height: 300px" class = "ui centered container">
+    <h1 class = "ui header">Sell Your Ticket</h1>
     <form class = "ui form">
       <div class="field">
         <label>Event</label>
         <div class="two fields">
           <div class="field">
-            <input type="text" name="first" id="first" placeholder="Event Name">
+            <input type="text" name="event" id="event" placeholder="Event Name">
 
           </div>
           <div class="field">
-            <input type="text" name="last" id="last" placeholder="Date">
+            <input type="text" name="date" id="date" placeholder="Date">
 
           </div>
         </div>
@@ -19,11 +19,11 @@
         <label>Location</label>
         <div class="three fields">
           <div class="twelve wide field">
-            <input type="text" name="address" id="address" placeholder="Location  ">
+            <input type="text" name="location" id="location" placeholder="Location  ">
 
           </div>
           <div class="field">
-            <input type="text" name="telephone" id="telephone" placeholder="Price">
+            <input type="text" name="price" id="price" placeholder="Price">
 
           </div>
           <div class="ui checkbox">
@@ -36,4 +36,50 @@
       <button class="ui button" type="submit">Upload Image</button>
     </form>
   </div>
+
+  <div class="ui segment">
+    <h1 class = "ui header">Search For People Buying Tickets</h1>
+    <div class="ui container">
+      <div class="ui search">
+        <input class="prompt" type="text" placeholder="Search By Event Name...">
+        <div class="results"></div>
+
+        <div class="ui button" type="search">Search</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui segment">
+    <h1 class = "ui header">Recent Buying Ticket Posts</h1>
+
+   <!-- <div class="ui container">
+    <table class="ui celled table">
+      <thead>
+      <tr>
+        <th>Event</th>
+        <th>Date</th>
+        <th>Location</th>
+        <th>Price</th>
+        <th>Negotiable</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      {{#each pbt in pbtList}}
+      <tr>
+        <td>{{pbt.event}}</td>
+        <td>{{pbt.date}}</td>
+        <td>{{pbt.location}}</td>
+        <td>{{pbt.price}}</td>
+        <td>{{pbt.negotiable}}</td>
+
+      </tr>
+      {{/each}}
+      </tbody>
+    </table>
+
+  </div>-->
+  </div>
+
 </template>
