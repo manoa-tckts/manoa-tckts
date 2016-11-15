@@ -1,0 +1,7 @@
+{
+  "galaxy.meteor.com": {
+    "env": {
+      "MONGO_URL": "mongodb://dumlaoj:ics314f16@ds145245.mlab.com:45245/manoa-tckts"
+    }
+  }
+}
