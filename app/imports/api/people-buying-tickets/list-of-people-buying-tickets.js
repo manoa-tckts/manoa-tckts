@@ -33,8 +33,8 @@ export const PBTSchema = new SimpleSchema({
     optional: false,
     max: 200,
   },
-  image: {
-    label: 'image',
+  negotiable: {
+    label: 'negotiable',
     type: String,
     optional: true,
     max: 200,
