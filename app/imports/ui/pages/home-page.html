@@ -1,48 +1,62 @@
 <template name="Home_Page">
-  <div style= "min-height: 700px;" class="ui vertical inverted center aligned segment" >
-    <div style = "margin-top: 4em; font-size: 4em;" class = "ui centered text container">
-      <h5 style="color: #FFFFFF" class = "ui fitted header">A TICKET EXCHANGE APP WHERE</h5>
-      <div class="ui text container"><h1 style="color: #FFFFFF; font-size: 3em;" class="ui huge header">YOU'RE IN CONTROL</h1></div>
-      <div class="text container">
-        {{#if currentUser}}
-          <div class = "ui active huge blue primary button cas-login">Welcome {{user}} </div>
-        {{else}}
-          <div class = "ui huge blue primary button cas-login">Login <i class="right arrow icon"></i></div>
-        {{/if}}
+
+  <div class="landing-first-segment">
+    <div style="min-height: 700px;" class="ui vertical inverted center aligned segment">
+      <div style="margin-top: 4em; font-size: 4em;" class="ui centered text container">
+        <h5 style="color: #FFFFFF" class="ui fitted header">A TICKET EXCHANGE APP WHERE</h5>
+        <div class="ui text container"><h1 style="color: #FFFFFF; font-size: 3em;" class="ui huge header">YOU'RE IN
+          CONTROL</h1></div>
+        <div class="text container">
+          {{#if currentUser}}
+          <div class="ui active huge blue primary button cas-login">Welcome {{user}}</div>
+          {{else}}
+          <div class="ui huge blue primary button cas-login">Login <i class="right arrow icon"></i></div>
+          {{/if}}
+        </div>
       </div>
     </div>
   </div>
 
+  <div class="landing-second-segment">
+    <div style="min-height: 150px;" class="ui vertical center aligned segment">
+      <div style="margin-top: 3em;" class="ui centered text container">JOIN A COMMUNITY OF MUSIC LOVERS</div>
+    </div>
+  </div>
+
+  <hr/>
+
+  <div class="landing-third-segment">
+    <div style="min-height: 150px;" class="ui vertical center aligned segment">
+      <div style="margin-top: 3em;" class="ui centered text container">CHECK UPCOMING EVENTS</div>
+    </div>
+  </div>
 
 
-    <div style = "min-height: 150px;" class="ui vertical center aligned segment">
+  <div style="min-height: 100px; background-color: #F2F3F5;" class="landing-fourth-segment">
+    <hr/>
+    <div style="text-align: center; padding-bottom: 20px" class="ui centered text container">WHY TCKTS?</div>
+    <div class="ui three column grid container">
 
-      <div style="margin-top: 3em;" class="ui centered text container">
-        JOIN A COMMUNITY OF MUSIC LOVERS
+      <div class="column">
+        <div class="text" style="text-align: center;">See What's Coming<hr/>
+          TCKTS help students to advertise that they are looking for or selling tickets for common concert events in Hawaii.
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="text" style="text-align: center;">Affordable Prices<hr/>
+          Means of purchasing tickets through Campus Center ticketing office or through online websites such as Flavorus usually come with a service fee, raising the prices of already difficult to afford tickets. TCKTS allow students to look for ways to purchase tickets at a better price or without service fees through peers.
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="text" style="text-align: center;">Safe and Trusted<hr/>
+          There is no anonymity and no worries of fraud purchases: buyers and sellers will connect through their UH credentials.
+        </div>
       </div>
 
     </div>
-
-    <div style = "min-height: 150px;" class="ui vertical center aligned segment">
-
-      <div style="margin-top: 3em;" class="ui centered text container">
-        CHECK UPCOMING EVENTS
-      </div>
-
-    </div>
-
-    <div class="ui left aligned grid">
-
-      <div style="margin-top: 2em;" class="left floated right aligned six wide column">
-          BUY TICKETS
-      </div>
-
-      <div style="margin-top: 2em;" class="right floated left aligned six wide column">
-          SELL TICKETS
-      </div>
-
-    </div>
-
+  </div>
 
 </template>
 
