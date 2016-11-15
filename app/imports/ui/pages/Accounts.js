@@ -5,4 +5,8 @@ var myLogoutFunc = function{
 
 AccountsTemplates.configure({
   onLogoutHook: myLogoutFunc
+<<<<<<< HEAD
 });*/
+=======
+})*/
+>>>>>>> master
