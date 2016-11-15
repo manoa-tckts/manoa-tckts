@@ -14,12 +14,12 @@
   "allowed_users": [
     "johnson",
     "cmoore",
-<<<<<<< HEAD
+
     "nunogawa",
-    "dumlaoj"
-=======
+    "dumlaoj",
+
     "dumlaoj",
     "bchun9"
->>>>>>> refs/remotes/origin/master
+
   ]
 }
