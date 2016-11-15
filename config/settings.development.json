@@ -20,24 +20,9 @@
   "allowed_users": [
     "johnson",
     "cmoore",
-<<<<<<< HEAD
-<<<<<<< HEAD
-
     "nunogawa",
     "dumlaoj",
-
-    "dumlaoj",
-    "bchun9"
-
-=======
-    "nunogawa",
-    "dumlaoj",
-    "bchun9"
->>>>>>> master
-=======
-    "nunogawa",
-    "dumlaoj",
-    "bchun9"
->>>>>>> master
+    "bchun9",
+    "kylebali"
   ]
 }
