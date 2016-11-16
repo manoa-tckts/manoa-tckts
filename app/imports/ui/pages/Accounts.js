@@ -7,6 +7,3 @@ AccountsTemplates.configure({
   onLogoutHook: myLogoutFunc
 <<<<<<< HEAD
 });*/
-=======
-})*/
->>>>>>> master

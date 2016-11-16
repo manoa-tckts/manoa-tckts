@@ -22,10 +22,11 @@ body {
     opacity: 1;
   }
 }
+
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-40px);
+    -webkit-transform: translateY(-70px);
   }
   100% {
     opacity: 1;
@@ -36,7 +37,7 @@ body {
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translateY(-40px);
+    transform: translateY(-70px);
   }
   100% {
     opacity: 1;
@@ -47,7 +48,7 @@ body {
 @-webkit-keyframes fadeInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-40px);
+    -webkit-transform: translateX(-60px);
   }
   100% {
     opacity: 1;
@@ -58,7 +59,29 @@ body {
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-40px);
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
   }
   100% {
     opacity: 1;
@@ -69,27 +92,31 @@ body {
 /*
  * Public Landing Page
  */
-.center.text {
-  color: white;
-  font-family: 'Questrial', sans-serif;
-  text-align: center;
-  font-size: 70px;
-
-  -webkit-animation: fadeInDown 2s;
-  animation: fadeInDown 2s;
+#titleFadeDown {
+  -webkit-animation: fadeInRight 1.5s;
+  animation: fadeInRight 1.5s;
 }
 
-.landing-background {
-  background: url(https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=d67d058666f12ab507d885162c4e33ad) no-repeat center center fixed;
-  background-size: cover;
-  min-height: 600px;
+#subtitleFadeDown {
+  -webkit-animation: fadeInLeft 1.5s;
+  animation: fadeInLeft 1.5s;
 }
 
-.landing-colorblocktop {
-  padding-top: 200px;
+#buttonFadeDown {
+  -webkit-animation: fade 2s;
+  animation: fade 2s;
 }
 
-.ui.huge.inverted.blue.basic.button {
-  -webkit-animation: fadeInDown 4s;
-  animation: fadeInDown 4s;
+.fadeInFourth {
+  opacity: 0;
 }
+
+.fadeInFifth {
+  opacity: 0;
+}
+/*
+.slideRight {
+  float: left;
+  position: relative;
+  display: none;
+}*/
