@@ -2,3 +2,94 @@ body {
   /*padding-top: 100px;  /* Move body of page below navbar. */
 }
 
+/*
+ * CSS for Fading transitions
+ */
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*
+ * Public Landing Page
+ */
+.center.text {
+  color: white;
+  font-family: 'Questrial', sans-serif;
+  text-align: center;
+  font-size: 70px;
+
+  -webkit-animation: fadeInDown 2s;
+  animation: fadeInDown 2s;
+}
+
+.landing-background {
+  background: url(https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=d67d058666f12ab507d885162c4e33ad) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 600px;
+}
+
+.landing-colorblocktop {
+  padding-top: 200px;
+}
+
+.ui.huge.inverted.blue.basic.button {
+  -webkit-animation: fadeInDown 4s;
+  animation: fadeInDown 4s;
+}
