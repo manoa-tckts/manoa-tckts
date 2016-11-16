@@ -114,6 +114,10 @@ body {
 .fadeInFifth {
   opacity: 0;
 }
+
+.fadeInSixth {
+  opacity: 0;
+}
 /*
 .slideRight {
   float: left;

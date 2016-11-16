@@ -45,8 +45,9 @@ $(function () {
       bottomWindow = bottomWindow + 100; /* lower the number for longer delay */
 
       if (bottomWindow > bottomObject) {
-        $(this).animate({ 'opacity': '1' }, 600); /*Larger the number, longer the effect takes */
+        $(this).animate({ opacity: 1 }, 600); /* larger number = longer duration of the animation */
       }
+
     });
   });
 });
@@ -60,11 +61,30 @@ $(function () {
       bottomWindow = bottomWindow + 100; /* lower the number for longer delay */
 
       if (bottomWindow > bottomObject) {
-        $(this).animate({ 'opacity': '1' }, 600); /*Larger the number, longer the effect takes */
+        $(this).animate({ opacity: 1 }, 600); /* larger number = longer duration of the animation */
       }
+
     });
   });
 });
+
+$(function () {
+  $(window).scroll(function () {
+    $('.fadeInSixth').each(function (i) {
+      var bottomObject = $(this).position().top + $(this).outerHeight();
+      var bottomWindow = $(window).scrollTop() + $(window).height();
+
+      bottomWindow = bottomWindow + 100; /* lower the number for longer delay */
+
+      if (bottomWindow > bottomObject) {
+        $(this).animate({ opacity: 1 }, 500); /* larger number = longer duration of the animation */
+      }
+
+    });
+  });
+});
+
+
 
 /*$(function () {
  $(window).scroll(function () {
@@ -73,7 +93,6 @@ $(function () {
  var bottomWindow = $(window).scrollTop() + $(window).height();
  var centerWidth = $(window).innerWidth() / 2 + "px";
 
- /!* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  *!/
  bottomWindow = bottomWindow + 200;
 
  if (bottomWindow > bottomObject) {
