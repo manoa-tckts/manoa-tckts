@@ -33,12 +33,17 @@ Template.Home_Page.events({
 
 });
 
+
+
+
+
+
 /*
  * Javascript for animations
  */
 $(function () {
   $(window).scroll(function () {
-    $('.fadeInFourth').each(function (i) {
+    $('.fadeInFourth').each(function () {
       var bottomObject = $(this).position().top + $(this).outerHeight();
       var bottomWindow = $(window).scrollTop() + $(window).height();
 
@@ -54,7 +59,7 @@ $(function () {
 
 $(function () {
   $(window).scroll(function () {
-    $('.fadeInFifth').each(function (i) {
+    $('.fadeInFifth').each(function () {
       var bottomObject = $(this).position().top + $(this).outerHeight();
       var bottomWindow = $(window).scrollTop() + $(window).height();
 
@@ -70,11 +75,11 @@ $(function () {
 
 $(function () {
   $(window).scroll(function () {
-    $('.fadeInSixth').each(function (i) {
+    $('.fadeInSixth').each(function () {
       var bottomObject = $(this).position().top + $(this).outerHeight();
       var bottomWindow = $(window).scrollTop() + $(window).height();
 
-      bottomWindow = bottomWindow + 100; /* lower the number for longer delay */
+      bottomWindow = bottomWindow + 200; /* lower the number for longer delay */
 
       if (bottomWindow > bottomObject) {
         $(this).animate({ opacity: 1 }, 500); /* larger number = longer duration of the animation */
@@ -84,11 +89,9 @@ $(function () {
   });
 });
 
-
-
 /*$(function () {
  $(window).scroll(function () {
- $('.slideRight').each(function (i) {
+ $('.slideRight').each(function () {
  var bottomObject = $(this).position().top + $(this).outerHeight();
  var bottomWindow = $(window).scrollTop() + $(window).height();
  var centerWidth = $(window).innerWidth() / 2 + "px";
@@ -101,4 +104,3 @@ $(function () {
  });
  });
  });*/
-
