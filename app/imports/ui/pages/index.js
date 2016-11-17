@@ -8,3 +8,5 @@ import './sell-tickets-page.js';
 import './sell-tickets-page.html';
 import './profile-page.html';
 import './profile-page.js';
+import './Accounts.js';
+

@@ -1,188 +1,32 @@
 <template name="Events_Page">
-  <div style ="padding-top: 90px" class="ui clearing padded middle centered container">
+  <div style ="padding-top: 90px" class="ui clearing padded container">
     <h1 class = "ui header">Upcoming Events</h1>
-    <div id="carousel" class="ui padded link cards">
+    <h5 class="ui floated right">Images courtesy of Flavorus</h5>
 
-      <div id="">
+    <div id="carousel" class="ui padded link cards">
+      {{#each event in eventsList}}
           <div class="ui card">
-          <div style= "min-height: 275px" class="centered image">
-              <img style="height: 300px" class="ui fluid image" src="/images/haunted-wonderland.jpg"/>
-          </div>
-          <div class="content">
-            <div class="header">Haunted Wonderland</div>
-            <div class="meta">
-              <a>Hawaii Country Club</a>
+            <div style= "min-height: 275px" class="centered image">
+              <img style="height: 300px" class="ui fluid image" src="/images/{{event.image}}"/>
             </div>
-          </div>
-          <div class="extra content">
-        <span class="right floated">
-          October 29 2016
-        </span>
-            <span>
-          <i class="ticket icon"></i>
-          75 Tickets
-        </span>
-          </div>
-        </div>
-      </div>
-      <div id="">
-          <div class="ui card">
-          <div style= "min-height: 275px" class="centered image">
-              <img style="height: 300px; max-height: 300px " class="ui fluid image" src="/images/miguel-migs.jpg"/>
-          </div>
-          <div class="content">
-            <div class="header">Miguel Migs</div>
-            <div class="meta">
-              <a>The Republik</a>
+            <div class="content">
+              <div class="header">{{event.event}}</div>
+              <div class="meta">
+                <a>{{event.location}}</a>
+              </div>
             </div>
-          </div>
-          <div class="extra content">
+            <div class="extra content">
           <span class="right floated">
-            November 5 2016
+            {{event.date}}
           </span>
               <span>
             <i class="ticket icon"></i>
-            65 Tickets
+                {{event.tickets}}
           </span>
             </div>
           </div>
-      </div>
-
-      <div id="">
-        <div class="ui card">
-          <div style= "min-height: 275px" class="centered image">
-            <img style="height: 300px;" class="ui fluid image" src="/images/madeintyo.jpg"/>
-          </div>
-          <div class="content">
-            <div class="header">Made in Tyo</div>
-            <div class="meta">
-              <a>The Republik</a>
-            </div>
-          </div>
-          <div class="extra content">
-          <span class="right floated">
-            November 17 2016
-          </span>
-            <span>
-            <i class="ticket icon"></i>
-            65 Tickets
-          </span>
-          </div>
-        </div>
-      </div>
-      <div id="demo-box">
-        <div class="ui card">
-          <div style= "min-height: 275px" class="centered image">
-            <img style="height: 300px;" class="ui fluid image" src="/images/adventure-club.jpg"/>
-          </div>
-          <div class="content">
-            <div class="header">Adventure Club</div>
-            <div class="meta">
-              <a>The Republik</a>
-            </div>
-          </div>
-          <div class="extra content">
-      <span class="right floated">
-        November 26 2016
-      </span>
-            <span>
-        <i class="ticket icon"></i>
-        40 Tickets
-      </span>
-          </div>
-        </div>
-      </div>
-      <div id="demo-box">
-        <div class="ui card">
-          <div style= "min-height: 275px" class="centered image">
-            <img style="height: 300px;" class="ui fluid image" src="/images/third-eye-blind.jpg"/>
-          </div>
-          <div class="content">
-            <div class="header">Third Eye Blind</div>
-            <div class="meta">
-              <a>The Republik</a>
-            </div>
-          </div>
-          <div class="extra content">
-      <span class="right floated">
-        November 20 2016
-      </span>
-            <span>
-        <i class="ticket icon"></i>
-        115 Tickets
-      </span>
-          </div>
-        </div>
-      </div>
-      <div id="demo-box">
-        <div class="ui card">
-          <div style= "min-height: 275px" class="centered image">
-            <img style="height: 300px; width: 300px" class="ui fluid image" src="/images/atmosphere.jpg"/>
-          </div>
-          <div class="content">
-            <div class="header">Atmosphere</div>
-            <div class="meta">
-              <a>The Republik</a>
-            </div>
-          </div>
-          <div class="extra content">
-      <span class="right floated">
-        December 3 2016
-      </span>
-            <span>
-        <i class="ticket icon"></i>
-        27 Tickets
-      </span>
-          </div>
-        </div>
-      </div>
-      <div id="demo-box">
-        <div class="ui card">
-          <div style= "min-height: 275px" class="centered image">
-            <img style="height: 300px;" class="ui fluid image" src="/images/dim-mak.jpg"/>
-          </div>
-          <div class="content">
-            <div class="header">Dim Mak Anniversary</div>
-            <div class="meta">
-              <a>Hawaii Country Club</a>
-            </div>
-          </div>
-          <div class="extra content">
-      <span class="right floated">
-        December 9 2016
-      </span>
-            <span>
-        <i class="ticket icon"></i>
-        115 Tickets
-      </span>
-          </div>
-        </div>
-      </div>
-      <div id="demo-box">
-        <div class="ui card">
-          <div style= "min-height: 275px" class="centered image">
-            <img style="height: 300px;" class="ui fluid image" src="/images/yellowcard.jpg"/>
-          </div>
-          <div class="content">
-            <div class="header">Yellowcard</div>
-            <div class="meta">
-              <a>The Republik</a>
-            </div>
-          </div>
-          <div class="extra content">
-      <span class="right floated">
-        February 5 2016
-      </span>
-            <span>
-        <i class="ticket icon"></i>
-        115 Tickets
-      </span>
-          </div>
-        </div>
-      </div>
-
-
+      {{/each}}
     </div>
-    <h5 class="ui floated right">Images courtesy of Flavorus</h5>
+
   </div>
 </template>
