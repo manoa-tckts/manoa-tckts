@@ -14,7 +14,7 @@ import { UserData, ListOfEvents, Tickets, UserDataSchema, EventsSchema, TicketSc
 /* eslint-disable object-shorthand */
 
 Template.Events_Page.helpers({
-  eventsList() {        // returns entire recipe list
+  eventsList() {
     return ListOfEvents.find();
   },
   shortDescription(description) {

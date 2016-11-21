@@ -22,6 +22,13 @@ FlowRouter.route('/events', {
   },
 });
 
+FlowRouter.route('/event/:_id', {
+  name: 'Event_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Event_Page' });
+  },
+});
+
 FlowRouter.route('/sell', {
   name: 'Sell_Tickets_Page',
   action() {
