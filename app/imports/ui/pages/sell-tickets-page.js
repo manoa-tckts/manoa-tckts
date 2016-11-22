@@ -3,7 +3,7 @@
  * Edited by Brandon on 11/14/16.
  */
 
-/*
+
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Template } from 'meteor/templating';
 import { _ } from 'meteor/underscore';
@@ -11,17 +11,18 @@ import { PeopleBuyingTickets } from '../../api/people-buying-tickets/list-of-peo
 
 
 Template.Sell_Tickets_Page.onCreated(function onCreated() {
-  this.context = PBTSchema.namedContext('Sell_Tickets_Page');
+  this.autorun(() => {
+    this.subscribe('PeopleBuyingTickets');
+  });
 });
 
 Template.Sell_Tickets_Page.helpers({
-
   pbtList() {
     return PeopleBuyingTickets.find();
   },
 });
 
-Template.Sell_Tickets_Page.events({
+/*Template.Sell_Tickets_Page.events({
   'submit .ticket-data-form'(event, instance) {
     event.preventDefault();
     // Get name (text field)

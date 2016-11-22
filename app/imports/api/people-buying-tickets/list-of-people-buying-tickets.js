@@ -8,7 +8,7 @@ export const PeopleBuyingTickets = new Mongo.Collection('PeopleBuyingTickets');
 /**
  * Create the schema for Stuff
  */
-export const PBTSchema = new SimpleSchema({
+export const PeopleBuyingTicketsSchema = new SimpleSchema({
   event: {
     label: 'event',
     type: String,
@@ -41,4 +41,4 @@ export const PBTSchema = new SimpleSchema({
   },
 });
 
-PeopleBuyingTickets.attachSchema(PBTSchema);
+PeopleBuyingTickets.attachSchema(PeopleBuyingTicketsSchema);

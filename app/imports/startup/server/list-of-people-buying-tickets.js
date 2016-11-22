@@ -6,7 +6,7 @@ import {_} from 'meteor/underscore';
  * @type {*[]}
  */
 const pbtSeeds = [
-  { event: 'testevent1',
+  /*{ event: 'testevent1',
     date: '10-12-2016',
     location: '1238 Dole Street',
     price: '69',
@@ -23,14 +23,11 @@ const pbtSeeds = [
     location: '1238 Dole Street',
     price: '69',
     negotiable: 'yes'
-  },
+  },*/
 ];
 
-/**
- * Initialize the Stuff collection if empty with seed data.
- *if (PeopleBuyingTickets.find().count() === 0) {
- *_.each(pbtSeeds, function seedPeopleBuyingTickets(pbtSeeds) {
- *   PeopleBuyingTickets.insert(pbtSeeds);
- * });
- *}
- */
+ if (PeopleBuyingTickets.find().count() === 0) {
+     _.each(pbtSeeds, function seedPeopleBuyingTickets(stuff) {
+    PeopleBuyingTickets.insert(stuff);
+  });
+ }
