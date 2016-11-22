@@ -1,4 +1,4 @@
-import {ListOfEvents} from '../../api/events/list-of-events.js';
+import {ListOfEvents} from '../../api/schema/schemas.js';
 import {_} from 'meteor/underscore';
 
 /**
