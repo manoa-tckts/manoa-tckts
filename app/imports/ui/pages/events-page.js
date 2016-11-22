@@ -3,16 +3,18 @@
  */
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
-import { ListOfEvents, EventsSchema } from '../../api/events/list-of-events.js';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import { Tracker } from 'meteor/tracker';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
+import { UserData, ListOfEvents, Tickets, UserDataSchema, EventsSchema, TicketSchema } from '../../api/schema/schemas.js';
+
+
 
 /* eslint-disable object-shorthand */
 
 Template.Events_Page.helpers({
-  eventsList() {        // returns entire recipe list
+  eventsList() {
     return ListOfEvents.find();
   },
   shortDescription(description) {

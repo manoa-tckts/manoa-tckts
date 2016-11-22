@@ -4,6 +4,8 @@ import './edit-profile-page.html';
 import './edit-profile-page.js';
 import './events-page.html';
 import './events-page.js';
+import './event-page.html';
+import './event-page.js';
 import './sell-tickets-page.js';
 import './sell-tickets-page.html';
 import './profile-page.html';
