@@ -6,7 +6,7 @@
         <label>Event</label>
         <div class="two fields">
           <div class="field">
-            <input type="text" name="event" id="event" placeholder="Event Name">
+            <input type="text" name="eventName" id="eventName" placeholder="Event Name">
 
           </div>
           <div class="field">
@@ -17,15 +17,11 @@
       </div>
       <div class="field">
         <label>Location</label>
-        <div class="three fields">
-          <div class="twelve wide field">
-            <input type="text" name="location" id="location" placeholder="Location  ">
-
-          </div>
+        <div class="two fields">
           <div class="field">
             <input type="text" name="price" id="price" placeholder="Price">
-
           </div>
+
           <div class="ui checkbox">
             <input type="checkbox" name="negotiable">
             <label>Negotiable Price?</label>
@@ -33,53 +29,7 @@
         </div>
       </div>
       <button class="ui button" type="submit">Submit</button>
-      <button class="ui button" type="submit">Upload Image</button>
     </form>
-  </div>
-
-  <div class="ui segment">
-    <h1 class = "ui header">Search For People Buying Tickets</h1>
-    <div class="ui container">
-      <div class="ui search">
-        <input class="prompt" type="text" placeholder="Search By Event Name...">
-        <div class="results"></div>
-
-        <div class="ui button" type="search">Search</div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="ui segment">
-    <h1 class = "ui header">Recent Buying Ticket Posts</h1>
-
-   <!-- <div class="ui container">
-    <table class="ui celled table">
-      <thead>
-      <tr>
-        <th>Event</th>
-        <th>Date</th>
-        <th>Location</th>
-        <th>Price</th>
-        <th>Negotiable</th>
-      </tr>
-      </thead>
-
-      <tbody>
-      {{#each pbt in pbtList}}
-      <tr>
-        <td>{{pbt.event}}</td>
-        <td>{{pbt.date}}</td>
-        <td>{{pbt.location}}</td>
-        <td>{{pbt.price}}</td>
-        <td>{{pbt.negotiable}}</td>
-
-      </tr>
-      {{/each}}
-      </tbody>
-    </table>
-
-  </div>-->
   </div>
 
 </template>
