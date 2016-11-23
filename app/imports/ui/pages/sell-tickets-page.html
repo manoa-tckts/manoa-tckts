@@ -9,24 +9,23 @@
           <div class="field">
             <input type="text" name="eventName" id="eventName" placeholder="Event Name">
           </div>
-          <div class="field">
+          <div class="three wide field">
             <input type="text" name="date" id="date" placeholder="Date">
           </div>
         </div>
       </div>
 
-      <div class="field">
+      <div class="three wide field">
         <label>Price</label>
-        <div class="two fields">
-          <div class="field">
-            <input type="text" name="price" id="price" placeholder="Price">
+          <div class="ui left labeled input">
+              <div class ="ui label">$</div>
+              <input type="text" name="price" id="price" placeholder="Amount">
           </div>
+      </div>
 
-          <div class="ui checkbox">
-            <input type="checkbox" name="negotiable">
-            <label>Negotiable Price?</label>
-          </div>
-        </div>
+      <div class="ui checkbox">
+        <input type="checkbox" name="negotiable">
+        <label>Negotiable Price?</label>
       </div>
       <button class="ui button" type="submit">Submit</button>
     </form>
