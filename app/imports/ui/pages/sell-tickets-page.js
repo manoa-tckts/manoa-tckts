@@ -10,13 +10,7 @@ import { Ticket, TicketSchema } from '../../api/schema/schemas.js';
 import { Meteor } from 'meteor/meteor';
 
 
-Template.Sell_Tickets_Page.onCreated(function onCreated() {
-});
-
 Template.Sell_Tickets_Page.helpers({
-  ticketList() {
-    return Ticket.find();
-  },
 });
 
 Template.Sell_Tickets_Page.events({
@@ -28,9 +22,10 @@ Template.Sell_Tickets_Page.events({
     const status = 'sell';
     const price = event.target.price.value;
     const negotiable = event.target.negotiable.value;
-    const owner = Meteor.userId();
+    const owner = 'test';
+    //const owner = Meteor.userId();
 
-    const newTicket = { eventName, status, date, price, negotiable, owner };
+    const newTicket = { eventName, status, date, price, negotiable , owner };
     // Clear out any old validation errors.
     instance.context.resetValidation();
     // Invoke clean so that newStudentData reflects what will be inserted.
