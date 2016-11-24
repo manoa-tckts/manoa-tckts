@@ -7,6 +7,9 @@ import { Template } from 'meteor/templating';
 /* eslint-disable object-shorthand */
 
 Template.Edit_Profile_Page.helpers({
+  user: function user() {
+    return Meteor.user() ? Meteor.user().profile.name : 'No logged in user';
+  },
   first: function() {
     return Meteor.user().profile.first;
   },

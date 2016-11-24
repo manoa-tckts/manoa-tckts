@@ -7,6 +7,25 @@ export const UserData = new Mongo.Collection('UserData');
 export const ListOfEvents = new Mongo.Collection('ListOfEvents');
 export const Ticket = new Mongo.Collection('Ticket');
 
+export const UserProfile = new SimpleSchema({
+  name: {
+    type: String,
+    optional: false
+  },
+
+  firstName: {
+    type: String,
+    optional: true
+  },
+  lastName: {
+    type: String,
+    optional: true
+  },
+  bio: {
+    type: String,
+    optional: true
+  }
+});
 /*
  * Create the schema for Users
  */
@@ -16,33 +35,65 @@ export const UserDataSchema = new SimpleSchema({
     type: String,
     max: 10,
   },
-  first: {
-    label: 'First',
-    type: String,
+  emails: {
+    label: 'emails',
+    type: Array,
     max: 50,
+    optional: true
   },
-  last: {
-    label: 'Last',
+  "emails.$": {
+    type: Object
+  },
+  "emails.$.address": {
     type: String,
-    max: 50,
+    regEx: SimpleSchema.RegEx.Email
   },
-  email: {
-    label: 'Email',
-    type: String,
-    defaultValue: '',
-    max: 25,
+  "emails.$.verified": {
+    type: Boolean
   },
-  phone: {
-    label: 'Phone',
-    type: String,
+
+  'registered_emails.$': {
+    type: Object,
+    blackbox: true
   },
-  status: {
-    label: 'Status',
-    type: String,
+  createdAt: {
+    type: Date
   },
+  profile: {
+    type: UserProfile,
+    optional: true
+  },
+  // Make sure this services field is in your schema if you're using any of the accounts packages
+  services: {
+    type: Object,
+    optional: true,
+    blackbox: true
+  },
+  roles: {
+    type: Object,
+    optional: true,
+    blackbox: true
+  },
+  // Option 2: [String] type
+  // If you are sure you will never need to use role groups, then
+  // you can specify [String] as the type
+  roles: {
+    type: Array,
+    optional: true
+  },
+  'roles.$': {
+    type: String
+  },
+  // In order to avoid an 'Exception in setInterval callback' from Meteor
+  heartbeat: {
+    type: Date,
+    optional: true
+  }
 });
 
-UserData.attachSchema(UserDataSchema);
+
+//UserData.attachSchema(UserDataSchema);
+Meteor.users.attachSchema(UserDataSchema);
 
 /**
  * Create the schema for Events
@@ -51,7 +102,7 @@ export const EventsSchema = new SimpleSchema({
   event: {
     label: 'Event',
     type: String,
-    optional: false,
+    optional: true,
     max: 2000,
   },
   image: {
@@ -127,7 +178,7 @@ export const TicketSchema = new SimpleSchema({
   event: {
     label: 'Event',
     type: ListOfEvents,
-    optional: false,
+    optional: true,
   },
 });
 
