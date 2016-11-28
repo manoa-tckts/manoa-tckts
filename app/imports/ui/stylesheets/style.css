@@ -118,9 +118,19 @@ body {
 .fadeInSixth {
   opacity: 0;
 }
-/*
+
 .slideRight {
   float: left;
-  position: relative;
-  display: none;
-}*/
+  position: absolute;
+ /* display: none;*/
+}
+
+.landing-background {
+  background: url(https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=d67d058666f12ab507d885162c4e33ad) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 600px;
+}
+.ui.divider {
+  border-top: 1px solid rgba(34,36,38,.15);
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}

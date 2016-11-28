@@ -27,11 +27,13 @@ Template.Home_Page.events({
 
     if (!Meteor.user()) {
       Meteor.loginWithCas(callback);
+      FlowRouter.go('Events_Page');
     }
     return false;
   },
 
 });
+
 
 
 
@@ -63,7 +65,7 @@ $(function () {
       var bottomObject = $(this).position().top + $(this).outerHeight();
       var bottomWindow = $(window).scrollTop() + $(window).height();
 
-      bottomWindow = bottomWindow + 100; /* lower the number for longer delay */
+      bottomWindow = bottomWindow + 300; /* lower the number for longer delay */
 
       if (bottomWindow > bottomObject) {
         $(this).animate({ opacity: 1 }, 600); /* larger number = longer duration of the animation */
@@ -89,18 +91,18 @@ $(function () {
   });
 });
 
-/*$(function () {
- $(window).scroll(function () {
- $('.slideRight').each(function () {
- var bottomObject = $(this).position().top + $(this).outerHeight();
- var bottomWindow = $(window).scrollTop() + $(window).height();
- var centerWidth = $(window).innerWidth() / 2 + "px";
+$(function () {
+  $(window).scroll(function () {
+    $('.slideRight').each(function () {
+      var bottomObject = $(this).position().top + $(this).outerHeight();
+      var bottomWindow = $(window).scrollTop() + $(window).height();
+      var centerWidth = $(window).innerWidth() / 2;
 
- bottomWindow = bottomWindow + 200;
+      bottomWindow = bottomWindow + 200;
 
- if (bottomWindow > bottomObject) {
- $(this).animate({ left: center_of_width, opacity: "show" }, 1500);
- }
- });
- });
- });*/
+      if (bottomWindow > bottomObject) {
+        $(this).animate({ marginLeft: $(window).width() / 2 }, 1500);
+      }
+    });
+  });
+});
