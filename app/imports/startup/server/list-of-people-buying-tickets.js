@@ -1,36 +1,40 @@
-import {PeopleBuyingTickets} from '../../api/people-buying-tickets/list-of-people-buying-tickets.js';
+import {Ticket} from '../../api/schema/schemas.js';
 import {_} from 'meteor/underscore';
+import { Meteor } from 'meteor/meteor';
 
 /**
  * A list of Stuff to pre-fill the Collection.
  * @type {*[]}
  */
-const pbtSeeds = [
-  { event: 'testevent1',
+const ticketSeeds = [
+  { eventName: 'testevent1',
     date: '10-12-2016',
-    location: '1238 Dole Street',
     price: '69',
-    negotiable: 'yes'
+    status: 'buy',
+    negotiable: 'yes',
+    owner: 'test',
+    // owner: Meteor.users.findOne({ username: Meteor.settings.defaultAccount.username })._id,
   },
-  { event: 'testevent2',
+  { eventName: 'testevent2',
     date: '10-12-2016',
-    location: '1238 Dole Street',
     price: '69',
-    negotiable: 'yes'
+    status: 'buy',
+    negotiable: 'yes',
+    owner: 'test',
+    // owner: Meteor.users.findOne({ username: Meteor.settings.defaultAccount.username })._id,
   },
-  { event: 'testevent3',
+  { eventName: 'testevent3',
     date: '10-12-2016',
-    location: '1238 Dole Street',
     price: '69',
-    negotiable: 'yes'
+    status: 'buy',
+    negotiable: 'yes',
+    owner: 'test',
+    // owner: Meteor.users.findOne({ username: Meteor.settings.defaultAccount.username })._id,
   },
 ];
 
-/**
- * Initialize the Stuff collection if empty with seed data.
- *if (PeopleBuyingTickets.find().count() === 0) {
- *_.each(pbtSeeds, function seedPeopleBuyingTickets(pbtSeeds) {
- *   PeopleBuyingTickets.insert(pbtSeeds);
- * });
- *}
- */
+ if (Ticket.find().count() === 0) {
+     _.each(ticketSeeds, function seedTicket(stuff) {
+    Ticket.insert(stuff);
+  });
+ }
