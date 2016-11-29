@@ -56,25 +56,7 @@ $(function () {
       /* lower the number for longer delay */
 
       if (bottomWindow > bottomObject) {
-        $(this).animate({ opacity: 1 }, 600);
-        /* larger number = longer duration of the animation */
-      }
-
-    });
-  });
-});
-
-$(function () {
-  $(window).scroll(function () {
-    $('.fadeInFifth').each(function () {
-      var bottomObject = $(this).position().top + $(this).outerHeight();
-      var bottomWindow = $(window).scrollTop() + $(window).height();
-
-      bottomWindow = bottomWindow + 300;
-      /* lower the number for longer delay */
-
-      if (bottomWindow > bottomObject) {
-        $(this).animate({ opacity: 1 }, 600);
+        $(this).animate({ opacity: 1 }, 500);
         /* larger number = longer duration of the animation */
       }
 
@@ -88,7 +70,7 @@ $(function () {
       var bottomObject = $(this).position().top + $(this).outerHeight();
       var bottomWindow = $(window).scrollTop() + $(window).height();
 
-      bottomWindow = bottomWindow + 200;
+      bottomWindow = bottomWindow + 300;
       /* lower the number for longer delay */
 
       if (bottomWindow > bottomObject) {
@@ -109,7 +91,7 @@ $(function () {
       bottomWindow = bottomWindow + 100;
 
       if (bottomWindow > bottomObject) {
-        $(this).animate({ left: ($(window).innerWidth() / 20) + "px", opacity: 1 }, 1000);
+        $(this).animate({ left: ($(window).innerWidth() / 20) + "px", opacity: 1 }, 800);
       }
     });
   });
