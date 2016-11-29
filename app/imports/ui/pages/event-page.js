@@ -18,6 +18,14 @@ Template.Event_Page.helpers({
     const eventData = ListOfEvents.findOne(FlowRouter.getParam('_id'));
     // See https://dweldon.silvrback.com/guards to understand '&&' in next line.
     return eventData;
+  },
+
+  listOfTickets(){
+    const eventData = ListOfEvents.findOne(FlowRouter.getParam('_id'));
+    const eventName = eventData.event;
+    const tickets = Ticket.find({eventName});
+    return tickets;
+
   }
 
 });
