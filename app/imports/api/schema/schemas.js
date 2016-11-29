@@ -85,7 +85,7 @@ export const EventsSchema = new SimpleSchema({
   },
   tickets: {
     label: 'Tickets',
-    type: [Ticket],
+    type: [TicketSchema],
     optional: true,
   },
 });
@@ -96,6 +96,12 @@ ListOfEvents.attachSchema(EventsSchema);
  * Create the schema for Tickets
  */
 export const TicketSchema = new SimpleSchema({
+  // event: {
+  //   label: 'Event',
+  //   type: String,
+  //   optional: false,
+  //   max: 2000,
+  // },
   eventName: {
     label: 'Event Name',
     type: String,
@@ -129,6 +135,7 @@ export const TicketSchema = new SimpleSchema({
     type: String,
     optional: true,
   },
+
 });
 
 Ticket.attachSchema(TicketSchema);
