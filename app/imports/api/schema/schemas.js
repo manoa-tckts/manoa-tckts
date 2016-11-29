@@ -126,8 +126,8 @@ export const TicketSchema = new SimpleSchema({
   },
   event: {
     label: 'Event',
-    type: ListOfEvents,
-    optional: false,
+    type: String,
+    optional: true,
   },
 });
 
