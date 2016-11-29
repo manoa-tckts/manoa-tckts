@@ -130,6 +130,14 @@ export const TicketSchema = new SimpleSchema({
     label: 'Owner',
     type: String,
   },
+<<<<<<< HEAD
+=======
+  event: {
+    label: 'Event',
+    type: String,
+    optional: true,
+  },
+>>>>>>> master
 });
 
 Ticket.attachSchema(TicketSchema);
