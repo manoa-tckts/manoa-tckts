@@ -1,5 +1,8 @@
 <template name="Edit_Profile_Page">
   <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
+
+    {{#If_Logged_In}}
+    {{#If_Not_Banned}}
     <h1 class = "ui header">Edit Profile</h1>
 
     <div class="ui two column doubling stackable grid container">
@@ -58,7 +61,7 @@
       </div>
     </div>
 
-
-
+    {{/If_Not_Banned}}
+    {{/If_Logged_In}}
   </div>
 </template>
