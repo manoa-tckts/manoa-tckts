@@ -111,16 +111,29 @@ body {
   opacity: 0;
 }
 
-.fadeInFifth {
+/*.fadeInFifth {
   opacity: 0;
-}
+}*/
 
 .fadeInSixth {
   opacity: 0;
 }
-/*
-.slideRight {
+
+.slideLeft {
   float: left;
-  position: relative;
-  display: none;
-}*/
+  position: absolute;
+  opacity: 0;
+  /* display: none;*/
+}
+
+.slideUp {
+  bottom: 0;
+  position: absolute;
+  opacity: 0;
+  /* display: none;*/
+}
+
+.ui.divider {
+  border-top: 1px solid rgba(34, 36, 38, .15);
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}

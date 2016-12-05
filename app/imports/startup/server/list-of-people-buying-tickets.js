@@ -6,6 +6,7 @@ import { Meteor } from 'meteor/meteor';
  * A list of Stuff to pre-fill the Collection.
  * @type {*[]}
  */
+/*
 const ticketSeeds = [
   { eventName: 'testevent1',
     date: '10-12-2016',
@@ -38,3 +39,4 @@ const ticketSeeds = [
     Ticket.insert(stuff);
   });
  }
+    */

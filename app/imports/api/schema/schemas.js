@@ -136,7 +136,7 @@ export const EventsSchema = new SimpleSchema({
   },
   tickets: {
     label: 'Tickets',
-    type: [Ticket],
+    type: [TicketSchema],
     optional: true,
   },
 });
@@ -177,9 +177,14 @@ export const TicketSchema = new SimpleSchema({
   },
   event: {
     label: 'Event',
+<<<<<<< HEAD
     type: ListOfEvents,
+=======
+    type: String,
+>>>>>>> master
     optional: true,
   },
+
 });
 
 Ticket.attachSchema(TicketSchema);

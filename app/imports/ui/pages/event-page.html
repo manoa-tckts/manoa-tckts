@@ -1,8 +1,51 @@
 <template name="Event_Page">
   <div style ="padding-top: 90px" class="ui container">
-    <h1 class = "ui header">For a single Event</h1>
-    <h1>    {{event.event}} </h1>
-    <img style="height: 300px" class="ui image" src="/images/{{event.image}}"/>
+    <h1 class = "ui header">{{event.event}}</h1>
+    <div class="ui two column grid">
+      <div class="fluid column" >
+        <div class="ui card">
+          <div style= "min-height: 275px" class="centered image">
+            <img style="height: 300px" class="ui fluid image" src="/images/{{event.image}}"/>
+          </div>
+          <div class="content">
+            <div class="header">{{event.event}}</div>
+            <div class="meta">
+              <a>{{event.location}}</a>
+            </div>
+          </div>
+          <div class="extra content">
+              <span class="right floated">
+                {{event.date.toDateString}}
+              </span>
+            <span>
+                <i class="ticket icon"></i>
+              {{event.numTickets}}
+              </span>
+          </div>
+        </div>
+      </div>
+      <div class="fluid column">
+        <table class="ui fluid celled large table">
+          <thead>
+          <tr>
+            <th>Type of ticket</th>
+            <th>Buyer/Seller</th>
+            <th>Asking price</th>
+          </tr>
+          </thead>
 
+          <tbody>
+          {{#each ticket in listOfTickets}}
+            <tr>
+              <td>{{ticket.status}}</td>
+              <td>{{ticket.owner}}</td>
+              <td>{{ticket.price}}</td>
+            </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      </div>
+
+    </div>
   </div>
 </template>
