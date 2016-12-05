@@ -4,9 +4,9 @@
     <form class = "ui form">
 
       <div class="field">
-        <label>Event</label>
         <div class="two fields">
           <div class="field">
+          <label>Event</label>
             <select class="ui dropdown" name="eventName"> 
               {{#each event in events}} 
                 <option value="{{event.event}}">{{event.event}}</option> 
@@ -14,18 +14,16 @@
              </select>
           </div>
           <div class="three wide field">
-            <input type="text" name="date" id="date" placeholder="Date">
+            <label>Price</label>
+            <div class="ui left labeled input">
+              <div class ="ui label">$</div>
+              <input type="text" name="price" id="price" placeholder="Amount">
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="three wide field">
-        <label>Price</label>
-          <div class="ui left labeled input">
-              <div class ="ui label">$</div>
-              <input type="text" name="price" id="price" placeholder="Amount">
-          </div>
-      </div>
+
 
       <div class="ui checkbox">
         <input type="checkbox" name="negotiable">
