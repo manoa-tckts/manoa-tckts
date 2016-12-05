@@ -1,6 +1,10 @@
 <template name="Events_Page">
+<<<<<<< HEAD
   {{#If_Logged_In}}
   <div style ="padding-top: 90px" class="ui container">
+=======
+  <div style ="padding-top: 90px" class="ui fluid container">
+>>>>>>> master
     <h1 class = "ui header">Upcoming Events</h1>
 
 
@@ -19,7 +23,7 @@
                 </div>
                 <div class="extra content">
               <span class="right floated">
-                {{event.date}}
+                {{event.date.toDateString}}
               </span>
                   <span>
                 <i class="ticket icon"></i>
