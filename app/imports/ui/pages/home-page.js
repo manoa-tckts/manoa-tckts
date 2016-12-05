@@ -3,19 +3,22 @@ import { Template } from 'meteor/templating';
 
 /* eslint-disable object-shorthand */
 
+/*
 Template.Home_Page.helpers({
-  /**
+  /!**
    * @returns {String} Returns the user who's logged in
-   */
+   *!/
   user: function user() {
     return Meteor.user() ? Meteor.user().profile.name : 'No logged in user';
   },
-});
+});*/
 
+
+/*
 Template.Home_Page.events({
-  /*
+  /!*
    *
-   */
+   *!/
 
   'click .cas-login': function casLogin(event, instance) {
     event.preventDefault();
@@ -27,7 +30,7 @@ Template.Home_Page.events({
 
     if (!Meteor.user()) {
       Meteor.loginWithCas(callback);
-      /* delay for the redirect */
+      /!* delay for the redirect *!/
     }
     return false;
 
@@ -51,6 +54,7 @@ Template.Home_Page.events({
   },
 
 });
+*/
 
 /*
  * Javascript for animations
@@ -105,19 +109,3 @@ $(function () {
     });
   });
 });
-
-/*
- $(function () {
- $(window).scroll(function () {
- $('.slideUp').each(function () {
- var bottomObject = $(this).position().top + $(this).outerHeight();
- var bottomWindow = $(window).scrollTop() + $(window).height();
-
- bottomWindow = bottomWindow + 300;
-
- if (bottomWindow > bottomObject) {
- $(this).animate({ bottom: '300px', opacity: 1 }, 2000);
- }
- });
- });
- });*/

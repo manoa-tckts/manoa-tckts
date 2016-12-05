@@ -107,11 +107,10 @@ body {
   animation: fade 2s;
 }
 
-
-#fadeBackground {
+/*#fadeBackground {
   -webkit-animation: fade 1s;
   animation: fade 1s;
-}
+}*/
 
 .fadeInFourth {
   opacity: 0;

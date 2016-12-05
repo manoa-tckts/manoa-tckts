@@ -7,11 +7,7 @@
         <div class="ui text container"><h1 id="subtitleFadeDown" style="color: #FFFFFF; font-size: 3em;"
                                            class="ui huge header">YOU'RE IN CONTROL</h1></div>
         <div id="buttonFadeDown" class="text container">
-          {{#if currentUser}}
-          <div class="ui active huge blue primary button cas-login">Welcome {{user}}</div>
-          {{else}}
-          <div class="ui huge blue primary button cas-login">Login <i class="right arrow icon"></i></div>
-          {{/if}}
+            {{>Cas_Login_Button}}
         </div>
       </div>
     </div>
