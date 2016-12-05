@@ -1,5 +1,11 @@
 <template name="Event_Page">
+  {{#If_Logged_In}}
   <div style ="padding-top: 90px" class="ui container">
+
+    <h1 class = "ui header">For a single Event</h1>
+    <h1>    {{event.event}} </h1>
+    <img style="height: 300px" class="ui image" src="/images/{{event.image}}"/>
+
     <h1 class = "ui header">{{event.event}}</h1>
     <div class="ui two column grid">
       <div class="fluid column" >
@@ -47,5 +53,7 @@
       </div>
 
     </div>
+
   </div>
+  {{/If_Logged_In}}
 </template>

@@ -1,4 +1,5 @@
 <template name="Edit_Profile_Page">
+  {{#If_Logged_In}}
   <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
     <h1 class = "ui header">Edit Profile</h1>
 
@@ -61,4 +62,5 @@
 
 
   </div>
+  {{/If_Logged_In}}
 </template>
