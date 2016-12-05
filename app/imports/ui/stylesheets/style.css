@@ -137,3 +137,9 @@ body {
   border-top: 1px solid rgba(34, 36, 38, .15);
   border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
+
+.ui.vertical.inverted.center.aligned.segment {
+  background: url(https://images.unsplash.com/photo-1455894127589-22f75500213a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=707b89a1269f1ff0b0a436bd3eededf4) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 700px;
+}

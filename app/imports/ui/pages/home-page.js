@@ -27,20 +27,29 @@ Template.Home_Page.events({
 
     if (!Meteor.user()) {
       Meteor.loginWithCas(callback);
-
       /* delay for the redirect */
-      var delay = 2; /* time is in seconds */
-      var redirectDelay = setInterval(function () {
-        delay = delay - 1;
-
-        if (delay <= 0) {
-          clearInterval(redirectDelay);
-          FlowRouter.go('Events_Page');
-        }
-      }, 1000);
     }
     return false;
+
+    var delay = 2;
+    var redirectDelay = setInterval(function () {
+      delay = delay - 1;
+
+      if (delay <= 0) {
+        clearInterval(redirectDelay);
+        FlowRouter.go('Events_Page');
+      }
+    }, 1000);
+
   },
+
+  'click .cas-logout': function casLogout(event) {
+    FlowRouter.go('Home_Page');
+    event.preventDefault();
+    Meteor.logout();
+    return false;
+  },
+
 });
 
 /*
