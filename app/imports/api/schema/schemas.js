@@ -12,7 +12,6 @@ export const UserProfile = new SimpleSchema({
     type: String,
     optional: false
   },
-
   firstName: {
     type: String,
     optional: true
@@ -21,7 +20,29 @@ export const UserProfile = new SimpleSchema({
     type: String,
     optional: true
   },
+  birthday: {
+    type: Date,
+    optional: true
+  },
+  gender: {
+    type: String,
+    allowedValues: ['Male', 'Female'],
+    optional: true
+  },
+  organization : {
+    type: String,
+    optional: true
+  },
+  website: {
+    type: String,
+    regEx: SimpleSchema.RegEx.Url,
+    optional: true
+  },
   bio: {
+    type: String,
+    optional: true
+  },
+  country: {
     type: String,
     optional: true
   }
@@ -29,16 +50,19 @@ export const UserProfile = new SimpleSchema({
 /*
  * Create the schema for Users
  */
-export const UserDataSchema = new SimpleSchema({
+export const UserDataSchema= new SimpleSchema({
   username: {
-    label: 'Username',
     type: String,
-    max: 10,
+    // For accounts-password, either emails or username is required, but not both. It is OK to make this
+    // optional here because the accounts-password package does its own validation.
+    // Third-party login packages may not require either. Adjust this schema as necessary for your usage.
+    optional: true
   },
   emails: {
-    label: 'emails',
     type: Array,
-    max: 50,
+    // For accounts-password, either emails or username is required, but not both. It is OK to make this
+    // optional here because the accounts-password package does its own validation.
+    // Third-party login packages may not require either. Adjust this schema as necessary for your usage.
     optional: true
   },
   "emails.$": {
@@ -51,7 +75,6 @@ export const UserDataSchema = new SimpleSchema({
   "emails.$.verified": {
     type: Boolean
   },
-
   'registered_emails.$': {
     type: Object,
     blackbox: true
@@ -69,6 +92,15 @@ export const UserDataSchema = new SimpleSchema({
     optional: true,
     blackbox: true
   },
+  /*
+  // Add `roles` to your schema if you use the meteor-roles package.
+  // Option 1: Object type
+  // If you specify that type as Object, you must also specify the
+  // `Roles.GLOBAL_GROUP` group whenever you add a user to a role.
+  // Example:
+  // Roles.addUsersToRoles(userId, ["admin"], Roles.GLOBAL_GROUP);
+  // You can't mix and match adding with and without a group since
+  // you will fail validation in some cases.
   roles: {
     type: Object,
     optional: true,
@@ -84,6 +116,7 @@ export const UserDataSchema = new SimpleSchema({
   'roles.$': {
     type: String
   },
+  */
   // In order to avoid an 'Exception in setInterval callback' from Meteor
   heartbeat: {
     type: Date,
@@ -91,8 +124,6 @@ export const UserDataSchema = new SimpleSchema({
   }
 });
 
-
-//UserData.attachSchema(UserDataSchema);
 Meteor.users.attachSchema(UserDataSchema);
 
 /**
@@ -146,6 +177,7 @@ ListOfEvents.attachSchema(EventsSchema);
 /**
  * Create the schema for Tickets
  */
+/*
 export const TicketSchema = new SimpleSchema({
   eventName: {
     label: 'Event Name',
@@ -177,14 +209,36 @@ export const TicketSchema = new SimpleSchema({
   },
   event: {
     label: 'Event',
-<<<<<<< HEAD
     type: ListOfEvents,
-=======
     type: String,
->>>>>>> master
     optional: true,
   },
-
 });
+*/
 
+export const TicketSchema = new SimpleSchema({
+  date: {
+    label: 'Date',
+    type: Date,
+    optional: false,
+    max: 20,
+  },
+  price: {
+    label: 'Price',
+    type: Number,
+    decimal: true,
+    optional: false,
+    max: 200,
+  },
+  owner: {
+    label: 'Owner',
+    type: user,
+  },
+  event: {
+    label: 'Event',
+    type: ListOfEvents,
+    type: String,
+    optional: true,
+  },
+});
 Ticket.attachSchema(TicketSchema);
