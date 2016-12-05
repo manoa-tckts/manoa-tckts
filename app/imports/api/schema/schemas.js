@@ -8,41 +8,35 @@ export const ListOfEvents = new Mongo.Collection('ListOfEvents');
 export const Ticket = new Mongo.Collection('Ticket');
 
 export const UserProfile = new SimpleSchema({
+  picture:{
+    type: String,
+    optional: true
+  },
   name: {
     type: String,
     optional: false
   },
-  firstName: {
+  first: {
     type: String,
     optional: true
   },
-  lastName: {
+  last: {
     type: String,
     optional: true
   },
-  birthday: {
-    type: Date,
-    optional: true
-  },
-  gender: {
-    type: String,
-    allowedValues: ['Male', 'Female'],
-    optional: true
-  },
-  organization : {
+  telephone: {
     type: String,
     optional: true
   },
-  website: {
-    type: String,
-    regEx: SimpleSchema.RegEx.Url,
-    optional: true
-  },
-  bio: {
+  email: {
     type: String,
     optional: true
   },
-  country: {
+  motto : {
+    type: String,
+    optional: true
+  },
+  miscellaneous: {
     type: String,
     optional: true
   }
@@ -164,12 +158,7 @@ export const EventsSchema = new SimpleSchema({
     label: 'Number Tickets',
     type: Number,
     optional: true,
-  },
-  tickets: {
-    label: 'Tickets',
-    type: [TicketSchema],
-    optional: true,
-  },
+  }
 });
 
 ListOfEvents.attachSchema(EventsSchema);
@@ -232,13 +221,11 @@ export const TicketSchema = new SimpleSchema({
   },
   owner: {
     label: 'Owner',
-    type: user,
-  },
-  event: {
-    label: 'Event',
-    type: ListOfEvents,
     type: String,
-    optional: true,
+  },
+  eventName: {
+    label: 'Event',
+    type: String,
   },
 });
 Ticket.attachSchema(TicketSchema);

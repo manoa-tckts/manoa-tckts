@@ -28,7 +28,6 @@
         <table class="ui fluid celled large table">
           <thead>
           <tr>
-            <th>Type of ticket</th>
             <th>Buyer/Seller</th>
             <th>Asking price</th>
           </tr>
@@ -37,8 +36,7 @@
           <tbody>
           {{#each ticket in listOfTickets}}
             <tr>
-              <td>{{ticket.status}}</td>
-              <td>{{ticket.owner}}</td>
+              <td>{{findOwner ticket}}</td>
               <td>{{ticket.price}}</td>
             </tr>
           {{/each}}

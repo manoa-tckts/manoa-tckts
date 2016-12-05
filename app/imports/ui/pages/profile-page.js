@@ -3,6 +3,7 @@
  */
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
+import { UserData, ListOfEvents, Ticket, UserDataSchema, EventsSchema, TicketSchema } from '../../api/schema/schemas.js';
 
 /* eslint-disable object-shorthand */
 
@@ -32,6 +33,15 @@ Template.Profile_Page.helpers({
   picture: function() {
     return Meteor.user().profile.picture;
   },
+  listOfTickets: function(){
+    //const eventName = eventData.event;
+    return Ticket.find();
+    //return tickets;
+  },
+  findOwner: function(ticket){
+    const owner = Meteor.users.findOne({_id: ticket.owner}).profile.name;
+    return owner;
+  }
 });
 
 Template.Profile_Page.events({

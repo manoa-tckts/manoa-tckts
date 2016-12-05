@@ -7,7 +7,11 @@
         <label>Event</label>
         <div class="two fields">
           <div class="field">
-            <input type="text" name="eventName" id="eventName" placeholder="Event Name">
+            <select class="ui dropdown" name="eventName"> 
+              {{#each event in events}} 
+                <option value="{{event.event}}">{{event.event}}</option> 
+              {{/each}}
+             </select>
           </div>
           <div class="three wide field">
             <input type="text" name="date" id="date" placeholder="Date">
@@ -29,6 +33,9 @@
       </div>
       <button class="ui button" type="submit">Submit</button>
     </form>
+
+
+
   </div>
 
 </template>

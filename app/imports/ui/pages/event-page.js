@@ -26,6 +26,11 @@ Template.Event_Page.helpers({
     const tickets = Ticket.find({eventName});
     return tickets;
 
+  },
+
+  findOwner: function(ticket){
+    const owner = Meteor.users.findOne({_id: ticket.owner}).profile.name;
+    return owner;
   }
 
 });

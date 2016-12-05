@@ -47,9 +47,7 @@ Template.Edit_Profile_Page.events({
     const picture = event.target.picture.value;
 
     const updatedProfile = {picture, name, first, last,telephone, email, motto, miscellaneous};
-    console.log(Meteor.user().profile);
     Meteor.users.update(Meteor.userId(), {$set: {profile: updatedProfile}});
-
 
     FlowRouter.go('Profile_Page');
   },
