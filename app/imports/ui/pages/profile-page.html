@@ -1,5 +1,6 @@
 <template name="Profile_Page">
-  {{#If_Logged_In}}
+{{#If_Logged_In}}
+  {{#If_Not_Banned}}
   <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
   <h1 class = "ui header">Hello {{user}}</h1>
 
@@ -71,5 +72,6 @@
     </div>
 
   </div>
-  {{/If_Logged_In}}
+  {{/If_Not_Banned}}
+{{/If_Logged_In}}
 </template>

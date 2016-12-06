@@ -62,8 +62,8 @@ Template.Home_Page.events({
 $(function () {
   $(window).scroll(function () {
     $('.fadeInFourth').each(function () {
-      var bottomObject = $(this).position().top + $(this).outerHeight();
-      var bottomWindow = $(window).scrollTop() + $(window).height();
+      let bottomObject = $(this).position().top + $(this).outerHeight();
+      let bottomWindow = $(window).scrollTop() + $(window).height();
 
       bottomWindow = bottomWindow + 100;
       /* lower the number for longer delay */
@@ -80,8 +80,8 @@ $(function () {
 $(function () {
   $(window).scroll(function () {
     $('.fadeInSixth').each(function () {
-      var bottomObject = $(this).position().top + $(this).outerHeight();
-      var bottomWindow = $(window).scrollTop() + $(window).height();
+      let bottomObject = $(this).position().top + $(this).outerHeight();
+      let bottomWindow = $(window).scrollTop() + $(window).height();
 
       bottomWindow = bottomWindow + 300;
       /* lower the number for longer delay */
@@ -98,8 +98,8 @@ $(function () {
 $(function () {
   $(window).scroll(function () {
     $('.slideLeft').each(function () {
-      var bottomObject = $(this).position().top + $(this).outerHeight();
-      var bottomWindow = $(window).scrollTop() + $(window).height();
+      let bottomObject = $(this).position().top + $(this).outerHeight();
+      let bottomWindow = $(window).scrollTop() + $(window).height();
 
       bottomWindow = bottomWindow + 100;
 
