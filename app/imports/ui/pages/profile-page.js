@@ -87,7 +87,7 @@ Template.Profile_Page.helpers({
   },
   picture: function() {
     if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
-      return('/images/matthew.png');
+      return('http://m.memegen.com/fdt0u5.jpg');
     }
     else{return Members.findOne({'uid':Meteor.userId()}).picture;}
   },
