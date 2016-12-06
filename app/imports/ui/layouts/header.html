@@ -1,4 +1,5 @@
 <template name="Header">
+
     <div class="ui top fixed inverted borderless menu">
       <div class="ui container">
           <a class="item" href="{{pathFor 'Home_Page'}}"><h1><i class="ticket icon"></i>TCKTS</h1></a>
@@ -7,7 +8,9 @@
 
         <div class="ui inverted borderless menu">
           <div class="ui simple dropdown item">
-            <i class="list sidebar icon"></i>
+            <i class="fitted item">
+              Menu
+            </i>
             <i class="dropdown icon"></i>
             <div class="menu">
               <a class="{{ isActiveRoute 'Profile_Page'}} item" href="{{ pathFor 'Profile_Page' }}">Profile</a>

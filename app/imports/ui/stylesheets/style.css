@@ -148,3 +148,9 @@ body {
   background-size: cover;
   min-height: 700px;
 }
+
+.sell-page-background{
+  background: url("/images/sell-tickets-background.png");
+  background-size: cover;
+  min-height 700px;
+}
