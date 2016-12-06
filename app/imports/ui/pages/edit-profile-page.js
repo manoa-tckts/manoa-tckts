@@ -71,7 +71,7 @@ Template.Edit_Profile_Page.helpers({
      console.log(Members.findOne({'first': 'Brent'}));
      */
 
-    if(Members.find({ id: Meteor.userId()}, {limit: 1}).count() > 0){return Members.findOne({'uid': Meteor.userId()}).first;}
+    if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Members.findOne({'uid': Meteor.userId()}).first;}
     else {return '';}
   },
   last: function() {
