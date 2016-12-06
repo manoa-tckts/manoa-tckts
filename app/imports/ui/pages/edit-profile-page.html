@@ -1,20 +1,6 @@
 <template name="Edit_Profile_Page">
   <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
 
-<<<<<<< HEAD
-      <h1>{{name}}</h1>
-    <div class="ui two column doubling stackable grid container">
-      <div class="column">
-        <div class = "ui centered card">
-          <img class="ui fluid centered medium rounded image" src="{{picture}}">
-        </div>
-      </div>
-      <div class="column">
-        <form class = "ui form edit-profile">
-          <div class="field">
-            <label>Profile Picture</label>
-            <input type="text" name="picture" id="picture" placeholder="put profile-picture link here" value="{{picture}}">
-=======
     {{#If_Logged_In}}
       {{#If_Not_Banned}}
         <h1 class = "ui header">Edit Profile</h1>
@@ -24,7 +10,6 @@
             <div class = "ui centered card">
               <img class="ui fluid centered medium rounded image" src="{{picture}}">
             </div>
->>>>>>> master
           </div>
           <div class="column">
             <form class = "ui form edit-profile">

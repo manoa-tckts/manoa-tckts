@@ -8,7 +8,7 @@ import { Tracker } from 'meteor/tracker';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { UserData, ListOfEvents, Ticket, UserDataSchema, EventsSchema, TicketSchema } from '../../api/schema/schemas.js';
-
+import { Members, MembersSchema } from '../../api/schema/members.js';
 
 /* eslint-disable object-shorthand */
 
@@ -28,8 +28,12 @@ Template.Event_Page.helpers({
 
   },
 
+  findusername(){
+    return Members.findOne({uid: Meteor.userId()}).username;
+  },
+
   findOwner: function(ticket){
-    const owner = Meteor.users.findOne({_id: ticket.owner}).profile.name;
+    const owner = Members.findOne({uid: ticket.owner}).username;
     return owner;
   }
 

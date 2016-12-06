@@ -4,12 +4,9 @@
 
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
-<<<<<<< HEAD
 import { UserData, ListOfEvents, Ticket, UserDataSchema, EventsSchema, TicketSchema } from '../../api/schema/schemas.js';
-=======
 import { Members } from '../../api/schema/members.js';
 import { PeopleBuyingTickets } from '../../api/people-buying-tickets/list-of-people-buying-tickets.js';
->>>>>>> master
 
 /* eslint-disable object-shorthand */
 
@@ -107,6 +104,18 @@ Template.Profile_Page.helpers({
   ticketList() {
     return PeopleBuyingTickets.find();
   },
+  listOfTickets(){
+    //const eventData = ListOfEvents.findOne(FlowRouter.getParam('_id'));
+    const owner = Meteor.userId({});
+    const tickets = Ticket.find({owner: owner});
+    return tickets;
+
+  },
+
+  findOwner: function(ticket){
+    const owner = Members.findOne({uid: ticket.owner}).username;
+    return owner;
+  }
 });
 
 Template.Profile_Page.events({
