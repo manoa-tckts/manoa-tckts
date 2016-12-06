@@ -2,8 +2,9 @@
     <div class="ui top fixed inverted borderless menu">
       <div class="ui container">
           <a class="item" href="{{pathFor 'Home_Page'}}"><h1><i class="ticket icon"></i>TCKTS</h1></a>
-        <a class = "right item">{{> Cas_Login }}</a>
         {{#if currentUser}}
+        <a class = "right item">{{> Cas_Login }}</a>
+
         <div class="ui inverted borderless menu">
           <div class="ui simple dropdown item">
             <i class="list sidebar icon"></i>
