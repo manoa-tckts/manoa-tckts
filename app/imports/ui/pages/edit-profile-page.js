@@ -9,6 +9,9 @@ import { Members, MembersSchema } from '../../api/schema/members.js';
 
 /*
 Template.Edit_Profile_Page.helpers({
+  user: function user() {
+    return Meteor.user() ? Meteor.user().profile.name : 'No logged in user';
+  },
   first: function() {
     return Meteor.user().profile.first;
   },
@@ -46,9 +49,7 @@ Template.Edit_Profile_Page.events({
     const picture = event.target.picture.value;
 
     const updatedProfile = {picture, name, first, last,telephone, email, motto, miscellaneous};
-    console.log(Meteor.user().profile);
     Meteor.users.update(Meteor.userId(), {$set: {profile: updatedProfile}});
-
 
     FlowRouter.go('Profile_Page');
   },

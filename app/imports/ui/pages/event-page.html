@@ -2,10 +2,6 @@
   {{#If_Logged_In}}
   <div style ="padding-top: 90px" class="ui container">
 
-    <h1 class = "ui header">For a single Event</h1>
-    <h1>    {{event.event}} </h1>
-    <img style="height: 300px" class="ui image" src="/images/{{event.image}}"/>
-
     <h1 class = "ui header">{{event.event}}</h1>
     <div class="ui two column grid">
       <div class="fluid column" >
@@ -34,7 +30,6 @@
         <table class="ui fluid celled large table">
           <thead>
           <tr>
-            <th>Type of ticket</th>
             <th>Buyer/Seller</th>
             <th>Asking price</th>
           </tr>
@@ -43,8 +38,7 @@
           <tbody>
           {{#each ticket in listOfTickets}}
             <tr>
-              <td>{{ticket.status}}</td>
-              <td>{{ticket.owner}}</td>
+              <td>{{findOwner ticket}}</td>
               <td>{{ticket.price}}</td>
             </tr>
           {{/each}}
