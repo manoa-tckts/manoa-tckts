@@ -1,7 +1,7 @@
 <template name="Edit_Profile_Page">
   <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
-    <h1 class = "ui header">Edit Profile</h1>
 
+<<<<<<< HEAD
       <h1>{{name}}</h1>
     <div class="ui two column doubling stackable grid container">
       <div class="column">
@@ -14,52 +14,69 @@
           <div class="field">
             <label>Profile Picture</label>
             <input type="text" name="picture" id="picture" placeholder="put profile-picture link here" value="{{picture}}">
-          </div>
-          <div class="field">
-            <label>Name</label>
-            <div class="two fields">
-              <div class="field">
-                <input type="text" name="first" id="first" placeholder="First Name" value="{{first}}">
-              </div>
-              <div class="field">
-                <input type="text" name="last" id="last" placeholder="Last Name" value="{{last}}">
+=======
+    {{#If_Logged_In}}
+      {{#If_Not_Banned}}
+        <h1 class = "ui header">Edit Profile</h1>
 
-              </div>
+        <div class="ui two column doubling stackable grid container">
+          <div class="column">
+            <div class = "ui centered card">
+              <img class="ui fluid centered medium rounded image" src="{{picture}}">
             </div>
+>>>>>>> master
           </div>
-          <div class="field">
-            <label>Contact info</label>
-            <div class="two fields">
+          <div class="column">
+            <form class = "ui form edit-profile">
               <div class="field">
-                <input type="text" name="telephone" id="telephone" placeholder="Phone Number" value="{{telephone}}">
-                <div class="ui checkbox">
-                  <input type="checkbox" name="contact phone">
-                  <label>Contact you by phone?</label>
+                <label>Profile Picture</label>
+                <input type="text" name="picture" id="picture" placeholder="put profile-picture link here" value="{{picture}}">
+              </div>
+              <div class="field">
+                <label>Name</label>
+                <div class="two fields">
+                  <div class="field">
+                    <input type="text" name="first" id="first" placeholder="First Name" value="{{first}}">
+                  </div>
+                  <div class="field">
+                    <input type="text" name="last" id="last" placeholder="Last Name" value="{{last}}">
+
+                  </div>
                 </div>
               </div>
               <div class="field">
-                <input type="text" name="email" id="email" placeholder="Email Address" value="{{email}}">
-                <div class="ui checkbox">
-                  <input type="checkbox" name="contact email">
-                  <label>Contact you by email?</label>
+                <label>Contact info</label>
+                <div class="two fields">
+                  <div class="field">
+                    <input type="text" name="telephone" id="telephone" placeholder="Phone Number" value="{{telephone}}">
+                    <div class="ui checkbox">
+                      <input type="checkbox" name="contact phone">
+                      <label>Contact you by phone?</label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <input type="text" name="email" id="email" placeholder="Email Address" value="{{email}}">
+                    <div class="ui checkbox">
+                      <input type="checkbox" name="contact email">
+                      <label>Contact you by email?</label>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div class="field">
+                <label>Motto</label>
+                <input type="text" name="motto" id="motto" placeholder="Motto" value="{{motto}}">
+              </div>
+              <div class="field">
+                <label>Miscellaneous</label>
+                <textarea  class="comment_textarea" name="miscellaneous" value="{{miscellaneous}}"></textarea>
+              </div>
+              <button class="ui button" type="submit">Submit</button>
+            </form>
           </div>
-          <div class="field">
-            <label>Motto</label>
-            <input type="text" name="motto" id="motto" placeholder="Motto" value="{{motto}}">
-          </div>
-          <div class="field">
-            <label>Miscellaneous</label>
-            <textarea  class="comment_textarea" name="miscellaneous" value="{{miscellaneous}}"></textarea>
-          </div>
-          <button class="ui button" type="submit">Submit</button>
-        </form>
-      </div>
-    </div>
+        </div>
 
-
-
+      {{/If_Not_Banned}}
+    {{/If_Logged_In}}
   </div>
 </template>

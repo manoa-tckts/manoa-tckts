@@ -1,4 +1,6 @@
 <template name="Sell_Tickets_Page">
+  <div style="min-height:500px;" class="sell-page-background">
+  {{#If_Logged_In}}
   <div style = "margin-top: 90px; min-height: 300px" class = "ui centered container">
     <h1 class = "ui header">Sell Your Ticket</h1>
     <form class = "ui form">
@@ -6,6 +8,7 @@
       <div class="field">
         <div class="two fields">
           <div class="field">
+<<<<<<< HEAD
           <label>Event</label>
             <select class="ui dropdown" name="eventName"> 
               {{#each event in events}} 
@@ -19,12 +22,31 @@
               <div class ="ui label">$</div>
               <input type="text" name="price" id="price" placeholder="Amount">
             </div>
+=======
+            <input style="border-width: 2px; border-color:black;" type="text" name="eventName" id="eventName" placeholder="Event Name">
+          </div>
+          <div style="border-width: 2px; border-color:black;" class="three wide field">
+            <input style="border-width: 2px; border-color:black;" type="text" name="date" id="date" placeholder="Date">
           </div>
         </div>
       </div>
 
+      <div class="three wide field">
+        <label>Price</label>
+          <div class="ui inverted left labeled input">
+              <div class ="ui label">$</div>
+              <input style="border-width: 2px; border-color:black;" type="text" name="price" id="price" placeholder="Amount">
+>>>>>>> master
+          </div>
+        </div>
+      </div>
+<<<<<<< HEAD
 
 
+
+=======
+      <BR>
+>>>>>>> master
       <div class="ui checkbox">
         <input type="checkbox" name="negotiable">
         <label>Negotiable Price?</label>
@@ -35,5 +57,6 @@
 
 
   </div>
-
+  {{/If_Logged_In}}
+    </div>
 </template>

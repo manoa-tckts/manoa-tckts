@@ -107,6 +107,11 @@ body {
   animation: fade 2s;
 }
 
+/*#fadeBackground {
+  -webkit-animation: fade 1s;
+  animation: fade 1s;
+}*/
+
 .fadeInFourth {
   opacity: 0;
 }
@@ -136,4 +141,16 @@ body {
 .ui.divider {
   border-top: 1px solid rgba(34, 36, 38, .15);
   border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.ui.vertical.inverted.center.aligned.segment {
+  background: url("/images/concert.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat center center fixed;
+  background-size: cover;
+  min-height: 700px;
+}
+
+.sell-page-background{
+  background: url("/images/sell-tickets-background.png");
+  background-size: cover;
+  min-height 700px;
 }
