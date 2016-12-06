@@ -1,22 +1,47 @@
+/**
+ * Created by Kyle on 12/4/16.
+ */
 import { Template } from 'meteor/templating';
 import { Meteor } from 'meteor/meteor';
 
-Template.Cas_Login.events({
+Template.Cas_Login_Button.helpers({
+  /**
+   * @returns {String} Returns the user who's logged in
+   */
+  user: function user() {
+    return Meteor.user() ? Meteor.user().profile.name : 'No logged in user';
+  },
+});
+
+Template.Cas_Login_Button.events({
   /**
    * Handle the click on the login link.
    * @param event The click event.
    * @returns {boolean} False.
    */
-/*  'click .cas-login': function casLogin(event, instance) {
+  'click .cas-login': function casLogin(event, instance) {
     event.preventDefault();
     const callback = function loginCallback(error) {
       if (error) {
         console.log(error);
       }
     };
-    Meteor.loginWithCas(callback);
+
+    if (!Meteor.user()) {
+      Meteor.loginWithCas(callback);
+      FlowRouter.go('Events_Page');
+    }
+/*
+
+    if (Meteor.userId()) {
+      setTimeout(function() {
+
+      }, 3000);
+    }
+*/
+
     return false;
-  },*/
+  },
 
   /**
    * Handle the click on the logout link.
@@ -30,11 +55,4 @@ Template.Cas_Login.events({
     return false;
   },
 
-});
-
-// Here's how to do the required initialization for Semantic UI dropdown menus.
-Template.Cas_Login.onRendered(function enableDropDown() {
-  this.$('.dropdown').dropdown({
-    action: 'select',
-  });
 });

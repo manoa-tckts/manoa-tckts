@@ -1,34 +1,38 @@
 <template name="Events_Page">
-  <div style ="padding-top: 90px" class="ui fluid container">
-    <h1 class = "ui header">Upcoming Events</h1>
+  {{#If_Logged_In}}
+  <div style="padding-top: 90px" class="ui container">
+    <div style="padding-top: 90px" class="ui fluid container">
+      <h1 class="ui header">Upcoming Events</h1>
 
 
-    <div id="" class="ui centered cards">
-      {{#each event in eventsList}}
+      <div id="" class="ui centered cards">
+        {{#each event in eventsList}}
         <a href="{{pathFor 'Event_Page' _id=event._id}}">
-              <div class="ui card">
-                <div style= "min-height: 275px" class="centered image">
-                  <img style="height: 300px" class="ui fluid image" src="/images/{{event.image}}"/>
-                </div>
-                <div class="content">
-                  <div class="header">{{event.event}}</div>
-                  <div class="meta">
-                    <a>{{event.location}}</a>
-                  </div>
-                </div>
-                <div class="extra content">
+          <div class="ui card">
+            <div style="min-height: 275px" class="centered image">
+              <img style="height: 300px" class="ui fluid image" src="/images/{{event.image}}"/>
+            </div>
+            <div class="content">
+              <div class="header">{{event.event}}</div>
+              <div class="meta">
+                <a>{{event.location}}</a>
+              </div>
+            </div>
+            <div class="extra content">
               <span class="right floated">
                 {{event.date.toDateString}}
               </span>
-                  <span>
+              <span>
                 <i class="ticket icon"></i>
                     {{event.numTickets}}
               </span>
-                </div>
-              </div>
+            </div>
+          </div>
         </a>
-      {{/each}}
+        {{/each}}
+      </div>
+      <h5 class="ui floated right">Images courtesy of Flavorus</h5>
     </div>
-    <h5 class="ui floated right">Images courtesy of Flavorus</h5>
   </div>
+  {{/If_Logged_In}}
 </template>
