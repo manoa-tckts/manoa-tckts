@@ -150,7 +150,8 @@ body {
 }
 
 .sell-page-background{
-  background: url("/images/sell-tickets-background.png");
-  background-size: cover;
-  min-height: 700px;
+  background: url("/images/nyrvisodq2m-yvette-de-wit.jpg");
+  background-size: 100vw 100vh;
+  margin-top: -25px;
+
 }
