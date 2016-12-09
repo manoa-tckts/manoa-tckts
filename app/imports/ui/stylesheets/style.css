@@ -144,7 +144,14 @@ body {
 }
 
 .ui.vertical.inverted.center.aligned.segment {
-  background: url("/images/concert.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat center center fixed;
+  background: url("/images/concert.jpg"), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), no-repeat center center fixed;
   background-size: cover;
   min-height: 700px;
+}
+
+.sell-page-background{
+  background: url("/images/nyrvisodq2m-yvette-de-wit.jpg");
+  background-size: 100vw 100vh;
+  margin-top: -25px;
+
 }

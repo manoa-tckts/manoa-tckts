@@ -4,6 +4,7 @@
 
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
+import { UserData, ListOfEvents, Ticket, UserDataSchema, EventsSchema, TicketSchema } from '../../api/schema/schemas.js';
 import { Members } from '../../api/schema/members.js';
 import { PeopleBuyingTickets } from '../../api/people-buying-tickets/list-of-people-buying-tickets.js';
 
@@ -36,6 +37,15 @@ Template.Profile_Page.helpers({
   picture: function() {
     return Meteor.user().profile.picture;
   },
+  listOfTickets: function(){
+    //const eventName = eventData.event;
+    return Ticket.find();
+    //return tickets;
+  },
+  findOwner: function(ticket){
+    const owner = Meteor.users.findOne({_id: ticket.owner}).profile.name;
+    return owner;
+  }
 });
 
 Template.Profile_Page.events({
@@ -94,6 +104,18 @@ Template.Profile_Page.helpers({
   ticketList() {
     return PeopleBuyingTickets.find();
   },
+  listOfTickets(){
+    //const eventData = ListOfEvents.findOne(FlowRouter.getParam('_id'));
+    const owner = Meteor.userId({});
+    const tickets = Ticket.find({owner: owner});
+    return tickets;
+
+  },
+
+  findOwner: function(ticket){
+    const owner = Members.findOne({uid: ticket.owner}).username;
+    return owner;
+  }
 });
 
 Template.Profile_Page.events({
