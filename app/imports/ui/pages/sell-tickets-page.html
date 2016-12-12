@@ -1,37 +1,40 @@
 <template name="Sell_Tickets_Page">
   <div style="min-height:500px;" class="sell-page-background">
-  {{#If_Logged_In}}
-  <div style = "margin-top: 90px; min-height: 300px" class = "ui centered container">
-    <h1 class = "ui header">Sell Your Ticket</h1>
-    <form class = "ui form">
+    {{#If_Logged_In}}
+    <div style="margin-top: 90px; min-height: 300px" class="ui centered container">
+      <h1 class="ui header">Sell Your Ticket</h1>
+      <form class="ui form">
 
-      <div class="field">
-        <label>Event</label>
-        <div class="two fields">
-          <div class="field">
-            <input style="border-width: 2px; border-color:black;" type="text" name="eventName" id="eventName" placeholder="Event Name">
-          </div>
-          <div style="border-width: 2px; border-color:black;" class="three wide field">
-            <input style="border-width: 2px; border-color:black;" type="text" name="date" id="date" placeholder="Date">
+        <div class="field">
+          <label>Event</label>
+          <div class="two fields">
+            <div class="field">
+              <input style="border-width: 2px; border-color:black;" type="text" name="eventName" id="eventName"
+                     placeholder="Event Name">
+            </div>
+            <div style="border-width: 2px; border-color:black;" class="three wide field">
+              <input style="border-width: 2px; border-color:black;" type="text" name="date" id="date"
+                     placeholder="Date">
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="three wide field">
-        <label>Price</label>
+        <div class="three wide field">
+          <label>Price</label>
           <div class="ui inverted left labeled input">
-              <div class ="ui label">$</div>
-              <input style="border-width: 2px; border-color:black;" type="text" name="price" id="price" placeholder="Amount">
+            <div class="ui label">$</div>
+            <input style="border-width: 2px; border-color:black;" type="text" name="price" id="price"
+                   placeholder="Amount">
           </div>
-      </div>
-      <BR>
-      <div class="ui checkbox">
-        <input type="checkbox" name="negotiable">
-        <label>Negotiable Price?</label>
-      </div>
-      <button class="ui button" type="submit">Submit</button>
-    </form>
-  </div>
-  {{/If_Logged_In}}
+        </div>
+        <BR>
+        <div class="ui checkbox">
+          <input type="checkbox" name="negotiable">
+          <label>Negotiable Price?</label>
+        </div>
+        <button class="ui button" type="submit">Submit</button>
+      </form>
     </div>
+    {{/If_Logged_In}}
+  </div>
 </template>
