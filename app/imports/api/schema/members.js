@@ -24,31 +24,31 @@ export const MembersSchema = new SimpleSchema({
   first: {
     label: 'first',
     type: String,
-    optional: false,
+    optional: true,
     max: 200,
   },
   last: {
     label: 'last',
     type: String,
-    optional: false,
+    optional: true,
     max: 200,
   },
   phone: {
     label: 'phone',
     type: String,
-    optional: false,
+    optional: true,
     max: 200,
   },
   email: {
     label: 'email',
     type: String,
-    optional: false,
+    optional: true,
     max: 200,
   },
   motto: {
     label: 'motto',
     type: String,
-    optional: false,
+    optional: true,
     max: 200,
   },
   miscellaneous: {
@@ -59,7 +59,7 @@ export const MembersSchema = new SimpleSchema({
   picture: {
     label: 'picture',
     type: String,
-    optional: false,
+    optional: true,
     max: 200,
   },
   role: {

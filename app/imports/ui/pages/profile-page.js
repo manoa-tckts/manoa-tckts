@@ -5,7 +5,10 @@
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 import { UserData, ListOfEvents, Ticket, UserDataSchema, EventsSchema, TicketSchema } from '../../api/schema/schemas.js';
-import { Members } from '../../api/schema/members.js';
+import { Members, MembersSchema } from '../../api/schema/members.js';
+import {Phonenumbers, PhonenumbersSchema} from '../../api/schema/phonenumbers.js';
+import {Emails, EmailsSchema} from '../../api/schema/phonenumbers.js';
+import {Usercheckboxes, UsercheckboxesSchema} from '../../api/schema/usercheckboxes.js';
 import { PeopleBuyingTickets } from '../../api/people-buying-tickets/list-of-people-buying-tickets.js';
 
 /* eslint-disable object-shorthand */
