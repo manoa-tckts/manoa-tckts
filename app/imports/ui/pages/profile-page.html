@@ -2,11 +2,11 @@
 {{#If_Logged_In}}
   {{#If_Not_Banned}}
   <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
-  <h1 class = "ui header">Hello {{first}}</h1>
+  <h1 class = "ui header">Hello {{user}}</h1>
 
     <div class="ui two column grid">
       <div class = "ui centered card">
-        <img class="ui fluid centered medium rounded image" src="{{picture}}">{{picture}}
+        <img class="ui fluid centered medium rounded image" src="{{picture}}">
       </div>
       <div class="four wide column">
         <div class = "ui segment">
@@ -59,22 +59,14 @@
         <table style="margin-top: 20px" class="ui celled table">
           <thead>
           <tr>
-            <th>Event</th>
-            <th>Price</th>
+            <th>Ticket</th>
+            <th>Type</th>
             <th>Date</th>
-            <th>Owner</th>
+            <th>Requested Price</th>
           </tr>
           </thead>
-          <tbody>
-          {{#each ticket in listOfTickets}}
-          <tr>
-            <th>{{ticket.eventName}}</th>
-            <th>{{ticket.price}}</th>
-            <th>{{ticket.date.toDateString}}</th>
-            <th>{{findOwner ticket}}</th>
-          </tr>
-          {{/each}}
-            </tbody>
+          <tbody>}
+          </tbody>
         </table>
       </div>
     </div>
