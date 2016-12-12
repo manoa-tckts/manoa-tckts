@@ -4,6 +4,7 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { Members, MembersSchema } from '../../api/schema/members.js';
+import {Checkboxes, CheckboxesSchema} from '../../api/schema/checkboxes.js';
 
 /* eslint-disable object-shorthand */
 
@@ -120,8 +121,22 @@ Template.Edit_Profile_Page.events({
       const picture = event.target.picture.value;
       const role = 'owner';
       const banned = false;
+      const phonecheckbox = false;
+      const emailcheckbox = false;
+      console.log(Meteor.user().profile.name);
+      if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
+        console.log('Checkboxes collection is being created');
+        const data = {uid, username, phonecheckbox, emailcheckbox};
+        console.log(data);
+        CheckboxesSchema.clean(data);
+        Checkboxes.insert(data);
+        console.log('in Checkboxes collection:');
+        console.log(Checkboxes.findOne({uid: Meteor.userId()}));
+      }
       const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned};
-      Members.update(Members.findOne({'uid':Meteor.userId()})._id, { $set: profile});
+      Members.update(Members.findOne({'uid': Meteor.userId()})._id, { $set: profile});
+      console.log('in Members collection:');
+      console.log(Members.findOne({uid: Meteor.userId()}));
       FlowRouter.go('Profile_Page');
     }
     else{
@@ -137,7 +152,7 @@ Template.Edit_Profile_Page.events({
       const role = 'owner';
       const banned = false;
       const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned};
-      console.log("testing false");
+      console.log('testing false');
       console.log(profile);
       MembersSchema.clean(profile);
       Members.insert(profile);
