@@ -107,16 +107,24 @@
             <p>{{emailchecked}}</p>
           </div>
         </form>
+
+        <h2>Your Tickets</h2>
         <table style="margin-top: 20px" class="ui celled table">
           <thead>
           <tr>
             <th>Ticket</th>
-            <th>Type</th>
             <th>Date</th>
             <th>Requested Price</th>
           </tr>
           </thead>
           <tbody>
+          {{#each ticket in listOfTickets}}
+            <tr>
+              <td>{{ticket.eventName}}</td>
+              <td>{{ticket.date.toDateString}}</td>
+              <td>{{ticket.price}}</td>
+            </tr>
+          {{/each}}
           </tbody>
         </table>
       </div>

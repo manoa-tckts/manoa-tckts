@@ -102,11 +102,11 @@ Template.Edit_Profile_Page.helpers({
     else {return '';}
   },
   emailchecked: function() {
-    if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Checkboxes.findOne({'uid': Meteor.userId()}).emailcheckbox;}
+    if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Members.findOne({'uid': Meteor.userId()}).emailcheckbox;}
     else{return false;}
   },
   phonechecked: function() {
-    if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Checkboxes.findOne({'uid': Meteor.userId()}).phonecheckbox;}
+    if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Members.findOne({'uid': Meteor.userId()}).phonecheckbox;}
     else{return false;}
   },
 });
