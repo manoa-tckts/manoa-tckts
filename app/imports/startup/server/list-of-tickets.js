@@ -5,7 +5,6 @@ import {ListOfEvents} from '../../api/schema/schemas.js';
 import {Ticket} from '../../api/schema/schemas.js';
 import {_} from 'meteor/underscore';
 
-/*
 const ticketSeeds = [
   { eventName: 'Haunted Wonderland',
     status: 'sell',
@@ -92,5 +91,3 @@ if (Ticket.find().count() === 0) {
     Ticket.insert(ticket);
   });
 }
-
-*/

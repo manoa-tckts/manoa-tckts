@@ -1,157 +1,49 @@
+/*
+ * Font
+ */
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans:400,400i');
+
 body {
   /*padding-top: 100px;  /* Move body of page below navbar. */
 }
 
 /*
- * CSS for Fading transitions
- */
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-70px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
-}
-
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-70px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-60px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-  }
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-60px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(60px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(60px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/*
  * Public Landing Page
  */
-#titleFadeDown {
-  -webkit-animation: fadeInRight 1.5s;
-  animation: fadeInRight 1.5s;
-}
-
-#subtitleFadeDown {
-  -webkit-animation: fadeInLeft 1.5s;
-  animation: fadeInLeft 1.5s;
-}
-
-#buttonFadeDown {
-  -webkit-animation: fade 2s;
-  animation: fade 2s;
-}
-
-/*#fadeBackground {
-  -webkit-animation: fade 1s;
-  animation: fade 1s;
-}*/
 
 .fadeInFourth {
   opacity: 0;
+/*  font-family: 'Expletus Sans', cursive;*/
 }
 
-/*.fadeInFifth {
+.fadeInFifth {
   opacity: 0;
-}*/
+/*  font-family: 'Expletus Sans', cursive;*/
+}
 
 .fadeInSixth {
   opacity: 0;
-}
-
-.slideLeft {
-  float: left;
-  position: absolute;
-  opacity: 0;
-  /* display: none;*/
-}
-
-.slideUp {
-  bottom: 0;
-  position: absolute;
-  opacity: 0;
-  /* display: none;*/
-}
-
-.ui.divider {
-  border-top: 1px solid rgba(34, 36, 38, .15);
-  border-bottom: 1px solid rgba(255, 255, 255, .1);
+/*  font-family: 'Expletus Sans', cursive;*/
 }
 
 .ui.vertical.inverted.center.aligned.segment {
-  background: url("/images/concert.jpg"), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), no-repeat center center fixed;
+  background: url("/images/concert.jpg"), linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 2)), no-repeat center center fixed;
   background-size: cover;
   min-height: 700px;
 }
 
 .sell-page-background{
-  background: url("/images/nyrvisodq2m-yvette-de-wit.jpg");
-  background-size: 100vw 100vh;
-  margin-top: -25px;
+  background: url("/images/sell-tickets-background.png");
+  background-size: cover;
+  min-height: 700px;
+}
 
+#titleFadeRight {
+  color: #F2F3F5;
+/*  font-family: 'Expletus Sans', cursive;*/
+}
+
+#subtitleFadeLeft {
+  color: #F2F3F5;
+/*  font-family: 'Expletus Sans', cursive;*/
 }
