@@ -72,6 +72,14 @@ export const MembersSchema = new SimpleSchema({
     label: 'banned',
     type: Boolean,
   },
+  phonecheckbox: {
+    type: Boolean,
+    optional: true
+  },
+  emailcheckbox: {
+    type: Boolean,
+    optional: true
+  }
 });
 
 Members.attachSchema(MembersSchema);

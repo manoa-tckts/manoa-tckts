@@ -8,6 +8,7 @@ import { Tracker } from 'meteor/tracker';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { UserData, ListOfEvents, Ticket, UserDataSchema, EventsSchema, TicketSchema } from '../../api/schema/schemas.js';
+import { Members } from '../../api/schema/members.js';
 
 
 /* eslint-disable object-shorthand */
@@ -69,7 +70,20 @@ Template.Event_Page.helpers({
       CheckboxesSchema.clean(boxes);
       Checkboxes.insert(boxes);
     }
+
+
   },
+
+  findusername: function(){
+    return Members.findOne({uid: Meteor.userId()}).username;
+  },
+
+  findOwner: function(ticket){
+    //const owner = Meteor.users.findOne({_id: ticket.owner}).profile.first;
+    const owner = Members.findOne({uid: ticket.owner}).first;
+
+    return owner;
+  }
 
 });
 

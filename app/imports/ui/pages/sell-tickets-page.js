@@ -7,11 +7,15 @@ import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
-import { Ticket, TicketSchema } from '../../api/schema/schemas.js';
+import { Ticket, TicketSchema, ListOfEvents } from '../../api/schema/schemas.js';
 import { Meteor } from 'meteor/meteor';
 
 
 Template.Sell_Tickets_Page.helpers({
+
+  events: function(){
+    return ListOfEvents.find();
+  },
   checknewuser: function(){
     if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
       const uid = Meteor.userId();
@@ -62,26 +66,28 @@ Template.Sell_Tickets_Page.events({
     event.preventDefault();
     // Get name (text field)
     const eventName = event.target.eventName.value;
-    const date = event.target.date.value;
+    const date = new Date();
     const status = 'sell';
     const price = event.target.price.value;
     const negotiable = event.target.negotiable.value;
-    const owner = 'test';
-    //const owner = Meteor.userId();
+    const owner = Meteor.userId();
 
-    const newTicket = { eventName, status, date, price, negotiable , owner };
+    const newTicket = { eventName, date, price , owner };
     // Clear out any old validation errors.
-    instance.context.resetValidation();
+    //instance.context.resetValidation();
     // Invoke clean so that newStudentData reflects what will be inserted.
-    TicketSchema.clean(newTicket);
+    //TicketSchema.clean(newTicket);
     // Determine validity.
-    instance.context.validate(newTicket);
+    /*instance.context.validate(newTicket);
     if (instance.context.isValid()) {
       Ticket.insert(newTicket);
       FlowRouter.go('Profile_Page');
     } else {
       FlowRouter.go('Sell_Tickets_Page');
     }
+    */
+    Ticket.insert(newTicket);
+    FlowRouter.go('Profile_Page');
   },
 
 });

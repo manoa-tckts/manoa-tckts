@@ -129,9 +129,11 @@ Template.Edit_Profile_Page.events({
       const picture = event.target.picture.value;
       const role = 'owner';
       const banned = false;
-      const phonecheckbox = false;
-      const emailcheckbox = false;
+      const phonecheckbox = event.target.contactphone.checked;
+      const emailcheckbox = event.target.contactemail.checked;
       console.log(Meteor.user().profile.name);
+
+      /*
       if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
         console.log('Checkboxes collection is being created');
         const data = {uid, username, phonecheckbox, emailcheckbox};
@@ -176,7 +178,9 @@ Template.Edit_Profile_Page.events({
       else {
         email = 'N/A';
       }
-      const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned};
+
+      */
+      const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned, phonecheckbox, emailcheckbox};
       Members.update(Members.findOne({'uid': Meteor.userId()})._id, { $set: profile});
       console.log('in Members collection:');
       console.log(Members.findOne({uid: Meteor.userId()}));
@@ -194,9 +198,11 @@ Template.Edit_Profile_Page.events({
       const picture = event.target.picture.value;
       const role = 'owner';
       const banned = false;
-      const phonecheckbox = false;
-      const emailcheckbox = false;
+      const phonecheckbox = event.target.contactphone.checked;
+      const emailcheckbox = event.target.contactemail.checked;
       console.log(Meteor.user().profile.name);
+
+      /*
       if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
         console.log('Checkboxes collection is being created');
         const data = {uid, username, phonecheckbox, emailcheckbox};
@@ -241,7 +247,9 @@ Template.Edit_Profile_Page.events({
       else {
         email = 'N/A';
       }
-      const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned};
+
+      */
+      const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned, phonecheckbox, emailcheckbox};
       console.log('testing false');
       console.log(profile);
       MembersSchema.clean(profile);
@@ -271,6 +279,7 @@ Template.Edit_Profile_Page.events({
 
      FlowRouter.go('Profile_Page');*/
   },
+      /*
   'change .emailchkbox'(event, instance){
     console.log('emailcheckbox changed: ');
     console.log(event.target.checked);
@@ -326,4 +335,6 @@ Template.Edit_Profile_Page.events({
       console.log(Checkboxes.findOne({uid: Meteor.userId()}));
     }
   },
+  */
+
 });
