@@ -6,6 +6,7 @@ import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 import { Members } from '../../api/schema/members.js';
 import { PeopleBuyingTickets } from '../../api/people-buying-tickets/list-of-people-buying-tickets.js';
+import { UserData, ListOfEvents, Ticket, UserDataSchema, EventsSchema, TicketSchema } from '../../api/schema/schemas.js';
 
 /* eslint-disable object-shorthand */
 
@@ -109,6 +110,13 @@ Template.Profile_Page.helpers({
   },
   ticketList() {
     return PeopleBuyingTickets.find();
+  },
+
+  listOfTickets(){
+    const owner = Meteor.userId();
+    const tickets = Ticket.find({owner: owner});
+    return tickets;
+
   },
 });
 
