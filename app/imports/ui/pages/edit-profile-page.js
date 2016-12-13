@@ -127,11 +127,15 @@ Template.Edit_Profile_Page.events({
       const motto = event.target.motto.value;
       const miscellaneous = event.target.miscellaneous.value;
       const picture = event.target.picture.value;
-      const role = 'regular';
+      var role = 'regular';
       const banned = false;
       const phonecheckbox = event.target.contactphone.checked;
       const emailcheckbox = event.target.contactemail.checked;
       console.log(Meteor.user().profile.name);
+
+      if(event.target.admin.checked){
+        role = 'admin'
+      }
 
       /*
       if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
@@ -196,11 +200,15 @@ Template.Edit_Profile_Page.events({
       const motto = event.target.motto.value;
       const miscellaneous = event.target.miscellaneous.value;
       const picture = event.target.picture.value;
-      const role = 'regular';
+      var role = 'regular';
       const banned = false;
       const phonecheckbox = event.target.contactphone.checked;
       const emailcheckbox = event.target.contactemail.checked;
       console.log(Meteor.user().profile.name);
+
+      if(event.target.admin.checked){
+        role = 'admin'
+      }
 
       /*
       if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){

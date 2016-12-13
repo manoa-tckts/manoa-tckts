@@ -11,4 +11,6 @@ import './sell-tickets-page.js';
 import './profile-page.html';
 import './profile-page.js';
 import './Accounts.js';
+import './edit-event-page.html';
+import './edit-event-page';
 

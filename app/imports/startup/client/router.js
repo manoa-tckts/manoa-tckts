@@ -48,3 +48,11 @@ FlowRouter.route('/profile', {
     BlazeLayout.render('App_Body', { main: 'Profile_Page' });
   },
 });
+
+FlowRouter.route('/editevent', {
+  name: 'Edit_Event_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Edit_Event_Page' });
+  },
+});
+

@@ -74,13 +74,9 @@ Template.Event_Page.helpers({
 
   },
 
-  findusername: function(){
-    return Members.findOne({uid: Meteor.userId()}).username;
-  },
-
   findOwner: function(ticket){
     //const owner = Meteor.users.findOne({_id: ticket.owner}).profile.first;
-    const owner = Members.findOne({uid: ticket.owner}).uid;
+    const owner = Members.findOne({uid: ticket.owner}).first;
     return owner;
   },
 

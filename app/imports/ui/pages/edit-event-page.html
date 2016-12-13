@@ -1,0 +1,29 @@
+<template name="Edit_Event_Page">
+  {{#If_Logged_In}}
+    {{#If_Is_Admin}}
+    {{checknewuser}}
+    <div style ="padding-top: 90px" class="ui container">
+      <h1>Existing Events</h1>
+      <table class="ui fluid celled large table">
+        <thead>
+        <tr>
+          <th>Event</th>
+          <th>Date</th>
+          <th>Num Tickets</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {{#each event in listOfEvents}}
+          <tr>
+            <td>{{event.event }}</td>
+            <td>{{event.date.toDateString}}</td>
+            <td>{{numTickets event}}</td>
+          </tr>
+        {{/each}}
+        </tbody>
+      </table>
+    </div>
+    {{/If_Is_Admin}}
+  {{/If_Logged_In}}
+</template>
