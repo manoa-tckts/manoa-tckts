@@ -9,6 +9,7 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { Ticket, TicketSchema, ListOfEvents } from '../../api/schema/schemas.js';
 import { Meteor } from 'meteor/meteor';
+import { Members, MembersSchema } from '../../api/schema/members.js';
 
 
 Template.Sell_Tickets_Page.helpers({
@@ -69,7 +70,6 @@ Template.Sell_Tickets_Page.events({
     const date = new Date();
     const status = 'sell';
     const price = event.target.price.value;
-    const negotiable = event.target.negotiable.value;
     const owner = Meteor.userId();
 
     const newTicket = { eventName, date, price , owner };
