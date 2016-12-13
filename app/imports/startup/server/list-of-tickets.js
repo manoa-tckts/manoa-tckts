@@ -86,8 +86,11 @@ const ticketSeeds = [
 
 ];
 
+/*
+
 if (Ticket.find().count() === 0) {
   _.each(ticketSeeds, function seedTicket(ticket) {
     Ticket.insert(ticket);
   });
 }
+    */

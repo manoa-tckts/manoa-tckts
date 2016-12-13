@@ -105,7 +105,7 @@ export const TicketSchema = new SimpleSchema({
   status: {
     label: 'Status',
     type: String,
-    optional: false,
+    optional: true,
   },
   date: {
     label: 'Date',

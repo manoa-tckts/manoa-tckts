@@ -91,6 +91,22 @@ Template.Profile_Page.helpers({
     }
     else{return Members.findOne({'uid':Meteor.userId()}).picture;}
   },
+  emailchecked: function() {
+    if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
+      //return('http://m.memegen.com/fdt0u5.jpg');
+    }
+    else{
+      return  Members.findOne({'uid':Meteor.userId()}).emailcheckbox ?  "yes" : "no"
+    }
+  },
+  phonechecked: function() {
+    if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
+      //return('http://m.memegen.com/fdt0u5.jpg');
+    }
+    else{
+      return  Members.findOne({'uid':Meteor.userId()}).phonecheckbox ?  "yes" : "no"
+    }
+  },
   ticketList() {
     return PeopleBuyingTickets.find();
   },

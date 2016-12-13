@@ -4,8 +4,6 @@
   <div style ="padding-top: 90px" class="ui container">
 
     <h1 class = "ui header">For a single Event</h1>
-    <h1>    {{event.event}} </h1>
-    <img style="height: 300px" class="ui image" src="/images/{{event.image}}"/>
 
     <h1 class = "ui header">{{event.event}}</h1>
     <div class="ui two column grid">
@@ -35,18 +33,22 @@
         <table class="ui fluid celled large table">
           <thead>
           <tr>
-            <th>Type of ticket</th>
-            <th>Buyer/Seller</th>
-            <th>Asking price</th>
+            <th>Seller</th>
+            <th>Price</th>
+            <th>Date Created</th>
+            <th>Email</th>
+            <th>Phone</th>
           </tr>
           </thead>
 
           <tbody>
           {{#each ticket in listOfTickets}}
             <tr>
-              <td>{{ticket.status}}</td>
-              <td>{{ticket.owner}}</td>
+              <td>{{findOwner ticket}}</td>
               <td>{{ticket.price}}</td>
+              <td>{{ticket.date.toDateString}}</td>
+              <td>{{contactByPhone ticket}}</td>
+              <td>{{contactByEmail ticket}}</td>
             </tr>
           {{/each}}
           </tbody>
