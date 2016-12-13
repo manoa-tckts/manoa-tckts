@@ -127,7 +127,7 @@ Template.Edit_Profile_Page.events({
       const motto = event.target.motto.value;
       const miscellaneous = event.target.miscellaneous.value;
       const picture = event.target.picture.value;
-      const role = 'owner';
+      const role = 'regular';
       const banned = false;
       const phonecheckbox = event.target.contactphone.checked;
       const emailcheckbox = event.target.contactemail.checked;
@@ -196,7 +196,7 @@ Template.Edit_Profile_Page.events({
       const motto = event.target.motto.value;
       const miscellaneous = event.target.miscellaneous.value;
       const picture = event.target.picture.value;
-      const role = 'owner';
+      const role = 'regular';
       const banned = false;
       const phonecheckbox = event.target.contactphone.checked;
       const emailcheckbox = event.target.contactemail.checked;
