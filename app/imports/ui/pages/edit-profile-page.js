@@ -5,6 +5,8 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { Members, MembersSchema } from '../../api/schema/members.js';
 import {Checkboxes, CheckboxesSchema} from '../../api/schema/checkboxes.js';
+import {Emails} from '../../api/schema/emails.js';
+import {Phonenumbers} from '../../api/schema/phonenumbers.js';
 
 /* eslint-disable object-shorthand */
 
@@ -81,11 +83,11 @@ Template.Edit_Profile_Page.helpers({
     else {return '';}
   },
   telephone: function() {
-    if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Members.findOne({'uid': Meteor.userId()}).phone;}
+    if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Phonenumbers.findOne({'uid': Meteor.userId()}).phone;}
     else {return '';}
   },
   email: function() {
-    if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Members.findOne({'uid': Meteor.userId()}).email;}
+    if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Emails.findOne({'uid': Meteor.userId()}).email;}
     else {return '';}
   },
   motto: function() {
@@ -100,7 +102,14 @@ Template.Edit_Profile_Page.helpers({
     if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Members.findOne({'uid': Meteor.userId()}).picture;}
     else {return '';}
   },
-
+  emailchecked: function() {
+    if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Checkboxes.findOne({'uid': Meteor.userId()}).emailcheckbox;}
+    else{return false;}
+  },
+  phonechecked: function() {
+    if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Checkboxes.findOne({'uid': Meteor.userId()}).phonecheckbox;}
+    else{return false;}
+  },
 });
 
 Template.Edit_Profile_Page.events({
@@ -114,8 +123,8 @@ Template.Edit_Profile_Page.events({
       const username = Meteor.user().profile.name;
       const first = event.target.first.value;
       const last = event.target.last.value;
-      const phone = event.target.telephone.value;
-      const email = event.target.email.value;
+      var phone = event.target.telephone.value;
+      var email = event.target.email.value;
       const motto = event.target.motto.value;
       const miscellaneous = event.target.miscellaneous.value;
       const picture = event.target.picture.value;
@@ -133,6 +142,41 @@ Template.Edit_Profile_Page.events({
         console.log('in Checkboxes collection:');
         console.log(Checkboxes.findOne({uid: Meteor.userId()}));
       }
+      if(Emails.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
+        const emails = {uid, username, email};
+        console.log('creating Emails database');
+        console.log('insterting emails');
+        console.log(emails);
+        Emails.insert(emails);
+        console.log(Emails.findOne({'uid': Meteor.userId()}));
+      }
+      if(Phonenumbers.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
+        const phonenumbers = {uid, username, phone};
+        console.log('creating phonenumbers database');
+        console.log('insterting phone numbers');
+        console.log(phonenumbers);
+        Phonenumbers.insert(phonenumbers);
+        console.log(Phonenumbers.findOne({'uid': Meteor.userId()}));
+      }
+      console.log('finiished checking and creating databases');
+      const phonedata = {uid, username, phone};
+      Phonenumbers.update(Phonenumbers.findOne({'uid':Meteor.userId()})._id, { $set: phonedata});
+      console.log('phone number: ');
+      console.log(Phonenumbers.findOne({'uid': Meteor.userId()}))
+      if (Checkboxes.findOne({'uid': Meteor.userId()}).phonecheckbox === true){
+        phone = Phonenumbers.findOne({'uid': Meteor.userId()}).phone;
+      }
+      else {
+        phone = 'N/A';
+      }
+      const emaildata = {uid, username, email};
+      Emails.update(Emails.findOne({'uid':Meteor.userId()})._id, { $set: emaildata});
+      if (Checkboxes.findOne({'uid': Meteor.userId()}).emailcheckbox === true){
+        email = Emails.findOne({'uid': Meteor.userId()}).email;
+      }
+      else {
+        email = 'N/A';
+      }
       const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned};
       Members.update(Members.findOne({'uid': Meteor.userId()})._id, { $set: profile});
       console.log('in Members collection:');
@@ -144,13 +188,60 @@ Template.Edit_Profile_Page.events({
       const username = Meteor.user().profile.name;
       const first = event.target.first.value;
       const last = event.target.last.value;
-      const phone = event.target.telephone.value;
-      const email = event.target.email.value;
+      var phone = event.target.telephone.value;
+      var email = event.target.email.value;
       const motto = event.target.motto.value;
       const miscellaneous = event.target.miscellaneous.value;
       const picture = event.target.picture.value;
       const role = 'owner';
       const banned = false;
+      const phonecheckbox = false;
+      const emailcheckbox = false;
+      console.log(Meteor.user().profile.name);
+      if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
+        console.log('Checkboxes collection is being created');
+        const data = {uid, username, phonecheckbox, emailcheckbox};
+        console.log(data);
+        CheckboxesSchema.clean(data);
+        Checkboxes.insert(data);
+        console.log('in Checkboxes collection:');
+        console.log(Checkboxes.findOne({uid: Meteor.userId()}));
+      }
+      if(Emails.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
+        const emails = {uid, username, email};
+        console.log('creating Emails database');
+        console.log('insterting emails');
+        console.log(emails);
+        Emails.insert(emails);
+        console.log(Emails.findOne({'uid': Meteor.userId()}));
+      }
+      if(Phonenumbers.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
+        const phonenumbers = {uid, username, phone};
+        console.log('creating phonenumbers database');
+        console.log('insterting phone numbers');
+        console.log(phonenumbers);
+        Phonenumbers.insert(phonenumbers);
+        console.log(Phonenumbers.findOne({'uid': Meteor.userId()}));
+      }
+      console.log('finiished checking and creating databases');
+      const phonedata = {uid, username, phone};
+      Phonenumbers.update(Phonenumbers.findOne({'uid':Meteor.userId()})._id, { $set: phonedata});
+      console.log('phone number: ');
+      console.log(Phonenumbers.findOne({'uid': Meteor.userId()}))
+      if (Checkboxes.findOne({'uid': Meteor.userId()}).phonecheckbox === true){
+        phone = Phonenumbers.findOne({'uid': Meteor.userId()}).phone;
+      }
+      else {
+        phone = 'N/A';
+      }
+      const emaildata = {uid, username, email};
+      Emails.update(Emails.findOne({'uid':Meteor.userId()})._id, { $set: emaildata});
+      if (Checkboxes.findOne({'uid': Meteor.userId()}).emailcheckbox === true){
+        email = Emails.findOne({'uid': Meteor.userId()}).email;
+      }
+      else {
+        email = 'N/A';
+      }
       const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned};
       console.log('testing false');
       console.log(profile);
