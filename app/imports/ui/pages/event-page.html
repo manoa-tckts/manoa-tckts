@@ -35,8 +35,9 @@
           <tr>
             <th>Seller</th>
             <th>Price</th>
-            <th>Phone</th>
+            <th>Date Created</th>
             <th>Email</th>
+            <th>Phone</th>
           </tr>
           </thead>
 
@@ -45,8 +46,9 @@
             <tr>
               <td>{{findOwner ticket}}</td>
               <td>{{ticket.price}}</td>
-              <td></td>
-              <td></td>
+              <td>{{ticket.date.toDateString}}</td>
+              <td>{{contactByPhone ticket}}</td>
+              <td>{{contactByEmail ticket}}</td>
             </tr>
           {{/each}}
           </tbody>

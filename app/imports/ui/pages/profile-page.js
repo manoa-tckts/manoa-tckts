@@ -96,7 +96,6 @@ Template.Profile_Page.helpers({
       //return('http://m.memegen.com/fdt0u5.jpg');
     }
     else{
-      //return "yes" ? Members.findOne({'uid':Meteor.userId()}).emailcheckbox : "no"
       return  Members.findOne({'uid':Meteor.userId()}).emailcheckbox ?  "yes" : "no"
     }
   },
@@ -106,7 +105,6 @@ Template.Profile_Page.helpers({
     }
     else{
       return  Members.findOne({'uid':Meteor.userId()}).phonecheckbox ?  "yes" : "no"
-      //return "yes" ? Members.findOne({'uid':Meteor.userId()}).phonecheckbox: "no";
     }
   },
   ticketList() {

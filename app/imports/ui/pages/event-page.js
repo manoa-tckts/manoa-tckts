@@ -81,8 +81,17 @@ Template.Event_Page.helpers({
   findOwner: function(ticket){
     //const owner = Meteor.users.findOne({_id: ticket.owner}).profile.first;
     const owner = Members.findOne({uid: ticket.owner}).first;
-
     return owner;
+  },
+
+  contactByPhone: function(ticket){
+    const owner = Members.findOne({uid: ticket.owner});
+    return owner.phonecheckbox ? owner.email : "N/A";
+  },
+
+  contactByEmail: function(ticket){
+    const owner = Members.findOne({uid: ticket.owner});
+    return owner.emailcheckbox ? owner.phone : "N/A";
   }
 
 });
