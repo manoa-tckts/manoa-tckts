@@ -181,4 +181,59 @@ Template.Edit_Profile_Page.events({
 
      FlowRouter.go('Profile_Page');*/
   },
+  'change .emailchkbox'(event, instance){
+    console.log('emailcheckbox changed: ');
+    console.log(event.target.checked);
+    const uid = Meteor.userId();
+    const username = Meteor.user().profile.name;
+    var phonecheckbox = false;
+    var emailcheckbox = false;
+    var data = {uid, username, phonecheckbox, emailcheckbox};
+    if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
+      console.log('Checkboxes collection is being created');
+      console.log(data);
+      CheckboxesSchema.clean(data);
+      Checkboxes.insert(data);
+      console.log('in Checkboxes collection:');
+      console.log(Checkboxes.findOne({uid: Meteor.userId()}));
+    }
+    else{
+      console.log('else');
+      phonecheckbox = Checkboxes.findOne({uid: Meteor.userId()}).phonecheckbox;
+      emailcheckbox = event.target.checked;
+      data = {uid, username, phonecheckbox, emailcheckbox};
+      console.log(data);
+      Checkboxes.update(Checkboxes.findOne({'uid': Meteor.userId()})._id, { $set: data});
+      console.log(Checkboxes.findOne({uid: Meteor.userId()}));
+    }
+  },
+
+
+  'change .phonechkbox'(event, instance){
+    console.log('phonecheckbox changed: ');
+    console.log(event.target.checked);
+    const uid = Meteor.userId();
+    const username = Meteor.user().profile.name;
+    var phonecheckbox = false;
+    var emailcheckbox = false;
+    var data = {uid, username, phonecheckbox, emailcheckbox};
+    if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
+      console.log('Checkboxes collection is being created');
+      console.log(data);
+      CheckboxesSchema.clean(data);
+      Checkboxes.insert(data);
+      console.log('in Checkboxes collection:');
+      console.log(Checkboxes.findOne({uid: Meteor.userId()}));
+    }
+    else{
+      console.log('else');
+      phonecheckbox = event.target.checked;
+      emailcheckbox = Checkboxes.findOne({uid: Meteor.userId()}).emailcheckbox;
+      data = {uid, username, phonecheckbox, emailcheckbox};
+      console.log(data);
+      Checkboxes.update(Checkboxes.findOne({'uid': Meteor.userId()})._id, { $set: data});
+      console.log();
+      console.log(Checkboxes.findOne({uid: Meteor.userId()}));
+    }
+  },
 });
