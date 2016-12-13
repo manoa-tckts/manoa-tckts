@@ -19,6 +19,12 @@ Template.Edit_Event_Page.helpers({
     return Ticket.find({eventName: event.event}).count();
   },
 
+  checkExpired: function(event){
+    const currentDate = new Date();
+    const eventDate = event.date;
+    return eventDate < currentDate;
+  },
+
   findOwner: function(ticket){
     //const owner = Meteor.users.findOne({_id: ticket.owner}).profile.first;
     const owner = Members.findOne({uid: ticket.owner}).first;
@@ -29,5 +35,7 @@ Template.Edit_Event_Page.helpers({
 
 Template.Edit_Event_Page.events({
 
-
+  'click .delete': function () {
+    alert("You will delete this event");
+  }
 });
