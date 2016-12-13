@@ -28,7 +28,7 @@ Template.Sell_Tickets_Page.helpers({
       const motto = '';
       const miscellaneous = '';
       const picture = '';
-      const role = 'owner';
+      const role = 'regular';
       const banned = false;
       const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned};
       MembersSchema.clean(profile);
