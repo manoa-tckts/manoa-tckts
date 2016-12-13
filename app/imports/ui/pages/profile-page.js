@@ -100,3 +100,17 @@ Template.Profile_Page.events({
 
 
 });
+
+Template.Profile_Page.onRendered(function () {
+  $('.menu .item')
+      .tab()
+  ;
+
+  $('.tabular.menu .item').tab();
+
+  $('.menu .item').on('click', function() {
+    $('.menu .item').removeClass('active');
+    $(this).addClass('active');
+  });
+
+});
