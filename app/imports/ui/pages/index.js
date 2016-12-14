@@ -19,3 +19,5 @@ import './profile-user-page.html';
 import './profile-user-page.js';
 import './users-page.html';
 import './users-page.js';
+import './send-messages-page.html';
+import './send-messages-page.js';
