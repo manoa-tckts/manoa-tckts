@@ -13,4 +13,7 @@ import './profile-page.js';
 import './Accounts.js';
 import './edit-event-page.html';
 import './edit-event-page';
-
+import './temp.html';
+import './temp.js';
+import './profile-user-page.html';
+import './profile-user-page.js';
