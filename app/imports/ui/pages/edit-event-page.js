@@ -13,10 +13,21 @@ Template.Edit_Event_Page.helpers({
 
   listOfEvents: function(){
     return ListOfEvents.find();
+  }});
+
+Template.Edit_Event_Page.events({
+
+});
+
+Template.anEvent.helpers({
+
+  listOfEvents: function(){
+    return ListOfEvents.find();
   },
 
   numTickets: function(event){
     return Ticket.find({eventName: event.event}).count();
+
   },
 
   checkExpired: function(event){
@@ -33,9 +44,21 @@ Template.Edit_Event_Page.helpers({
 
 });
 
-Template.Edit_Event_Page.events({
+Template.anEvent.events({
 
-  'click .delete': function () {
-    alert("You will delete this event");
+  'click .delete': function(){
+    console.log(this.event._id);
+
+     let currentUser = Members.findOne({uid: Meteor.userId()});
+     if(currentUser.role !== "admin"){
+     alert("You are not authorized!");
+     }
+     console.log(currentUser.role);
+     if(confirm("Are you sure you wish to delete?")){
+       ListOfEvents.remove(this.event._id);
+     alert("Event removed");
+     FlowRouter.go('Edit_Event_Page');
+     }
+
   }
 });

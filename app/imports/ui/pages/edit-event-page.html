@@ -4,7 +4,7 @@
     {{checknewuser}}
     <div style ="padding-top: 90px" class="ui container">
       <h1>Existing Events</h1>
-      <table class="ui fluid celled large table">
+      <table class="ui table">
         <thead>
         <tr>
           <th>Date</th>
@@ -16,16 +16,20 @@
 
         <tbody>
         {{#each event in listOfEvents}}
-          <tr>
-            <td>{{event.date.toDateString}}</td>
-            <td>{{event.event }}</td>
-            <td>{{numTickets event}}</td>
-            <td>{{#if checkExpired event}} Yes <button class="ui compact button delete">Delete</button> {{else }} No {{/if}}</td>
-          </tr>
+          {{>anEvent event=event}}
         {{/each}}
         </tbody>
       </table>
     </div>
     {{/If_Is_Admin}}
   {{/If_Logged_In}}
+</template>
+
+<template name="anEvent">
+  <tr>
+    <td>{{event.date.toDateString}}</td>
+    <td>{{event.event}}</td>
+    <td>{{numTickets event}}</td>
+    <td>{{#if checkExpired event}}Yes<button name="a" id="a" value="{{event}}" class="ui negative small right floated delete button">Delete</button>{{else}}No{{/if}}</td>
+  </tr>
 </template>

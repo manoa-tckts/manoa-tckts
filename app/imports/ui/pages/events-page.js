@@ -8,6 +8,7 @@ import { Tracker } from 'meteor/tracker';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { UserData, ListOfEvents, Tickets, UserDataSchema, EventsSchema, TicketSchema } from '../../api/schema/schemas.js';
+import { Members } from '../../api/schema/members.js';
 
 
 
