@@ -75,7 +75,7 @@ export const EventsSchema = new SimpleSchema({
     label: 'Price',
     type: Number,
     decimal: true,
-    optional: false,
+    optional: true,
     max: 200,
   },
   numTickets: {
@@ -124,7 +124,7 @@ export const TicketSchema = new SimpleSchema({
     label: 'Owner',
     type: String,
   },
-  event: {
+  eventId: {
     label: 'Event',
     type: String,
     optional: true,

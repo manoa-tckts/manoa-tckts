@@ -69,3 +69,11 @@ FlowRouter.route('/profile/:_id', {
     BlazeLayout.render('App_Body', { main: 'Profile_User_Page' });
   },
 });
+
+
+FlowRouter.route('/users', {
+  name: 'Users_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Users_Page' });
+  },
+});

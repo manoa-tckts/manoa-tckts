@@ -16,7 +16,31 @@ Template.Edit_Event_Page.helpers({
   }});
 
 Template.Edit_Event_Page.events({
+  'submit form'(e, instance) {
+    e.preventDefault();
+    // Get name (text field)
+    const event = e.target.event.value;
+    const location = e.target.location.value;
+    const date = e.target.date.value;
+    const image = e.target.image.value;
 
+    const newEvent = { event, date, location , image };
+    // Clear out any old validation errors.
+    //instance.context.resetValidation();
+    // Invoke clean so that newStudentData reflects what will be inserted.
+    //TicketSchema.clean(newTicket);
+    // Determine validity.
+    /*instance.context.validate(newTicket);
+     if (instance.context.isValid()) {
+     Ticket.insert(newTicket);
+     FlowRouter.go('Profile_Page');
+     } else {
+     FlowRouter.go('Sell_Tickets_Page');
+     }
+     */
+    ListOfEvents.insert(newEvent);
+    FlowRouter.go('Events_Page');
+  },
 });
 
 Template.anEvent.helpers({
@@ -26,7 +50,7 @@ Template.anEvent.helpers({
   },
 
   numTickets: function(event){
-    return Ticket.find({eventName: event.event}).count();
+    return Ticket.find({eventId: event._id}).count();
 
   },
 
@@ -47,17 +71,20 @@ Template.anEvent.helpers({
 Template.anEvent.events({
 
   'click .delete': function(){
-    console.log(this.event._id);
-
+    const id=this.event._id;
+    const eventName = this.event.event;
      let currentUser = Members.findOne({uid: Meteor.userId()});
      if(currentUser.role !== "admin"){
      alert("You are not authorized!");
      }
-     console.log(currentUser.role);
      if(confirm("Are you sure you wish to delete?")){
-       ListOfEvents.remove(this.event._id);
-     alert("Event removed");
-     FlowRouter.go('Edit_Event_Page');
+
+       Ticket.find({eventId: id}).forEach(function (doc) {
+         Ticket.remove({_id: doc._id});
+       });
+       ListOfEvents.remove(id);
+       alert("Event removed");
+       FlowRouter.go('Edit_Event_Page');
      }
 
   }

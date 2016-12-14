@@ -1,26 +1,57 @@
 <template name="Edit_Event_Page">
   {{#If_Logged_In}}
     {{#If_Is_Admin}}
-    {{checknewuser}}
-    <div style ="padding-top: 90px" class="ui container">
-      <h1>Existing Events</h1>
-      <table class="ui table">
-        <thead>
-        <tr>
-          <th>Date</th>
-          <th>Event</th>
-          <th>Num Tickets</th>
-          <th>Expired?</th>
-        </tr>
-        </thead>
+      {{checknewuser}}
+      <div style="padding-top: 90px" class="ui container">
+        <div class="ui container">
+          <h1>Existing Events</h1>
+          <table class="ui table">
+            <thead>
+            <tr>
+              <th>Date</th>
+              <th>Event</th>
+              <th>Num Tickets</th>
+              <th>Expired?</th>
+            </tr>
+            </thead>
 
-        <tbody>
-        {{#each event in listOfEvents}}
-          {{>anEvent event=event}}
-        {{/each}}
-        </tbody>
-      </table>
-    </div>
+            <tbody>
+            {{#each event in listOfEvents}}
+              {{>anEvent event=event}}
+            {{/each}}
+            </tbody>
+          </table>
+        </div>
+        <br>
+      </div>
+      <div class="ui container">
+        <h1>Add Event</h1>
+        <form class="ui form">
+          <div class="field">
+            <div class="two fields">
+              <div class="field">
+                <label>Event Name</label>
+                <input type="text" name="event" placeholder="Event Name">
+              </div>
+              <div class="field">
+                <label>Location</label>
+                <input type="text" name="location" placeholder="Location">
+              </div>
+            </div>
+            <div class="two fields">
+              <div class="field">
+                <label>Date</label>
+                <input type="text" name="date" placeholder="MM/DD/YYYY">
+              </div>
+              <div class="field">
+                <label>Image url</label>
+                <input type="text" name="image" placeholder="link">
+              </div>
+            </div>
+            <button class="ui button" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
     {{/If_Is_Admin}}
   {{/If_Logged_In}}
 </template>
@@ -30,6 +61,7 @@
     <td>{{event.date.toDateString}}</td>
     <td>{{event.event}}</td>
     <td>{{numTickets event}}</td>
-    <td>{{#if checkExpired event}}Yes<button name="a" id="a" value="{{event}}" class="ui negative small right floated delete button">Delete</button>{{else}}No{{/if}}</td>
+    <td>{{#if checkExpired event}}Yes
+      <button class="ui negative small right floated delete button">Delete</button>{{else}}No{{/if}}</td>
   </tr>
 </template>

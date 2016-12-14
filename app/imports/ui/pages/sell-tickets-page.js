@@ -66,13 +66,14 @@ Template.Sell_Tickets_Page.events({
   'submit form'(event, instance) {
     event.preventDefault();
     // Get name (text field)
-    const eventName = event.target.eventName.value;
+    const eventId = event.target.eventId.value;
+    const eventName = ListOfEvents.findOne({_id: eventId}).event;
     const date = new Date();
     const status = 'sell';
     const price = event.target.price.value;
     const owner = Meteor.userId();
 
-    const newTicket = { eventName, date, price , owner };
+    const newTicket = { eventName, date, price , owner, eventId };
     // Clear out any old validation errors.
     //instance.context.resetValidation();
     // Invoke clean so that newStudentData reflects what will be inserted.
