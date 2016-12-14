@@ -56,3 +56,16 @@ FlowRouter.route('/editevent', {
   },
 });
 
+FlowRouter.route('/temp', {
+  name: 'Temp_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Temp_Page' });
+  },
+});
+
+FlowRouter.route('/profile/:_id', {
+  name: 'Profile_User_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Profile_User_Page' });
+  },
+});
