@@ -7,6 +7,21 @@ body {
   /*padding-top: 100px;  /* Move body of page below navbar. */
 }
 
+label {
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+input {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+}
+
 /*
  * Public Landing Page
  */
@@ -46,4 +61,20 @@ body {
 #subtitleFadeLeft {
   color: #F2F3F5;
 /*  font-family: 'Expletus Sans', cursive;*/
+}
+
+label {
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+input {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  *overflow: hidden;
 }

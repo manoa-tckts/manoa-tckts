@@ -1,21 +1,22 @@
 <template name="Edit_Profile_Page">
-  <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
+  <div style="margin-top: 90px; min-height: 500px" class="ui centered container">
 
     {{#If_Logged_In}}
     {{#If_Not_Banned}}
-    <h1 class = "ui header">Edit Profile</h1>
+    <h1 class="ui header">Edit Profile</h1>
 
     <div class="ui two column doubling stackable grid container">
       <div class="column">
-        <div class = "ui centered card">
+        <div class="ui centered card">
           <img class="ui fluid centered medium rounded image" src="{{picture}}">
         </div>
       </div>
       <div class="column">
-        <form class = "ui form edit-profile">
+        <form class="ui form edit-profile">
           <div class="field">
             <label>Profile Picture</label>
-            <input type="text" name="picture" id="picture" placeholder="put profile-picture link here" value="{{picture}}">
+            <input type="text" name="picture" id="picture" placeholder="put profile-picture link here"
+                   value="{{picture}}">
           </div>
           <div class="field">
             <label>Name</label>
@@ -29,35 +30,43 @@
               </div>
             </div>
           </div>
+
           <div class="field">
             <label>Contact info</label>
             <div class="two fields">
               <div class="field">
                 <input type="text" name="telephone" id="telephone" placeholder="Phone Number" value="{{telephone}}">
-                <div class="phonechkbox">
-                  <input type="checkbox" name="contactphone" checked = "{{phonechecked}}">
-                  <label>Contact you by phone?</label>
-                </div>
               </div>
+
+              <div class="phonechkbox">
+                <label><input type="checkbox" name="contactphone" checked="{{phonechecked}}">Contact you by
+                  phone?</label>
+              </div>
+
               <div class="field">
                 <input type="text" name="email" id="email" placeholder="Email Address" value="{{email}}">
-                <div class="emailchkbox">
-                  <input type="checkbox" name="contactemail" checked = "{{emailchecked}}">
-                  <label>Contact you by email?</label>
-                </div>
               </div>
+
+              <div class="emailchkbox" style="vertical-align: bottom">
+                <label><input type="checkbox" name="contactemail" checked="{{emailchecked}}">Contact you by
+                  email?</label>
+              </div>
+
             </div>
           </div>
+
           <div class="field">
             <label>Motto</label>
             <input type="text" name="motto" id="motto" placeholder="Motto" value="{{motto}}">
           </div>
           <div class="field">
             <label>Miscellaneous</label>
-            <textarea  class="comment_textarea" name="miscellaneous" value="{{miscellaneous}}"></textarea>
+            <textarea class="comment_textarea" name="miscellaneous" value="{{miscellaneous}}"></textarea>
           </div>
+
           <button class="ui button" type="submit">Submit</button>
         </form>
+
       </div>
     </div>
 

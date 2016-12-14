@@ -2,49 +2,7 @@
   {{#If_Logged_In}}
   {{#If_Not_Banned}}
 
-  <div style="margin-top: 120px; min-height: 500px" class="ui centered container">
-    <div class="ui column">
-
-      <div class="profile-center text">
-        <img class="ui medium circular centered image"
-             src="{{picture}}">
-        <p></p>
-        <h1 class="ui header" style="text-align: center">Hello {{user}}</h1>
-        <p></p>
-        <p></p>
-      </div>
-
-      <div class="ui grid">
-        <div class="four wide column">
-          <div class="ui vertical fluid tabular menu">
-            <a class="active item" data-tab="Bio">
-              Bio
-            </a>
-            <a class="item" data-tab="Pics">
-              Pics
-            </a>
-            <a class="item">
-              Companies
-            </a>
-            <a class="item">
-              Links
-            </a>
-          </div>
-        </div>
-        <div class="twelve wide stretched column">
-          <div class="ui active tab segment" data-tab="Bio">
-            This is an stretched grid column. This segment will always match the tab height
-          </div>
-          <div class="ui tab segment" data-tab="Pics">
-            This is a test
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!--<div style="margin-top: 90px; min-height: 500px" class="ui centered container">
+  <div style="margin-top: 90px; min-height: 500px" class="ui centered container">
     <h1 class="ui header">Hello {{user}}</h1>
 
     <div class="ui two column grid">
@@ -130,7 +88,7 @@
       </div>
     </div>
 
-  </div>-->
+  </div>
   {{/If_Not_Banned}}
   {{/If_Logged_In}}
 </template>
