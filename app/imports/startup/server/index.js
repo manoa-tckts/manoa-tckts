@@ -6,3 +6,4 @@ import './members.js';
 import './phonenumbers.js';
 import './emails.js';
 import './checkboxes.js';
+import './messages.js';

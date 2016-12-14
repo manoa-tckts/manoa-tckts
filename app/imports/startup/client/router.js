@@ -69,3 +69,10 @@ FlowRouter.route('/profile/:_id', {
     BlazeLayout.render('App_Body', { main: 'Profile_User_Page' });
   },
 });
+
+FlowRouter.route('/messages/:_id', {
+  name: 'Send_Messages_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Send_Messages_Page' });
+  },
+});
