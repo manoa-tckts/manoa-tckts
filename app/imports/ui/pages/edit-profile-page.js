@@ -82,11 +82,11 @@ Template.Edit_Profile_Page.helpers({
     else {return '';}
   },
   telephone: function() {
-    if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Phonenumbers.findOne({'uid': Meteor.userId()}).phone;}
+    if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Members.findOne({'uid': Meteor.userId()}).phone;}
     else {return '';}
   },
   email: function() {
-    if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Emails.findOne({'uid': Meteor.userId()}).email;}
+    if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Members.findOne({'uid': Meteor.userId()}).email;}
     else {return '';}
   },
   motto: function() {
@@ -102,12 +102,10 @@ Template.Edit_Profile_Page.helpers({
     else {return '';}
   },
   emailchecked: function() {
-    if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Members.findOne({'uid': Meteor.userId()}).emailcheckbox;}
-    else{return false;}
+    return Members.findOne({'uid': Meteor.userId()}).emailcheckbox;
   },
   phonechecked: function() {
-    if(Checkboxes.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){return Members.findOne({'uid': Meteor.userId()}).phonecheckbox;}
-    else{return false;}
+    return Members.findOne({'uid': Meteor.userId()}).phonecheckbox;
   },
 });
 
