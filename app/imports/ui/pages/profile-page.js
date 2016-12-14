@@ -118,6 +118,13 @@ Template.Profile_Page.helpers({
     return tickets;
 
   },
+
+  role: function() {
+    if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
+      return('http://m.memegen.com/fdt0u5.jpg');
+    }
+    else{return Members.findOne({'uid':Meteor.userId()}).role;}
+  },
 });
 
 Template.Profile_Page.events({
@@ -125,6 +132,7 @@ Template.Profile_Page.events({
 
 });
 
+<<<<<<< HEAD
 Template.Profile_Page.onRendered(function () {
   $('.menu .item')
       .tab()
@@ -137,4 +145,20 @@ Template.Profile_Page.onRendered(function () {
     $(this).addClass('active');
   });
 
+=======
+
+Template.aTicket.helpers({
+
+});
+
+Template.aTicket.events({
+  'click .delete': function() {
+    console.log(this.ticket._id);
+    if (confirm("Are you sure you wish to delete?")) {
+        Ticket.remove(this.ticket._id);
+      alert("Ticket removed");
+      FlowRouter.go('Profile_Page');
+    }
+  }
+>>>>>>> master
 });

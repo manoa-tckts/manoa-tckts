@@ -1,0 +1,85 @@
+<template name="Profile_User_Page">
+  {{#If_Logged_In}}
+    {{#If_Not_Banned}}
+      <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
+        <h1 class = "ui header">Hello {{user}}</h1>
+
+        <div class="ui two column grid">
+          <div class = "ui centered card">
+            <img class="ui fluid centered medium rounded image" src="{{memberField 'picture'}}">
+          </div>
+          <div class="four wide column">
+            <div class = "ui segment">
+              <div class="ui secondary vertical menu">
+                <a class="active item">
+                  Account
+                </a>
+                <a class="item" href="{{ pathFor 'Edit_Profile_Page' }}">
+                  Edit Profile
+                </a>
+                <a class="item">
+                  Messages
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <form class = "ui form edit-profile">
+              <div class="field">
+                <label>Name</label>
+                <div class="two fields">
+                  <div class="field">
+                    <p>{{memberField 'first'}} {{memberField 'last'}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+
+                <div class="two fields">
+                  <div class="field">
+                    <label>Telephone</label>
+                    <p>{{memberField 'phone'}}</p>
+                  </div>
+                  <div class="field">
+                    <label>Email</label>
+                    <p>{{memberField 'email'}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label>Motto</label>
+                <p>{{memberField 'motto'}}</p>
+              </div>
+              <div class="field">
+                <label>Miscellaneous</label>
+                <p>{{memberField 'miscellaneous'}}</p>
+              </div>
+            </form>
+
+            <h2>Selling Tickets</h2>
+            <table style="margin-top: 20px" class="ui celled table">
+              <thead>
+              <tr>
+                <th>Ticket</th>
+                <th>Date</th>
+                <th>Requested Price</th>
+              </tr>
+              </thead>
+              <tbody>
+              {{#each ticket in ticketField}}
+                <tr>
+                  <td>{{ticket.eventName}}</td>
+                  <td>{{ticket.date.toDateString}}</td>
+                  <td>{{ticket.price}}</td>
+                </tr>
+              {{/each}}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    {{/If_Not_Banned}}
+  {{/If_Logged_In}}
+</template>

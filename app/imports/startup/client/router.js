@@ -48,3 +48,32 @@ FlowRouter.route('/profile', {
     BlazeLayout.render('App_Body', { main: 'Profile_Page' });
   },
 });
+
+FlowRouter.route('/editevent', {
+  name: 'Edit_Event_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Edit_Event_Page' });
+  },
+});
+
+FlowRouter.route('/temp', {
+  name: 'Temp_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Temp_Page' });
+  },
+});
+
+FlowRouter.route('/profile/:_id', {
+  name: 'Profile_User_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Profile_User_Page' });
+  },
+});
+
+
+FlowRouter.route('/users', {
+  name: 'Users_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Users_Page' });
+  },
+});

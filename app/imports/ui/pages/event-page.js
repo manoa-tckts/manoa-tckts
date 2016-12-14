@@ -23,8 +23,8 @@ Template.Event_Page.helpers({
 
   listOfTickets(){
     const eventData = ListOfEvents.findOne(FlowRouter.getParam('_id'));
-    const eventName = eventData.event;
-    const tickets = Ticket.find({eventName});
+    const eventId = eventData._id;
+    const tickets = Ticket.find({eventId: eventId});
     return tickets;
 
   },
@@ -74,13 +74,9 @@ Template.Event_Page.helpers({
 
   },
 
-  findusername: function(){
-    return Members.findOne({uid: Meteor.userId()}).username;
-  },
-
   findOwner: function(ticket){
     //const owner = Meteor.users.findOne({_id: ticket.owner}).profile.first;
-    const owner = Members.findOne({uid: ticket.owner}).uid;
+    const owner = Members.findOne({uid: ticket.owner}).first;
     return owner;
   },
 

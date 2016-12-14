@@ -1,0 +1,40 @@
+<template name="Users_Page">
+  {{#If_Logged_In}}
+    {{#If_Is_Admin}}
+      {{checknewuser}}
+      <div style="padding-top: 90px" class="ui container">
+        <div class="ui container">
+          <h1>List of Users</h1>
+
+          <table class="ui table">
+            <thead>
+            <tr>
+              <th>Uid</th>
+              <th>Username</th>
+              <th>Name</th>
+              <th></th>
+            </tr>
+            </thead>
+
+            <tbody>
+            {{#each user in listOfUsers}}
+              {{>anUser user=user}}
+            {{/each}}
+            </tbody>
+          </table>
+
+          </div>
+      </div>
+    {{/If_Is_Admin}}
+  {{/If_Logged_In}}
+</template>
+
+
+<template name="anUser">
+  <tr>
+    <td>{{user._id}}</td>
+    <td>{{user.username}}</td>
+    <td>{{user.first}} {{user.last}}</td>
+    <td><button class="ui negative small right floated ban button">Ban</button></td>
+  </tr>
+</template>

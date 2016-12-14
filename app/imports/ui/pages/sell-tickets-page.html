@@ -2,6 +2,7 @@
   {{checknewuser}}
   <div style="min-height:500px;" class="sell-page-background">
     {{#If_Logged_In}}
+      {{#If_Not_Banned}}
     <div style="margin-top: 90px; min-height: 300px" class="ui centered container">
       <h1 class="ui header">Sell Your Ticket</h1>
       <form class="ui form">
@@ -10,9 +11,9 @@
           <div class="two fields">
             <div class="field">
               <label>Event</label>
-              <select class="ui dropdown" name="eventName"> 
+              <select class="ui dropdown" name="eventId"> 
                 {{#each event in events}} 
-                <option value="{{event.event}}">{{event.event}}</option>
+                <option value="{{event._id}}">{{event.event}}</option>
                  
                 {{/each}}
                  </select>
@@ -32,6 +33,7 @@
 
 
     </div>
+      {{/If_Not_Banned}}
     {{/If_Logged_In}}
   </div>
 </template>

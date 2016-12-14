@@ -64,6 +64,10 @@
             <label>Email checked</label>
             <p>{{emailchecked}}</p>
           </div>
+          <div class="field">
+            <label>Role</label>
+            <p>{{role}}</p>
+          </div>
         </form>
 
         <h2>Your Tickets</h2>
@@ -73,15 +77,12 @@
             <th>Ticket</th>
             <th>Date</th>
             <th>Requested Price</th>
+            <th></th>
           </tr>
           </thead>
           <tbody>
           {{#each ticket in listOfTickets}}
-            <tr>
-              <td>{{ticket.eventName}}</td>
-              <td>{{ticket.date.toDateString}}</td>
-              <td>{{ticket.price}}</td>
-            </tr>
+            {{>aTicket ticket=ticket}}
           {{/each}}
           </tbody>
         </table>
@@ -91,4 +92,13 @@
   </div>
   {{/If_Not_Banned}}
   {{/If_Logged_In}}
+</template>
+
+<template name="aTicket">
+  <tr>
+    <td>{{ticket.eventName}}</td>
+    <td>{{ticket.date.toDateString}}</td>
+    <td>{{ticket.price}}</td>
+    <td><button class="ui negative small right floated delete button">Delete</button></td>
+  </tr>
 </template>
