@@ -4,11 +4,16 @@ import { Members, MembersSchema } from '../../api/schema/members.js';
 
 /* eslint-disable object-shorthand */
 
-Template.If_Is_Admin.helpers({
+Template.If_New_User.helpers({
   /**
    * @returns {*} True if Meteor is in the process of logging in.
    */
-  isAdmin: function isAdmin() {
-    return Members.findOne({'uid':Meteor.userId()}).admin;
+  isNewUser: function() {
+    if(!Members.findOne({uid: Meteor.userId()})){
+      alert("You are a first time user. You will be directed to the edit profile page");
+      FlowRouter.go('Edit_Profile_Page');
+    }else{
+      return true;
+    }
   },
 });

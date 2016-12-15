@@ -1,5 +1,6 @@
 <template name="Event_Page">
   {{#If_Logged_In}}
+    {{#If_New_User}}
     {{checknewuser}}
   <div style ="padding-top: 90px" class="ui container">
     <h1 class = "ui header">{{event.event}}</h1>
@@ -55,5 +56,6 @@
     </div>
 
   </div>
+    {{/If_New_User}}
   {{/If_Logged_In}}
 </template>

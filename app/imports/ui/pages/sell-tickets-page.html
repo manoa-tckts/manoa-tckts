@@ -2,6 +2,7 @@
   {{checknewuser}}
   <div style="min-height:500px;" class="sell-page-background">
     {{#If_Logged_In}}
+      {{#If_New_User}}
       {{#If_Not_Banned}}
     <div style="margin-top: 90px; min-height: 300px" class="ui centered container">
       <h1 class="ui header">Sell Your Ticket</h1>
@@ -34,6 +35,7 @@
 
     </div>
       {{/If_Not_Banned}}
+      {{/If_New_User}}
     {{/If_Logged_In}}
   </div>
 </template>
