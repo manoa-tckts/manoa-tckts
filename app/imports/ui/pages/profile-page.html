@@ -7,27 +7,8 @@
 
   <div style="margin-top: 90px; min-height: 500px" class="ui centered container">
     <h1 class="ui header">Hello {{user}}</h1>
-
-    <div class="ui fitted centered card">
-      <img class="ui fluid medium rounded image" src="{{picture}}">
-    </div>
-
+    
     <div class="ui two column grid">
-      <div class="four wide column">
-        <div class="ui segment">
-          <div class="ui secondary vertical menu">
-            <a class="item">
-              Account
-            </a>
-            <a class="item" href="{{ pathFor 'Edit_Profile_Page' }}">
-              Edit Profile
-            </a>
-            <a class="item" href="{{ pathFor 'Inbox' }}">
-              Messages
-            </a>
-          </div>
-        </div>
-      </div>
 
       <div class="twelve wide stretched column">
         <div class="ui segment">
@@ -76,6 +57,29 @@
           </form>
         </div>
       </div>
+
+      <div class="four wide column">
+
+        <div class="ui fitted right card">
+          <img class="ui fluid medium rounded image" src="{{picture}}">
+        </div>
+
+        <div class="ui segment">
+          <div class="ui secondary vertical menu">
+            <a class="item">
+              Account
+            </a>
+            <a class="item" href="{{ pathFor 'Edit_Profile_Page' }}">
+              Edit Profile
+            </a>
+            <a class="item" href="{{ pathFor 'Inbox' }}">
+              Messages
+            </a>
+          </div>
+        </div>
+      </div>
+
+
     </div>
 
     <div class="ui container">
