@@ -1,6 +1,7 @@
 <template name="Profile_User_Page">
   {{#If_Logged_In}}
-    {{#If_Not_Banned}}
+    {{#If_New_User}}
+      {{#If_Is_Admin}}
       <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
         <h1 class = "ui header">Hello {{user}}</h1>
 
@@ -80,6 +81,7 @@
         </div>
 
       </div>
-    {{/If_Not_Banned}}
+        {{/If_Is_Admin}}
+      {{/If_New_User}}
   {{/If_Logged_In}}
 </template>

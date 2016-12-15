@@ -17,3 +17,5 @@ import './if-is-owner.html';
 import './if-is-owner.js';
 import './if-not-banned.html';
 import './if-not-banned.js';
+import './if-new-user.html';
+import './if-new-user';

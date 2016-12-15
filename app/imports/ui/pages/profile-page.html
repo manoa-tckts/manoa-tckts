@@ -1,5 +1,6 @@
 <template name="Profile_Page">
 {{#If_Logged_In}}
+    {{#If_New_User}}
   {{#If_Not_Banned}}
   <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
   <h1 class = "ui header">Hello {{user}}</h1>
@@ -65,7 +66,7 @@
           </div>
           <div class="field">
             <label>Role</label>
-            <p>{{role}}</p>
+            <p>{{role}} {{superuser}}</p>
           </div>
         </form>
 
@@ -89,7 +90,8 @@
     </div>
 
   </div>
-  {{/If_Not_Banned}}
+      {{/If_Not_Banned}}
+    {{/If_New_User}}
 {{/If_Logged_In}}
 </template>
 

@@ -3,6 +3,7 @@
  */
 import { Template } from 'meteor/templating';
 import { Meteor } from 'meteor/meteor';
+import { Members, MembersSchema } from '../../api/schema/members.js';
 
 Template.Cas_Login_Button.helpers({
   /**
@@ -29,7 +30,7 @@ Template.Cas_Login_Button.events({
 
     if (!Meteor.user()) {
       Meteor.loginWithCas(callback);
-      FlowRouter.go('Events_Page');
+      FlowRouter.go('Profile_Page');
     }
 /*
 

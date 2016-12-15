@@ -79,6 +79,14 @@ export const MembersSchema = new SimpleSchema({
   emailcheckbox: {
     type: Boolean,
     optional: true
+  },
+  superuser: {
+    type: Boolean,
+    optional: true
+  },
+  admin: {
+    type: Boolean,
+    optional: true
   }
 });
 

@@ -74,7 +74,7 @@ Template.anEvent.events({
     const id=this.event._id;
     const eventName = this.event.event;
      let currentUser = Members.findOne({uid: Meteor.userId()});
-     if(currentUser.role !== "admin"){
+     if(!currentUser.admin){
      alert("You are not authorized!");
      }
      if(confirm("Are you sure you wish to delete?")){
