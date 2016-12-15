@@ -40,6 +40,54 @@
                 </tbody>
               </table>
 
+              <table style="margin-top: 20px" class="ui celled table">
+                <thead>
+                <tr>
+                  <th>Event Name</th>
+                  <th>Status</th>
+                  <th>Date</th>
+                  <th>Price</th>
+                  <th>Owner</th>
+                  <th>Event</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each ticket in listOfTickets}}
+                  <tr>
+                    <td>{{ticket.eventName}}</td>
+                    <td>{{ticket.status}}</td>
+                    <td>{{ticket.date}}</td>
+                    <td>{{ticket.price}}</td>
+                    <td>{{ticket.owner}}</td>
+                    <td>{{ticket.event}}</td>
+                    <td><a href="{{pathFor 'Send_Messages_Page' _id=ticket._id}}">Send Message</a></td>
+                  </tr>
+                {{/each}}
+                </tbody>
+              </table>
+
+
+              <table style="margin-top: 20px" class="ui celled table">
+                <thead>
+                <tr>
+                  <th>Inbox person Name</th>
+                  <th>Subject</th>
+                  <th>Date sent</th>
+                  <th>Read</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each person in listOfInboxusers}}
+                  <tr>
+                    <td>{{person.reciever}}</td>
+                    <td>{{person.subject}}</td>
+                    <td>{{person.date}}</td>
+                    <td>{{person.isRead}}</td>
+                  </tr>
+                {{/each}}
+                </tbody>
+              </table>
+
             </form>
           </div>
         </div>
