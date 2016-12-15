@@ -13,7 +13,7 @@ Template.Send_Messages_Page.helpers({
 
   recipient: function() {
     const owner = Ticket.findOne(FlowRouter.getParam('_id'));
-    return Members.findOne({'uid': owner.owner}).first;
+    return Members.findOne({'uid': owner.owner}).username;
   },
   subject: function() {
     const subject = Ticket.findOne(FlowRouter.getParam('_id'));
