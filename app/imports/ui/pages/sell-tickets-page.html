@@ -1,40 +1,45 @@
 <template name="Sell_Tickets_Page">
+
   <div style="min-height:500px;" class="sell-page-background">
     {{#If_Logged_In}}
-      {{#If_New_User}}
-      {{#If_Not_Banned}}
+    {{#If_New_User}}
+    {{#If_Not_Banned}}
+
     <div style="margin-top: 90px; min-height: 300px" class="ui centered container">
       <h1 class="ui header">Sell Your Ticket</h1>
       <form class="ui form">
 
-        <div class="field">
-          <div class="two fields">
-            <div class="field">
-              <label>Event</label>
-              <select class="ui dropdown" name="eventId"> 
-                {{#each event in events}} 
-                <option value="{{event._id}}">{{event.event}}</option>
-                 
-                {{/each}}
-                 </select>
-            </div>
-            <div class="three wide field">
-              <label>Price</label>
-              <div class="ui left labeled input">
-                <div class="ui label">$</div>
-                <input type="text" name="price" id="price" placeholder="Amount">
+        <div class="ui segment" style="opacity: 0.95">
+
+          <div class="field">
+
+            <div class="two fields">
+              <div class="field">
+                <label>Event</label>
+                <select class="ui dropdown" name="eventId"> 
+                  {{#each event in events}} 
+                  <option value="{{event._id}}">{{event.event}}</option>
+                   
+                  {{/each}}
+                   </select>
+              </div>
+              <div class="three wide field">
+                <label>Price</label>
+                <div class="ui left labeled input">
+                  <div class="ui label">$</div>
+                  <input type="text" name="price" id="price" placeholder="Amount">
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <button class="ui button" type="submit">Submit</button>
+          <button class="ui button" type="submit">Submit</button>
+        </div>
       </form>
 
-
     </div>
-      {{/If_Not_Banned}}
-      {{/If_New_User}}
+    {{/If_Not_Banned}}
+    {{/If_New_User}}
     {{/If_Logged_In}}
   </div>
 </template>

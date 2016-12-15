@@ -92,8 +92,8 @@ Template.Edit_Profile_Page.events({
       const miscellaneous = event.target.miscellaneous.value;
       const picture = event.target.picture.value;
       var role = 'regular';
-      const superuser = Meteor.user().profile.name == "dumlaoj";
-      const admin = Meteor.user().profile.name == "dumlaoj";
+      const superuser = Meteor.user().profile.name == "kylebali";
+      const admin = Meteor.user().profile.name == "kylebali";
       const banned = false;
       const phonecheckbox = event.target.contactphone.checked;
       const emailcheckbox = event.target.contactemail.checked;

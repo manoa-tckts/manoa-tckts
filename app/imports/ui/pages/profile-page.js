@@ -145,7 +145,7 @@ Template.Profile_Page.events({
 });
 
 
-<<<<<<< HEAD
+
 Template.Profile_Page.onRendered(function () {
   $('.menu .item')
       .tab()
@@ -159,8 +159,6 @@ Template.Profile_Page.onRendered(function () {
   });
 });
 
-=======
->>>>>>> master
 
 Template.aTicket.helpers({
 
