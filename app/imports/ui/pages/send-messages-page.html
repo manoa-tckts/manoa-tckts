@@ -3,7 +3,7 @@
 
     {{#If_Logged_In}}
       {{#If_Not_Banned}}
-        <h1 class = "ui header">Edit Profile</h1>
+        <h1 class = "ui header">Send Message</h1>
 
         <div class="ui two column doubling stackable grid container">
           <div class="column">
@@ -15,19 +15,15 @@
             <form class = "ui form send-messages">
               <div class="field">
                 <label>To:</label>
-                <input type="text" name="ToField" id="ToField" placeholder="Enter Recipient of Message" value="{{recipient}}">
+                <input type="text" name="ToField" id="ToField" placeholder="Enter Recipient of Message" readonly="" value="{{recipient}}">
               </div>
               <div class="field">
                 <label>Subject</label>
-                <input type="text" name="subject" id="subject" placeholder="Enter subject here" value="{{subject}}">
+                <input type="text" name="subject" id="subject" placeholder="Enter subject here" readonly="" value="{{subject}}">
               </div>
               <div class="field">
                 <label>Message</label>
                 <textarea  class="comment_textarea" name="message" value="{{message}}"></textarea>
-              </div>
-              <div class="field">
-                <input type="checkbox" name="admin">
-                <label>Admin</label>
               </div>
               <button class="ui button" type="submit">Submit</button>
             </form>

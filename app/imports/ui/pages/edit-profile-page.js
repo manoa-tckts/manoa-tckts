@@ -4,9 +4,6 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { Members, MembersSchema } from '../../api/schema/members.js';
-import {Checkboxes, CheckboxesSchema} from '../../api/schema/checkboxes.js';
-import {Emails} from '../../api/schema/emails.js';
-import {Phonenumbers} from '../../api/schema/phonenumbers.js';
 import {Messages} from '../../api/schema/messages.js';
 
 /**
@@ -74,11 +71,11 @@ Template.Edit_Profile_Page.events({
       const banned = false;
       const phonecheckbox = event.target.contactphone.checked;
       const emailcheckbox = event.target.contactemail.checked;
-      console.log(Meteor.user().profile.name);
-      console.log('messages: ');
-      console.log(Messages.findOne({'reciever': Meteor.userId()}));
+      //console.log(Meteor.user().profile.name);
+      //console.log('messages: ');
+      //console.log(Messages.findOne({'reciever': Meteor.userId()}));
 
-      const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned, phonecheckbox, emailcheckbox, superuser, admin};
+      const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned, phonecheckbox, emailcheckbox};
       Members.update(Members.findOne({'uid': Meteor.userId()})._id, { $set: profile});
       console.log('in Members collection:');
       console.log(Members.findOne({uid: Meteor.userId()}));

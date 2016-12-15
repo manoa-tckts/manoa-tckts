@@ -13,7 +13,7 @@ Template.Send_Messages_Page.helpers({
 
   recipient: function() {
     const owner = Ticket.findOne(FlowRouter.getParam('_id'));
-    return Members.findOne({'uid': owner.owner}).username;
+    return Members.findOne({'uid': owner.owner}).first;
   },
   subject: function() {
     const subject = Ticket.findOne(FlowRouter.getParam('_id'));
@@ -24,7 +24,7 @@ Template.Send_Messages_Page.helpers({
   },
   message: function() {
     const subject = Ticket.findOne(FlowRouter.getParam('_id'));
-    const message = "Hi, I'm interested in buying the ticket for the event " + subject.eventName + " occuring at  " + subject.date + " please reply back";
+    const message = "Hi, I'm interested in buying the ticket for the event " + subject.eventName + " occuring at  " + subject.date.toDateString() + " please reply back";
     console.log('message');
     console.log(message);
     return message;
