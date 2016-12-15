@@ -132,7 +132,7 @@ Template.Profile_Page.events({
 
 });
 
-<<<<<<< HEAD
+
 Template.Profile_Page.onRendered(function () {
   $('.menu .item')
       .tab()
@@ -140,12 +140,12 @@ Template.Profile_Page.onRendered(function () {
 
   $('.tabular.menu .item').tab();
 
-  $('.menu .item').on('click', function() {
+  $('.menu .item').on('click', function () {
     $('.menu .item').removeClass('active');
     $(this).addClass('active');
   });
+});
 
-=======
 
 Template.aTicket.helpers({
 
@@ -160,5 +160,4 @@ Template.aTicket.events({
       FlowRouter.go('Profile_Page');
     }
   }
->>>>>>> master
 });
