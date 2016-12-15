@@ -92,8 +92,8 @@ Template.Edit_Profile_Page.events({
       const miscellaneous = event.target.miscellaneous.value;
       const picture = event.target.picture.value;
       var role = 'regular';
-      const superuser = Meteor.user().profile.name == "dumlaoj";
-      const admin = Meteor.user().profile.name == "dumlaoj";
+      const superuser = Meteor.user().profile.name == "kylebali";
+      const admin = Meteor.user().profile.name == "kylebali";
       const banned = false;
       const phonecheckbox = event.target.contactphone.checked;
       const emailcheckbox = event.target.contactemail.checked;
@@ -110,5 +110,26 @@ Template.Edit_Profile_Page.events({
       FlowRouter.go('Profile_Page');
     }
   },
+
+});
+
+
+Template.Edit_Profile_Page.onRendered(function () {
+  $('.menu .item')
+      .tab()
+  ;
+
+  $('.tabular.menu .item').tab();
+
+  $('.menu .item').on('click', function() {
+    $('.menu .item').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $('.right .dropdown')
+      .dropdown({
+        direction: 'right'
+      })
+  ;
 
 });
