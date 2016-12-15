@@ -7,6 +7,7 @@ import { Members, MembersSchema } from '../../api/schema/members.js';
 import {Checkboxes, CheckboxesSchema} from '../../api/schema/checkboxes.js';
 import {Emails} from '../../api/schema/emails.js';
 import {Phonenumbers} from '../../api/schema/phonenumbers.js';
+import {Messages} from '../../api/schema/messages.js';
 
 /* eslint-disable object-shorthand */
 
@@ -130,6 +131,8 @@ Template.Edit_Profile_Page.events({
       const phonecheckbox = event.target.contactphone.checked;
       const emailcheckbox = event.target.contactemail.checked;
       console.log(Meteor.user().profile.name);
+      console.log('messages: ');
+      console.log(Messages.findOne({'reciever': Meteor.userId()}));
 
       if(event.target.admin.checked){
         role = 'admin'

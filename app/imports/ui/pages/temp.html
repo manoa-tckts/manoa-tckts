@@ -65,6 +65,29 @@
                 {{/each}}
                 </tbody>
               </table>
+
+
+              <table style="margin-top: 20px" class="ui celled table">
+                <thead>
+                <tr>
+                  <th>Inbox person Name</th>
+                  <th>Subject</th>
+                  <th>Date sent</th>
+                  <th>Read</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each person in listOfInboxusers}}
+                  <tr>
+                    <td>{{person.reciever}}</td>
+                    <td>{{person.subject}}</td>
+                    <td>{{person.date}}</td>
+                    <td>{{person.isRead}}</td>
+                  </tr>
+                {{/each}}
+                </tbody>
+              </table>
+
             </form>
           </div>
         </div>

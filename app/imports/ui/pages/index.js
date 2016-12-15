@@ -21,3 +21,7 @@ import './users-page.html';
 import './users-page.js';
 import './send-messages-page.html';
 import './send-messages-page.js';
+import './inbox.html';
+import './inbox.js';
+import './reply-page.html';
+import './reply-page.js';
