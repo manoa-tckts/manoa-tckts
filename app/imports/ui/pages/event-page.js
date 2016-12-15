@@ -31,7 +31,7 @@ Template.Event_Page.helpers({
 
   findOwner: function(ticket){
     //const owner = Meteor.users.findOne({_id: ticket.owner}).profile.first;
-    const owner = Members.findOne({uid: ticket.owner}).first;
+    const owner = Members.findOne({uid: ticket.owner}).username;
     return owner;
   },
 

@@ -16,13 +16,24 @@
             <a class="{{ isActiveRoute 'Events_Page'}} item" href="{{ pathFor 'Events_Page' }}">Events</a>
             <a class="{{ isActiveRoute 'Sell_Tickets_Page'}} item" href="{{ pathFor 'Sell_Tickets_Page' }}">Sell</a>
             <a class="{{ isActiveRoute 'Inbox'}} item" href="{{ pathFor 'Inbox' }}">Inbox</a>
-            {{#If_Is_Admin}}
-            <a class="{{ isActiveRoute 'Edit_Event_Page'}} item" href="{{ pathFor 'Edit_Event_Page' }}">Edit Events</a>
-            <a class="{{ isActiveRoute 'Users_Page'}} item" href="{{ pathFor 'Users_Page' }}">Users</a>
-            {{/If_Is_Admin}}
+            <a class="{{ isActiveRoute 'Admins'}} item" href="{{ pathFor 'Admins' }}">Contact Admin</a>
           </div>
         </div>
       </div>
+
+        {{#If_Is_Admin}}
+        <div class="ui inverted borderless menu">
+          <div class="ui simple dropdown item">
+            Admin
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="{{ isActiveRoute 'Edit_Event_Page'}} item" href="{{ pathFor 'Edit_Event_Page' }}">Edit Events</a>
+                <a class="{{ isActiveRoute 'Users_Page'}} item" href="{{ pathFor 'Users_Page' }}">Users</a>
+            </div>
+          </div>
+        </div>
+        {{/If_Is_Admin}}
+
       {{/if}}
     </div>
   </div>

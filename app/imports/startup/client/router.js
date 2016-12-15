@@ -84,6 +84,7 @@ FlowRouter.route('/messages/:_id', {
     BlazeLayout.render('App_Body', { main: 'Send_Messages_Page' });
   },
 });
+
 FlowRouter.route('/reply/:_id', {
   name: 'Reply_Page',
   action() {
