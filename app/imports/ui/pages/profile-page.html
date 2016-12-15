@@ -1,18 +1,72 @@
 <template name="Profile_Page">
-{{#If_Logged_In}}
-    {{#If_New_User}}
+
+  {{#If_Logged_In}}
+  {{#If_New_User}}
+
   {{#If_Not_Banned}}
-  <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
-  <h1 class = "ui header">Hello {{user}}</h1>
+
+  <div style="margin-top: 90px; min-height: 500px" class="ui centered container">
+    <h1 class="ui header">Hello {{user}}</h1>
 
     <div class="ui two column grid">
-      <div class = "ui centered card">
-        <img class="ui fluid centered medium rounded image" src="{{picture}}">
+
+      <div class="twelve wide stretched column">
+        <div class="ui segment">
+          <form class="ui form edit-profile">
+            <div class="field">
+              <label>Name</label>
+              <div class="two fields">
+                <div class="field">
+                  <p>{{first}} {{last}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+
+              <div class="two fields">
+                <div class="field">
+                  <label>Telephone</label>
+                  <p>{{telephone}}</p>
+                </div>
+                <div class="field">
+                  <label>Email</label>
+                  <p>{{email}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <label>Motto</label>
+              <p>{{motto}}</p>
+            </div>
+            <div class="field">
+              <label>Miscellaneous</label>
+              <p>{{miscellaneous}}</p>
+            </div>
+            <div class="field">
+              <label>Phone checked</label>
+              <p>{{phonechecked}}</p>
+            </div>
+            <div class="field">
+              <label>Email checked</label>
+              <p>{{emailchecked}}</p>
+            </div>
+            <div class="field">
+              <label>Role</label>
+              <p>{{role}} {{superuser}}</p>
+            </div>
+          </form>
+        </div>
       </div>
+
       <div class="four wide column">
-        <div class = "ui segment">
+
+        <div class="ui fitted right card">
+          <img class="ui fluid medium rounded image" src="{{picture}}">
+        </div>
+
+        <div class="ui segment">
           <div class="ui secondary vertical menu">
-            <a class="active item">
+            <a class="item">
               Account
             </a>
             <a class="item" href="{{ pathFor 'Edit_Profile_Page' }}">
@@ -25,74 +79,35 @@
         </div>
       </div>
 
-      <div class="column">
-        <form class = "ui form edit-profile">
-          <div class="field">
-            <label>Name</label>
-            <div class="two fields">
-              <div class="field">
-                <p>{{first}} {{last}}</p>
-              </div>
-            </div>
-          </div>
-          <div class="field">
 
-            <div class="two fields">
-              <div class="field">
-                <label>Telephone</label>
-                <p>{{telephone}}</p>
-              </div>
-              <div class="field">
-                <label>Email</label>
-                <p>{{email}}</p>
-              </div>
-            </div>
-          </div>
-          <div class="field">
-            <label>Motto</label>
-            <p>{{motto}}</p>
-          </div>
-          <div class="field">
-            <label>Miscellaneous</label>
-            <p>{{miscellaneous}}</p>
-          </div>
-          <div class="field">
-            <label>Phone checked</label>
-            <p>{{phonechecked}}</p>
-          </div>
-          <div class="field">
-            <label>Email checked</label>
-            <p>{{emailchecked}}</p>
-          </div>
-          <div class="field">
-            <label>Role</label>
-            <p>{{role}} {{superuser}}</p>
-          </div>
-        </form>
+    </div>
 
-        <h2>Your Tickets</h2>
-        <table style="margin-top: 20px" class="ui celled table">
-          <thead>
-          <tr>
-            <th>Ticket</th>
-            <th>Date</th>
-            <th>Requested Price</th>
-            <th></th>
-          </tr>
-          </thead>
-          <tbody>
-          {{#each ticket in listOfTickets}}
-            {{>aTicket ticket=ticket}}
-          {{/each}}
-          </tbody>
-        </table>
-      </div>
+    <div class="ui container" style="padding-top: 20px">
+      <h2>Your Tickets</h2>
+      <table style="margin-top: 20px" class="ui celled table">
+        <thead>
+        <tr>
+          <th>Ticket</th>
+          <th>Date</th>
+          <th>Requested Price</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each ticket in listOfTickets}}
+        {{>aTicket ticket=ticket}}
+        {{/each}}
+        </tbody>
+      </table>
     </div>
 
   </div>
-      {{/If_Not_Banned}}
-    {{/If_New_User}}
-{{/If_Logged_In}}
+
+
+  {{/If_Not_Banned}}
+  {{/If_New_User}}
+  {{/If_Logged_In}}
+
 </template>
 
 <template name="aTicket">
@@ -100,6 +115,8 @@
     <td>{{ticket.eventName}}</td>
     <td>{{ticket.date.toDateString}}</td>
     <td>{{ticket.price}}</td>
-    <td><button class="ui negative small right floated delete button">Delete</button></td>
+    <td>
+      <button class="ui negative small right floated delete button">Delete</button>
+    </td>
   </tr>
 </template>

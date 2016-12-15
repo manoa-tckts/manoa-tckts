@@ -23,3 +23,30 @@ Template.Inbox.events({
     FlowRouter.go('Inbox');
   },
 });
+
+Template.aPerson.helpers({
+  listOfInboxusers(fieldName){
+
+    return Messages.find({'reciever': Members.findOne({'uid': Meteor.userId()}).username});
+  },
+});
+
+Template.aPerson.events({
+
+  'click .delete'(event, instance){
+    event.preventDefault();
+
+    if (confirm("Are you sure you wish to delete?")) {
+      Messages.remove(this.person._id);
+      alert("Message removed");
+      FlowRouter.go('Inbox');
+    }
+  },
+
+  'click .openModal'(event, instance){
+    event.preventDefault();
+    $('.ui.modal')
+        .modal('show')
+    ;
+  }
+});
