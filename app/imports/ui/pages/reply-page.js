@@ -12,7 +12,7 @@ import {Messages} from '../../api/schema/messages.js';
 Template.Reply_Page.helpers({
 
   recipient: function() {
-    const owner = Messages.findOne(FlowRouter.getParam('_id')).reciever;
+    const owner = Messages.findOne(FlowRouter.getParam('_id')).sender;
     return owner;
   },
   subject: function() {
