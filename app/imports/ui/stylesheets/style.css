@@ -33,8 +33,9 @@ body {
 }
 
 .sell-page-background{
-  background: url("/images/sell-tickets-background.png");
+  background: url("/images/final-sell-page-background.jpg");
   background-size: cover;
+  padding-top: 0px;
   min-height: 700px;
 }
 

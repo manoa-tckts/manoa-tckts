@@ -1,16 +1,16 @@
 <template name="Sell_Tickets_Page">
-  <div style="min-height:500px;" class="sell-page-background">
+  <div class="sell-page-background">
     {{#If_Logged_In}}
       {{#If_New_User}}
       {{#If_Not_Banned}}
     <div style="margin-top: 90px; min-height: 300px" class="ui centered container">
-      <h1 class="ui header">Sell Your Ticket</h1>
+      <h1 style="color:white;" class="ui header">Sell Your Ticket</h1>
       <form class="ui form">
 
         <div class="field">
           <div class="two fields">
             <div class="field">
-              <label>Event</label>
+              <label style="color:white;">Event</label>
               <select class="ui dropdown" name="eventId"> 
                 {{#each event in events}} 
                 <option value="{{event._id}}">{{event.event}}</option>
@@ -19,7 +19,7 @@
                  </select>
             </div>
             <div class="three wide field">
-              <label>Price</label>
+              <label style="color:white;">Price</label>
               <div class="ui left labeled input">
                 <div class="ui label">$</div>
                 <input type="text" name="price" id="price" placeholder="Amount">
