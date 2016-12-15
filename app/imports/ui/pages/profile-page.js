@@ -145,6 +145,7 @@ Template.Profile_Page.events({
 });
 
 
+/*
 
 Template.Profile_Page.onRendered(function () {
   $('.menu .item')
@@ -158,6 +159,7 @@ Template.Profile_Page.onRendered(function () {
     $(this).addClass('active');
   });
 });
+*/
 
 
 Template.aTicket.helpers({
