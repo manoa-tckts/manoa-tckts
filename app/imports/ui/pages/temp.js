@@ -10,8 +10,7 @@ import {Messages} from '../../api/schema/messages.js';
 
 Template.Temp_Page.helpers({
   listOfUsers(){
-    console.log('loading users');
-    console.log(Meteor.userId());
+    
     return Members.find();
   },
 

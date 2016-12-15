@@ -57,8 +57,7 @@ Template.Edit_Profile_Page.events({
     event.preventDefault()
 
     if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() > 0){
-      /*console.log(Members.findOne({'uid':Meteor.userId()}).first);
-       console.log(Members.findOne({'uid':Meteor.userId()})); */
+
       const uid = Meteor.userId();
       const username = Meteor.user().profile.name;
       const first = event.target.first.value;
@@ -71,14 +70,9 @@ Template.Edit_Profile_Page.events({
       const banned = false;
       const phonecheckbox = event.target.contactphone.checked;
       const emailcheckbox = event.target.contactemail.checked;
-      //console.log(Meteor.user().profile.name);
-      //console.log('messages: ');
-      //console.log(Messages.findOne({'reciever': Meteor.userId()}));
 
       const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned, phonecheckbox, emailcheckbox};
       Members.update(Members.findOne({'uid': Meteor.userId()})._id, { $set: profile});
-      console.log('in Members collection:');
-      console.log(Members.findOne({uid: Meteor.userId()}));
       FlowRouter.go('Profile_Page');
     }
     else{
@@ -97,16 +91,10 @@ Template.Edit_Profile_Page.events({
       const banned = false;
       const phonecheckbox = event.target.contactphone.checked;
       const emailcheckbox = event.target.contactemail.checked;
-      console.log(Meteor.user().profile.name);
 
       const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned, phonecheckbox, emailcheckbox, superuser, admin};
-      console.log('testing false');
-      console.log(profile);
       MembersSchema.clean(profile);
       Members.insert(profile);
-      console.log('test');
-      console.log(Members.findOne({uid: Meteor.userId()}));
-      console.log('test');
       FlowRouter.go('Profile_Page');
     }
   },

@@ -18,15 +18,12 @@ Template.Send_Messages_Page.helpers({
   subject: function() {
     const subject = Ticket.findOne(FlowRouter.getParam('_id'));
     const message = "Interested in " + subject.eventName + " ticket";
-    console.log('subject line: ');
-    console.log(message);
+
     return message;
   },
   message: function() {
     const subject = Ticket.findOne(FlowRouter.getParam('_id'));
     const message = "Hi, I'm interested in buying the ticket for the event " + subject.eventName + " occuring at  " + subject.date.toDateString() + " please reply back";
-    console.log('message');
-    console.log(message);
     return message;
   },
   ticketField(fieldName) {

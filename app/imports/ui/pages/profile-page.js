@@ -117,7 +117,6 @@ Template.aTicket.helpers({
 
 Template.aTicket.events({
   'click .delete': function() {
-    console.log(this.ticket._id);
     if (confirm("Are you sure you wish to delete?")) {
         Ticket.remove(this.ticket._id);
       alert("Ticket removed");
