@@ -47,6 +47,10 @@ Template.Profile_Page.events({
 
 Template.Profile_Page.helpers({
 
+  displayId: function(){
+    alert(Members.findOne({uid: Meteor.userId()}).first);
+    alert(Meteor.userId());
+  },
   user: function user() {
     return Meteor.user() ? Meteor.user().profile.name : 'No logged in user';
   },
@@ -123,8 +127,16 @@ Template.Profile_Page.helpers({
     if(Members.find({uid: Meteor.userId()}, {limit: 1}).count() <= 0){
       return('http://m.memegen.com/fdt0u5.jpg');
     }
-    else{return Members.findOne({'uid':Meteor.userId()}).role;}
+    else{return Members.findOne({'uid':Meteor.userId()}).admin ? "admin" : "not admin";}
   },
+  superuser: function() {
+    if (Members.find({ uid: Meteor.userId() }, { limit: 1 }).count() <= 0) {
+      //return('http://m.memegen.com/fdt0u5.jpg');
+    }
+    else {
+      return Members.findOne({ 'uid': Meteor.userId() }).superuser ? "superuser" : "not superuser"
+    }
+  }
 });
 
 Template.Profile_Page.events({
@@ -133,6 +145,7 @@ Template.Profile_Page.events({
 });
 
 
+<<<<<<< HEAD
 Template.Profile_Page.onRendered(function () {
   $('.menu .item')
       .tab()
@@ -146,6 +159,8 @@ Template.Profile_Page.onRendered(function () {
   });
 });
 
+=======
+>>>>>>> master
 
 Template.aTicket.helpers({
 

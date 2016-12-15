@@ -1,5 +1,10 @@
 <template name="Profile_Page">
+<<<<<<< HEAD
   {{#If_Logged_In}}
+=======
+{{#If_Logged_In}}
+    {{#If_New_User}}
+>>>>>>> master
   {{#If_Not_Banned}}
 
   <div style="margin-top: 90px; min-height: 500px" class="ui centered container">
@@ -18,7 +23,7 @@
             <a class="item" href="{{ pathFor 'Edit_Profile_Page' }}">
               Edit Profile
             </a>
-            <a class="item">
+            <a class="item" href="{{ pathFor 'Inbox' }}">
               Messages
             </a>
           </div>
@@ -66,7 +71,7 @@
           </div>
           <div class="field">
             <label>Role</label>
-            <p>{{role}}</p>
+            <p>{{role}} {{superuser}}</p>
           </div>
         </form>
 
@@ -90,8 +95,14 @@
     </div>
 
   </div>
+<<<<<<< HEAD
   {{/If_Not_Banned}}
   {{/If_Logged_In}}
+=======
+      {{/If_Not_Banned}}
+    {{/If_New_User}}
+{{/If_Logged_In}}
+>>>>>>> master
 </template>
 
 <template name="aTicket">

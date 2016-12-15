@@ -1,0 +1,36 @@
+<template name="Send_Messages_Page">
+  <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
+
+    {{#If_Logged_In}}
+      {{#If_Not_Banned}}
+        <h1 class = "ui header">Send Message</h1>
+
+        <div class="ui two column doubling stackable grid container">
+          <div class="column">
+            <div class = "ui centered card">
+              <img class="ui fluid centered medium rounded image" src="{{picture}}">
+            </div>
+          </div>
+          <div class="column">
+            <form class = "ui form send-messages">
+              <div class="field">
+                <label>To:</label>
+                <input type="text" name="ToField" id="ToField" placeholder="Enter Recipient of Message" readonly="" value="{{recipient}}">
+              </div>
+              <div class="field">
+                <label>Subject</label>
+                <input type="text" name="subject" id="subject" placeholder="Enter subject here" readonly="" value="{{subject}}">
+              </div>
+              <div class="field">
+                <label>Message</label>
+                <textarea  class="comment_textarea" name="message" value="{{message}}"></textarea>
+              </div>
+              <button class="ui button" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+
+      {{/If_Not_Banned}}
+    {{/If_Logged_In}}
+  </div>
+</template>
