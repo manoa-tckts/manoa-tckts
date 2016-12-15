@@ -10,7 +10,7 @@ import {Messages} from '../../api/schema/messages.js';
 
 Template.Temp_Page.helpers({
   listOfUsers(){
-    
+
     return Members.find();
   },
 
