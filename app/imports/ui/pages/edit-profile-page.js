@@ -75,7 +75,7 @@ Template.Edit_Profile_Page.events({
       //console.log('messages: ');
       //console.log(Messages.findOne({'reciever': Meteor.userId()}));
 
-      const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned, phonecheckbox, emailcheckbox};
+      const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned, phonecheckbox, emailcheckbox, superuser, admin};
       Members.update(Members.findOne({'uid': Meteor.userId()})._id, { $set: profile});
       console.log('in Members collection:');
       console.log(Members.findOne({uid: Meteor.userId()}));
@@ -92,8 +92,8 @@ Template.Edit_Profile_Page.events({
       const miscellaneous = event.target.miscellaneous.value;
       const picture = event.target.picture.value;
       var role = 'regular';
-      const superuser = Meteor.user().profile.name == "kylebali";
-      const admin = Meteor.user().profile.name == "kylebali";
+      const superuser = Meteor.user().profile.name == "dumlaoj";
+      const admin = Meteor.user().profile.name == "dumlaoj";
       const banned = false;
       const phonecheckbox = event.target.contactphone.checked;
       const emailcheckbox = event.target.contactemail.checked;

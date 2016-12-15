@@ -26,7 +26,11 @@ Template.anUser.helpers({
   },
   notSelf: function(){
     const id = this.user;
-    return !(id.uid == Meteor.userId() || id.admin || id.superuser);
+    return !(id.uid == Meteor.userId());
+  },
+  notSelf: function(){
+    const id = this.user;
+    return !(Members.findOne({'uid': id.uid}).admin);
   },
   color: function(){
     const id = this.user._id;

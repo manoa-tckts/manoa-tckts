@@ -63,6 +63,6 @@
     <td>{{event.event}}</td>
     <td>{{numTickets event}}</td>
     <td>{{#if checkExpired event}}Yes
-      <button class="ui negative small right floated delete button">Delete</button>{{else}}No{{/if}}</td>
+      {{else}}No{{/if}}<button class="ui negative small right floated delete button">Delete</button></td>
   </tr>
 </template>
