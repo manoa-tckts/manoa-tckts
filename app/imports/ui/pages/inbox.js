@@ -11,23 +11,18 @@ import { Ticket, TicketSchema, ListOfEvents } from '../../api/schema/schemas.js'
 import {Inboxmessages} from '../../api/schema/inboxmessages.js';
 import {Messages} from '../../api/schema/messages.js';
 
-Template.Temp_Page.helpers({
-  listOfUsers(){
-    console.log('loading users');
-    console.log(Meteor.userId());
-    return Members.find();
-  },
-
-  listOfTickets(){
-    return Ticket.find();
-  },
+Template.Inbox.helpers({
   listOfInboxusers(fieldName){
 
     return Messages.find({'reciever': Members.findOne({'uid': Meteor.userId()}).username});
   },
 });
 
-Template.Temp_Page.events({
+Template.Inbox.events({
 
-
+  'click .delete'(event, instance){
+    event.preventDefault();
+    Messages.remove(FlowRouter.getParam('_id'));
+    FlowRouter.go('Inbox');
+  },
 });

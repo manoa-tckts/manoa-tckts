@@ -7,6 +7,7 @@ import { Members, MembersSchema } from '../../api/schema/members.js';
 import {Checkboxes, CheckboxesSchema} from '../../api/schema/checkboxes.js';
 import {Emails} from '../../api/schema/emails.js';
 import {Phonenumbers} from '../../api/schema/phonenumbers.js';
+import {Messages} from '../../api/schema/messages.js';
 
 /**
  * Created by Jordan on 10/25/16.
@@ -74,6 +75,8 @@ Template.Edit_Profile_Page.events({
       const phonecheckbox = event.target.contactphone.checked;
       const emailcheckbox = event.target.contactemail.checked;
       console.log(Meteor.user().profile.name);
+      console.log('messages: ');
+      console.log(Messages.findOne({'reciever': Meteor.userId()}));
 
       const profile = {uid, username, first, last, phone, email, motto, miscellaneous, picture, role, banned, phonecheckbox, emailcheckbox, superuser, admin};
       Members.update(Members.findOne({'uid': Meteor.userId()})._id, { $set: profile});

@@ -1,0 +1,40 @@
+<template name="Inbox">
+  <div style = "margin-top: 90px; min-height: 500px" class = "ui centered container">
+
+    {{#If_Logged_In}}
+      {{#If_Not_Banned}}
+        <h1 class = "ui header">Inbox</h1>
+
+        <div class="ui two column doubling stackable grid container">
+          <div class="column">
+            <form class = "ui form edit-profile">
+              <table style="margin-top: 20px" class="ui celled table">
+                <thead>
+                <tr>
+                  <th>Inbox person Name</th>
+                  <th>Subject</th>
+                  <th>Date sent</th>
+                  <th>Read</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each person in listOfInboxusers}}
+                  <tr>
+                    <td>{{person.reciever}}</td>
+                    <td>{{person.subject}}</td>
+                    <td>{{person.date}}</td>
+                    <td>{{person.isRead}}</td>
+                    <td><a href="{{pathFor 'Reply_Page' _id=person._id}}">Reply to Message</a></td>
+                  </tr>
+                  <button class="ui button delete">Delete</button>
+                {{/each}}
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+
+      {{/If_Not_Banned}}
+    {{/If_Logged_In}}
+  </div>
+</template>
