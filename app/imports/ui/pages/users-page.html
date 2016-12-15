@@ -36,6 +36,6 @@
     <td>{{user._id}}</td>
     <td>{{user.username}}</td>
     <td>{{user.first}} {{user.last}}</td>
-    <td>{{#if notSelf}}{{#if notOtherAdmin}}<button class="ui {{color}} small right floated ban button">{{banText}}</button>{{/if}}{{#if superUser}}<button class="ui {{adminColor}} small right floated admin button">{{adminText}}</button>{{/if}}{{/if}}</td>
+    <td>{{#if notSelf}}<button class="ui {{color}} small right floated ban button">{{banText}}</button>{{#if superUser}}<button class="ui {{adminColor}} small right floated admin button">{{adminText}}</button>{{/if}}{{/if}}</td>
   </tr>
 </template>
