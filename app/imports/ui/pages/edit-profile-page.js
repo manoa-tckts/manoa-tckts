@@ -113,6 +113,7 @@ Template.Edit_Profile_Page.events({
 
 });
 
+/*
 
 Template.Edit_Profile_Page.onRendered(function () {
   $('.menu .item')
@@ -132,4 +133,4 @@ Template.Edit_Profile_Page.onRendered(function () {
       })
   ;
 
-});
+});*/
