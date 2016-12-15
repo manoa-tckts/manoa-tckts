@@ -15,18 +15,12 @@
                   <th>Subject</th>
                   <th>Date sent</th>
                   <th>Read</th>
+                  <th></th>
                 </tr>
                 </thead>
                 <tbody>
                 {{#each person in listOfInboxusers}}
-                  <tr>
-                    <td>{{person.reciever}}</td>
-                    <td>{{person.subject}}</td>
-                    <td>{{person.date}}</td>
-                    <td>{{person.isRead}}</td>
-                    <td><a href="{{pathFor 'Reply_Page' _id=person._id}}">Reply to Message</a></td>
-                  </tr>
-                  <button class="ui button delete">Delete</button>
+                  {{>aPerson person=person}}
                 {{/each}}
                 </tbody>
               </table>
@@ -36,5 +30,22 @@
 
       {{/If_Not_Banned}}
     {{/If_Logged_In}}
+  </div>
+</template>
+
+<template name="aPerson">
+  <tr>
+    <td>{{person.reciever}}</td>
+    <td>{{person.subject}}</td>
+    <td>{{person.date.toDateString}}</td>
+    <td><button class="openModal ui small blue button">Read Message</button></td>
+    <td><a href="{{pathFor 'Reply_Page' _id=person._id}}"><button class="ui small blue button">Reply</button><button class="ui small negative button delete">Delete</button></a></td>
+  </tr>
+
+  <div class="ui modal">
+    <div class="header">{{person.subject}}</div>
+    <div class="content">
+      <p>{{person.message}}</p>
+    </div>
   </div>
 </template>
